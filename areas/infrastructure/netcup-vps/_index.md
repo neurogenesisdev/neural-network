@@ -95,11 +95,13 @@ Secrets are podman secrets `n8n-db-password` and `n8n-encryption-key` (both also
 
 ## Vault
 
-`/srv/vault` is the `neural-network` vault on its own subvolume `@srv`, synced by `ob sync` as `luis`. Ownership is `luis:vault` throughout, with no `other` bits.
+`/srv/vault` is the `neural-network` vault on its own subvolume `@srv`, synced by `ob sync` as `luis`. Ownership is `luis:vault` throughout, with no `other` bits, except the top folder and `.claude/` (both `root:vault`, since 2026-10-28; see below).
 
 **Permissions** ([[adr-0040-vault-merge-and-agent-council|ADR-0040]] §5, amended 2026-10-25): one tier. Every folder is `2770` and every file `0660`, with a default ACL `g::rwx`, so `dev` can create, edit, rename and delete anything in the vault — including the root, `.claude/`, `.obsidian/`, `_generated/` and every `CLAUDE.md`. Set by the tier script `/usr/local/lib/vault-tools/apply-tiers.sh`, identical to `vault/apply-tiers.sh` in infra-tools. The skeleton, protected and contract tiers were retired 2026-10-25.
 
 What still stops agents from editing instruction files and protected trees is Claude Code, not the kernel: the deny rules in `/etc/claude-code/managed-settings.json` and the council's `scope.py` hook.
+
+**Exception since 2026-10-28:** `/srv/vault/.claude` is `root:vault`, folders 2750 and files 0640 (the tier script's `ROOT_TREES`), so a `luis` session's project settings change only with sudo. The vault's top folder is `root:vault` 3770 (sticky), so nobody can rename `.claude` away, and group members can only rename or delete their own top-level entries (all of which belong to `luis`).
 
 `n8n` gets traverse-only ACLs on the root and `_inbox/`, and `rwX` (plus default) on `_inbox/n8n/` only. `vault-drift.service` runs `apply-tiers.sh --check` nightly: every folder `2770`, every file `0660`, every owning-group ACL entry `rw`, and no `CLAUDE.md`/`AGENTS.md` outside its list. Then it runs the infra-tools council installer's `--check` as `luis` and `dev`, and confirms `managed-settings.json` exists. Clean on 2026-10-25 after the change.
 
@@ -109,7 +111,7 @@ Since 2026-10-28 (`measured`; [[adr-0040-vault-merge-and-agent-council|ADR-0040]
 
 - **Snapshot:** `vault-snap "<why>"` (`/usr/local/bin`), for any `vault` member, without sudo. It holds a lock (`state/snap.lock`), runs `git add -A` and commits as the calling user (`<user>@netcup-vps`). With nothing to commit it exits 0. Use `GIT_DIR=/var/lib/vault-git git …` to read history.
 - **Push:** `vault-autocommit.timer`, see [[#System (custom, all enabled)]]. A failed push (for example, the remote has diverged) fails the unit, which sends an ntfy alert.
-- **Hook:** `core.hooksPath=/usr/local/lib/vault-git-hooks` (`root:root` 0755). Its `pre-commit` blocks only secret shapes: private key blocks, Anthropic, OpenAI, AWS and GitHub tokens. It is a guard, not a boundary, because `--no-verify` bypasses it.
+- **Hooks:** `core.hooksPath=/usr/local/lib/vault-git-hooks` (`root:root` 0755). There is one scanner, `secret-scan`, linked as `pre-commit` (staged additions) and `pre-push` (every commit in `origin/main..HEAD`). It blocks only secret shapes: private key blocks, Anthropic, OpenAI, AWS and GitHub tokens. `--no-verify` gets past `pre-commit`, but the push stops it; the timer's push never passes `--no-verify`. To remove a blocked commit: `git update-ref refs/heads/main <good>`, then `git reset`, then `sudo git … reflog expire --expire-unreachable=now --all && sudo git … gc --prune=now`.
 - **Protection:** the top folder (2750), `config`, `HEAD` (0644) and `info/` are `root:vault`, so `dev` cannot change hooks or config, which would mean running code as `luis` on the next timer run. Only `objects/`, `reftable/`, `logs/` and `state/` are group-writable; the index is `state/index`, through a symlink. Config changes need `sudo git --git-dir=/var/lib/vault-git config …`.
 - **Ignored:** `.obsidian/workspace*.json`, `.trash/`, `_generated/*` except `.keep` (the vault's `.gitignore`).
 - **gc** is off (`gc.auto=0`) because it writes to the root-owned top folder. Run `sudo git --git-dir=/var/lib/vault-git gc` now and then; that also prunes the blob of anything the hook blocked.

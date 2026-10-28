@@ -23,6 +23,9 @@ tags: [project, vault, merge]
   + Never run git by hand in the vault. On the server, the snapshot is vault-snap "<why>"; make it before an agent job.
   ```
 - [ ] Laptop git: stop committing to the laptop's own vault repository, or replace it with a clone of `neurogenesisdev/neural-network`.
+- [ ] Laptop, infra-tools tidy-up (ADR-0040 §4: executables live in infra-tools). Bring the server-only vault git pieces into the repo: `/usr/local/bin/vault-snap`, `/usr/local/lib/vault-git-hooks/secret-scan` (with its `pre-commit` and `pre-push` links), `vault-autocommit.{service,timer}`, `/etc/gitconfig` (`safe.directory`), and the `/var/lib/vault-git` layout (reftable, root-owned top folder, `config`, `HEAD` and `info/`). Also commit the `ROOT_TREES` change to `vault/apply-tiers.sh`, which is uncommitted in `/opt/infra-tools`. That clone also has 1 commit not on GitHub (not from this session), so check it first.
+- [x] Stop `.claude` being renamed away: the vault's top folder is now `root:vault` 3770 (sticky), done 2026-10-28 (ADR-0040, third amendment that day).
+- [ ] `vault-drift` is failing since 2026-10-28 12:59: `luis`'s council release `0.1.4` has 3 files changed in place (`agents/sysadmin.md`, `hooks/scope.py`, `hooks/tests/test_scope.py`) that no longer match its MANIFEST. Cut a new release or reinstall; it alerts every night until then.
 - [x] Rewrite `areas/infrastructure/netcup-vps/_index.md`. It still describes Debian, Hermes and the auto-* timers. A good first job for `cc-sys`.
 - [ ] neurogenesis.dev site sync: read `areas/writing/published/` (was `publish/blog/`).
 - [ ] 15 unread freelance digests in `archive/freelance/digest/`: give the n8n digest workflow a reader, or switch it off.
