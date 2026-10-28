@@ -29,7 +29,9 @@
       "Bash(export GIT_DIR=/var/lib/vault-git)",
       "Bash(git ls-remote *)",
       "Bash(echo \"ls-remote exit=$?\")",
-      "Bash(echo \"push exit=$?\")"
+      "Bash(echo \"push exit=$?\")",
+      "Bash(set -e)",
+      "Bash(getfacl -p .claude)"
     ]
   }
 }
