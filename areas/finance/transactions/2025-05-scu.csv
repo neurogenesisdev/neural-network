@@ -1,0 +1,63 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2025-05-01,2025-05,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,205.85
+2025-05-11,2025-05,PRIMARY SAVINGS 8400,credit,100.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,305.85
+2025-05-31,2025-05,PRIMARY SAVINGS 8400,credit,1.14,Dividends,Credit Dividends,306.99
+2025-05-01,2025-05,PRIMARY SAVINGS 8400,debit,-67.95,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,436.70
+2025-05-01,2025-05,PRIMARY SAVINGS 8400,fee,-0.68,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,436.02
+2025-05-03,2025-05,PRIMARY SAVINGS 8400,debit,-34.12,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,401.90
+2025-05-03,2025-05,PRIMARY SAVINGS 8400,fee,-0.34,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,401.56
+2025-05-04,2025-05,PRIMARY SAVINGS 8400,debit,-59.69,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,341.87
+2025-05-04,2025-05,PRIMARY SAVINGS 8400,fee,-0.60,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,341.27
+2025-05-07,2025-05,PRIMARY SAVINGS 8400,debit,-39.87,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,301.40
+2025-05-07,2025-05,PRIMARY SAVINGS 8400,fee,-0.40,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,301.00
+2025-05-08,2025-05,PRIMARY SAVINGS 8400,debit,-21.72,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,279.28
+2025-05-08,2025-05,PRIMARY SAVINGS 8400,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,279.06
+2025-05-08,2025-05,PRIMARY SAVINGS 8400,debit,-14.77,MEDIA MARKT TV-HIFISULZBACH,POS Withdrawal MEDIA MARKT TV-HIFISULZBACH DEDE,264.29
+2025-05-08,2025-05,PRIMARY SAVINGS 8400,fee,-0.15,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,264.14
+2025-05-10,2025-05,PRIMARY SAVINGS 8400,debit,-95.83,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,168.31
+2025-05-10,2025-05,PRIMARY SAVINGS 8400,fee,-0.96,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,167.35
+2025-05-11,2025-05,PRIMARY SAVINGS 8400,credit,200.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,367.35
+2025-05-13,2025-05,PRIMARY SAVINGS 8400,debit,-39.91,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,327.44
+2025-05-13,2025-05,PRIMARY SAVINGS 8400,fee,-0.40,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,327.04
+2025-05-14,2025-05,PRIMARY SAVINGS 8400,debit,-33.59,Barber lounge936 Frankfurt am,POS Withdrawal Barber lounge936 Frankfurt am DEDE,293.45
+2025-05-14,2025-05,PRIMARY SAVINGS 8400,fee,-0.34,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,293.11
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,debit,-13.83,DM-Drogerie Markt Frankfurt am,POS Withdrawal DM-Drogerie Markt Frankfurt am DEDE,279.28
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,279.14
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,debit,-85.09,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,194.05
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,fee,-0.85,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,193.20
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,credit,500.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,693.20
+2025-05-15,2025-05,PRIMARY SAVINGS 8409,credit,100.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,793.20
+2025-05-17,2025-05,PRIMARY SAVINGS 8409,debit,-68.26,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,724.94
+2025-05-17,2025-05,PRIMARY SAVINGS 8409,fee,-0.68,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,724.26
+2025-05-17,2025-05,PRIMARY SAVINGS 8409,debit,-7.21,Feinkost im Rewe-CeFrankfurt am,POS Withdrawal Feinkost im Rewe-CeFrankfurt am DEDE,717.05
+2025-05-17,2025-05,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,716.98
+2025-05-18,2025-05,PRIMARY SAVINGS 8409,debit,-43.59,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,673.39
+2025-05-18,2025-05,PRIMARY SAVINGS 8409,fee,-0.44,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,672.95
+2025-05-19,2025-05,PRIMARY SAVINGS 8409,debit,-22.44,RSG Group GmbH Schluesselfel,POS Withdrawal RSG Group GmbH Schluesselfel DEDE,650.51
+2025-05-19,2025-05,PRIMARY SAVINGS 8409,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,650.29
+2025-05-20,2025-05,PRIMARY SAVINGS 8409,debit,-53.06,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,597.23
+2025-05-20,2025-05,PRIMARY SAVINGS 8409,fee,-0.53,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,596.70
+2025-05-22,2025-05,PRIMARY SAVINGS 8409,debit,-7.46,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,589.24
+2025-05-22,2025-05,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,589.17
+2025-05-22,2025-05,PRIMARY SAVINGS 8409,debit,-40.04,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,549.13
+2025-05-22,2025-05,PRIMARY SAVINGS 8409,fee,-0.40,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,548.73
+2025-05-24,2025-05,PRIMARY SAVINGS 8409,debit,-36.32,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,512.41
+2025-05-24,2025-05,PRIMARY SAVINGS 8409,fee,-0.36,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,512.05
+2025-05-25,2025-05,PRIMARY SAVINGS 8409,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,912.05
+2025-05-25,2025-05,PRIMARY SAVINGS 8409,debit,-10.52,Penny Sossenheim Frankfurt am,POS Withdrawal Penny Sossenheim Frankfurt am DEDE,901.53
+2025-05-25,2025-05,PRIMARY SAVINGS 8409,fee,-0.11,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,901.42
+2025-05-26,2025-05,PRIMARY SAVINGS 8409,debit,-2.84,RSG Group GmbH Schluesselfel,POS Withdrawal RSG Group GmbH Schluesselfel DEDE,898.58
+2025-05-26,2025-05,PRIMARY SAVINGS 8409,fee,-0.03,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,898.55
+2025-05-27,2025-05,PRIMARY SAVINGS 8409,debit,-45.18,REWE Ffm-Griesheim Frankfurt am,POS Withdrawal REWE Ffm-Griesheim Frankfurt am DEDE,853.37
+2025-05-27,2025-05,PRIMARY SAVINGS 8409,fee,-0.45,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,852.92
+2025-05-27,2025-05,PRIMARY SAVINGS 8409,debit,-93.69,SHELL OBN309 FRANKFURT,POS Withdrawal SHELL OBN309 FRANKFURT DEDE,759.23
+2025-05-27,2025-05,PRIMARY SAVINGS 8409,fee,-0.94,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,758.29
+2025-05-29,2025-05,PRIMARY SAVINGS 8409,debit,-60.08,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,698.21
+2025-05-29,2025-05,PRIMARY SAVINGS 8409,fee,-0.60,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,697.61
+2025-05-30,2025-05,PRIMARY SAVINGS 8409,debit,-36.44,Barber lounge936 Frankfurt am,POS Withdrawal Barber lounge936 Frankfurt am DEDE,661.17
+2025-05-30,2025-05,PRIMARY SAVINGS 8409,fee,-0.36,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,660.81
+2025-05-30,2025-05,PRIMARY SAVINGS 8409,credit,500.00,Happy Birthday,Deposit Happy Birthday,1160.81
+2025-05-31,2025-05,PRIMARY SAVINGS 8409,debit,-17.11,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,1143.70
+2025-05-31,2025-05,PRIMARY SAVINGS 8409,fee,-0.17,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1143.53
+2025-05-31,2025-05,PRIMARY SAVINGS 8409,debit,-78.20,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,1065.33
+2025-05-31,2025-05,PRIMARY SAVINGS 8409,fee,-0.78,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1064.55

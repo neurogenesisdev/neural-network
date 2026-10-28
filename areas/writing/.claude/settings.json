@@ -1,0 +1,4 @@
+{
+  "agent": "writing-mentor",
+  "permissions": { "additionalDirectories": ["/srv/vault"] }
+}

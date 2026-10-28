@@ -1,0 +1,4 @@
+{
+  "agent": "case-manager",
+  "permissions": { "additionalDirectories": ["/srv/vault"] }
+}

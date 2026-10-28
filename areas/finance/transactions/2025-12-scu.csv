@@ -1,0 +1,135 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,110.21
+2025-12-10,2025-12,PRIMARY SAVINGS 8400,credit,5000.00,Transfer from DIVIDEND CHECKING - Papa,Deposit Transfer from DIVIDEND CHECKING - Papa,5110.21
+2025-12-25,2025-12,PRIMARY SAVINGS 8400,debit,-1000.00,Transfer to EVERYDAY CHECKING,Withdrawal Transfer to EVERYDAY CHECKING,4110.21
+2025-12-31,2025-12,PRIMARY SAVINGS 8400,credit,2.25,Dividends,Credit Dividends,4112.46
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,debit,-1.15,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,2189.39
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2189.38
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,credit,2000.00,Transfer from DIVIDEND CHECKING - Papa,Deposit Transfer from DIVIDEND CHECKING - Papa,4189.38
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,debit,-52.25,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,4137.13
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,fee,-0.52,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,4136.61
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,debit,-24.38,Thong Thai GmbH CoEschborn,POS Withdrawal Thong Thai GmbH CoEschborn DEDE,4112.23
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,fee,-0.24,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,4111.99
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,debit,-14.98,Frankfurt-RoedelheiFrankfurt am,POS Withdrawal Frankfurt-RoedelheiFrankfurt am DEDE,4097.01
+2025-12-01,2025-12,PRIMARY SAVINGS 8400,fee,-0.15,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,4096.86
+2025-12-02,2025-12,PRIMARY SAVINGS 8400,debit,-48.83,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,4048.03
+2025-12-02,2025-12,PRIMARY SAVINGS 8400,fee,-0.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,4047.54
+2025-12-02,2025-12,PRIMARY SAVINGS 8400,debit,-15.03,Frankfurt-RoedelheiFrankfurt am,POS Withdrawal Frankfurt-RoedelheiFrankfurt am DEDE,4032.51
+2025-12-02,2025-12,PRIMARY SAVINGS 8400,fee,-0.15,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,4032.36
+2025-12-03,2025-12,PRIMARY SAVINGS 8400,debit,-33.61,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,3998.75
+2025-12-03,2025-12,PRIMARY SAVINGS 8400,fee,-0.34,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3998.41
+2025-12-03,2025-12,PRIMARY SAVINGS 8400,debit,-32.79,BOLT.EUTallinn,POS Withdrawal BOLT.EU/O/251203060Tallinn EEEE,3965.62
+2025-12-03,2025-12,PRIMARY SAVINGS 8400,fee,-0.33,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3965.29
+2025-12-04,2025-12,PRIMARY SAVINGS 8400,debit,-53.18,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,3912.11
+2025-12-04,2025-12,PRIMARY SAVINGS 8409,fee,-0.53,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3911.58
+2025-12-04,2025-12,PRIMARY SAVINGS 8409,debit,-7.67,FFM Flughafen RegioFrankfurt am,POS Withdrawal FFM Flughafen RegioFrankfurt am DEDE,3903.91
+2025-12-04,2025-12,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3903.83
+2025-12-04,2025-12,PRIMARY SAVINGS 8409,debit,-15.06,Frankfurt-RoedelheiFrankfurt am,POS Withdrawal Frankfurt-RoedelheiFrankfurt am DEDE,3888.77
+2025-12-04,2025-12,PRIMARY SAVINGS 8409,fee,-0.15,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3888.62
+2025-12-05,2025-12,PRIMARY SAVINGS 8409,debit,-175.80,REWE Ali Alamyaar Frankfurt,POS Withdrawal REWE Ali Alamyaar Frankfurt DEDE,3712.82
+2025-12-05,2025-12,PRIMARY SAVINGS 8409,fee,-1.76,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3711.06
+2025-12-05,2025-12,PRIMARY SAVINGS 8409,debit,-120.45,Finion FairPay GmbHMainz,POS Withdrawal Finion FairPay GmbHMainz DEDE,3590.61
+2025-12-05,2025-12,PRIMARY SAVINGS 8409,fee,-1.20,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3589.41
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,debit,-25.69,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,3563.72
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,fee,-0.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3563.46
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,debit,-7.71,Frankfurt-RoedelheiFrankfurt am,POS Withdrawal Frankfurt-RoedelheiFrankfurt am DEDE,3555.75
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3555.67
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,debit,-21.79,Backerei +KonditoreFrankfurt am,POS Withdrawal Backerei +KonditoreFrankfurt am DEDE,3533.88
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3533.66
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,debit,-7.70,FFM Flughafen RegioFrankfurt am,POS Withdrawal FFM Flughafen RegioFrankfurt am DEDE,3525.96
+2025-12-06,2025-12,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3525.88
+2025-12-07,2025-12,PRIMARY SAVINGS 8409,debit,-50.18,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,3475.70
+2025-12-07,2025-12,PRIMARY SAVINGS 8409,fee,-0.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3475.20
+2025-12-07,2025-12,PRIMARY SAVINGS 8409,debit,-43.02,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,3432.18
+2025-12-07,2025-12,PRIMARY SAVINGS 8409,fee,-0.43,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3431.75
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,debit,-82.80,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,3348.95
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,fee,-0.83,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3348.12
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,debit,-63.23,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,3284.89
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,fee,-0.63,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3284.26
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,debit,-25.95,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM CAUS,3258.31
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,debit,-25.34,Urban Coffee Frankfurt am,POS Withdrawal Urban Coffee Frankfurt am DEDE,3232.97
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,fee,-0.25,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,3232.72
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,debit,-178.86,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*Z93QD4AMAZON.DE LULU,3053.86
+2025-12-09,2025-12,PRIMARY SAVINGS 8409,fee,-1.79,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,3052.07
+2025-12-10,2025-12,PRIMARY SAVINGS 8409,debit,-46.83,ATM Withdrawal 000000070015000 TRANSACT 22200461 FRANKFURT M,ATM Withdrawal 000000070015000 TRANSACT 22200461 FRANKFURT MAI DEDE,3005.24
+2025-12-10,2025-12,PRIMARY SAVINGS 8409,fee,-0.40,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,3004.84
+2025-12-11,2025-12,PRIMARY SAVINGS 8409,debit,-50.12,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,2954.72
+2025-12-11,2025-12,PRIMARY SAVINGS 8409,fee,-0.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2954.22
+2025-12-11,2025-12,PRIMARY SAVINGS 8409,credit,1.15,Point Of Sale Deposit VOI DE MUNCHEN,Point Of Sale Deposit VOI DE MUNCHEN DEDE,2955.37
+2025-12-11,2025-12,PRIMARY SAVINGS 8409,debit,-35.11,SHELL 7905 FRANKFURT,POS Withdrawal SHELL 7905 FRANKFURT DEDE,2920.26
+2025-12-11,2025-12,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2919.91
+2025-12-12,2025-12,PRIMARY SAVINGS 8409,debit,-5.60,Patreon* MembershipDublin,POS Withdrawal Patreon* MembershipDublin IEIE,2914.31
+2025-12-12,2025-12,PRIMARY SAVINGS 8409,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2914.25
+2025-12-13,2025-12,PRIMARY SAVINGS 8409,debit,-63.36,Reservix GmbH reservix.de/,POS Withdrawal Reservix GmbH reservix.de/ DEDE,2850.89
+2025-12-13,2025-12,PRIMARY SAVINGS 8409,fee,-0.63,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2850.26
+2025-12-13,2025-12,PRIMARY SAVINGS 8409,debit,-29.48,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM NLNL,2820.78
+2025-12-13,2025-12,PRIMARY SAVINGS 8409,fee,-0.29,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2820.49
+2025-12-14,2025-12,PRIMARY SAVINGS 8409,debit,-108.68,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,2711.81
+2025-12-14,2025-12,PRIMARY SAVINGS 8409,fee,-1.09,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2710.72
+2025-12-15,2025-12,PRIMARY SAVINGS 8409,debit,-36.73,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM NLNL,2673.99
+2025-12-15,2025-12,PRIMARY SAVINGS 8409,fee,-0.37,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2673.62
+2025-12-15,2025-12,PRIMARY SAVINGS 8409,debit,-52.88,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,2620.74
+2025-12-15,2025-12,PRIMARY SAVINGS 8409,fee,-0.53,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2620.21
+2025-12-16,2025-12,PRIMARY SAVINGS 8409,debit,-51.59,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,2568.62
+2025-12-16,2025-12,PRIMARY SAVINGS 8409,fee,-0.52,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2568.10
+2025-12-16,2025-12,PRIMARY SAVINGS 8409,debit,-229.03,ZULASSUNG.DIGITAL SCHONEFELD,POS Withdrawal ZULASSUNG.DIGITAL SCHONEFELD DEDE,2339.07
+2025-12-16,2025-12,PRIMARY SAVINGS 8409,fee,-2.29,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2336.78
+2025-12-17,2025-12,PRIMARY SAVINGS 8409,debit,-14.41,ECHST.NET 866-4525108,POS Withdrawal ECHST.NET 866-4525108 WAUS,2322.37
+2025-12-17,2025-12,PRIMARY SAVINGS 8409,debit,-35.76,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM CAUS,2286.61
+2025-12-17,2025-12,PRIMARY SAVINGS 8409,debit,-38.10,Aral Tankstelle 286Frankfurt am,POS Withdrawal Aral Tankstelle 286Frankfurt am DEDE,2248.51
+2025-12-17,2025-12,PRIMARY SAVINGS 8409,fee,-0.38,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2248.13
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,debit,-105.25,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,2142.88
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,fee,-1.05,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2141.83
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,debit,-119.48,EURONOOT TOULOUSE,POS Withdrawal EURONOOT TOULOUSE FRFR,2022.35
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,fee,-1.19,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,2021.16
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,debit,-26.56,REWE Mohamed Boufo Frankfurt,POS Withdrawal REWE Mohamed Boufo Frankfurt DEDE,1994.60
+2025-12-18,2025-12,PRIMARY SAVINGS 8409,fee,-0.27,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1994.33
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,debit,-108.17,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*ZP5033AMAZON.DE LULU,1886.16
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,fee,-1.08,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,1885.08
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,debit,-90.14,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*ZP43P9AMAZON.DE LULU,1794.94
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,fee,-0.90,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,1794.04
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,debit,-27.20,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM CAUS,1766.84
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,debit,-33.39,REWE Mohamed Boufo Frankfurt,POS Withdrawal REWE Mohamed Boufo Frankfurt DEDE,1733.45
+2025-12-19,2025-12,PRIMARY SAVINGS 8409,fee,-0.33,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1733.12
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,debit,-748.60,UZR*session GmbH & Walldorf,POS Withdrawal UZR*session GmbH & Walldorf DEDE,984.52
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,fee,-7.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,977.03
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,debit,-70.55,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,906.48
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,fee,-0.71,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,905.77
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,debit,-77.39,SHELL DEUTSCHLAND OHAMBURG,POS Withdrawal SHELL DEUTSCHLAND OHAMBURG DEDE,828.38
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,fee,-0.77,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,827.61
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,debit,-15.26,BUNDESAMT FUER JUST03183384/9151,POS Withdrawal BUNDESAMT FUER JUST03183384/9151 DEDE,812.35
+2025-12-21,2025-12,PRIMARY SAVINGS 8409,fee,-0.15,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,812.20
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,debit,-176.09,SP THE RIDGE EU AMSTERDAM-DUI,POS Withdrawal SP THE RIDGE EU AMSTERDAM-DUI NLNL,636.11
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,fee,-1.76,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,634.35
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,debit,-11.76,LEDGER TRUST SERVICPARIS,POS Withdrawal LEDGER TRUST SERVICPARIS FRFR,622.59
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,fee,-0.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,622.47
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,debit,-2.35,The New York Times Amsterdam,POS Withdrawal The New York Times Amsterdam NLNL,620.12
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,fee,-0.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,620.10
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,debit,-42.32,REWE Mohamed Boufo Frankfurt,POS Withdrawal REWE Mohamed Boufo Frankfurt DEDE,577.78
+2025-12-23,2025-12,PRIMARY SAVINGS 8409,fee,-0.42,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,577.36
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,debit,-31.70,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM NLNL,545.66
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,545.34
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,debit,-28.77,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,516.57
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,fee,-0.29,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,516.28
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,credit,6.64,Point Of Sale Deposit UBER *EATS HELP.UBER.COM,Point Of Sale Deposit UBER *EATS HELP.UBER.COM NLNL,522.92
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,debit,-48.83,UBER *EATS HELP.UBEAmsterdam,POS Withdrawal UBER *EATS HELP.UBEAmsterdam NLNL,474.09
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,fee,-0.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,473.60
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,debit,-109.90,REWE Ali Alamyaar Frankfurt,POS Withdrawal REWE Ali Alamyaar Frankfurt DEDE,363.70
+2025-12-24,2025-12,PRIMARY SAVINGS 8409,fee,-1.10,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,362.60
+2025-12-25,2025-12,PRIMARY SAVINGS 8409,credit,1000.00,Transfer from PRIMARY SAVINGS,Deposit Transfer from PRIMARY SAVINGS,1362.60
+2025-12-25,2025-12,PRIMARY SAVINGS 8409,debit,-154.95,EURONOOT TOULOUSE,POS Withdrawal EURONOOT TOULOUSE FRFR,1207.65
+2025-12-25,2025-12,PRIMARY SAVINGS 8409,fee,-1.55,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1206.10
+2025-12-27,2025-12,PRIMARY SAVINGS 8409,debit,-4.28,CNP* WIRED - DIGITACONDENAST.COM,POS Withdrawal CNP* WIRED - DIGITACONDENAST.COM NYUS,1201.82
+2025-12-28,2025-12,PRIMARY SAVINGS 8409,debit,-7.07,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,1194.75
+2025-12-28,2025-12,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1194.68
+2025-12-28,2025-12,PRIMARY SAVINGS 8409,debit,-49.74,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,1144.94
+2025-12-28,2025-12,PRIMARY SAVINGS 8409,fee,-0.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1144.44
+2025-12-28,2025-12,PRIMARY SAVINGS 8409,credit,400.00,Transfer from DIVIDEND CHECKING,Deposit Transfer from DIVIDEND CHECKING,1544.44
+2025-12-29,2025-12,PRIMARY SAVINGS 8409,debit,-5.89,UBER *ONE MEMBERSUBER.COM/BILL,POS Withdrawal UBER *ONE MEMBERSUBER.COM/BILL NLNL,1538.55
+2025-12-29,2025-12,PRIMARY SAVINGS 8409,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1538.49
+2025-12-29,2025-12,PRIMARY SAVINGS 8409,debit,-53.53,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,1484.96
+2025-12-29,2025-12,PRIMARY SAVINGS 8409,fee,-0.54,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1484.42
+2025-12-29,2025-12,PRIMARY SAVINGS 8409,debit,-19.99,ECHST.NET 866-452-5108,POS Withdrawal ECHST.NET 866-452-5108 NVUS,1464.43
+2025-12-30,2025-12,PRIMARY SAVINGS 8409,debit,-8.25,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,1456.18
+2025-12-30,2025-12,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1456.10
+2025-12-30,2025-12,PRIMARY SAVINGS 8409,debit,-12.20,CLOUDFLARE CLOUDFLARE.CO,POS Withdrawal CLOUDFLARE CLOUDFLARE.CO CAUS,1443.90

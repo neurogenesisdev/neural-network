@@ -1,0 +1,53 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-07-01,2024-07,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,106.93
+2024-07-24,2024-07,PRIMARY SAVINGS 8400,credit,274.40,Internet Transfer FROM: XXXX8409,Deposit Internet Transfer FROM: XXXX8409,381.33
+2024-07-31,2024-07,PRIMARY SAVINGS 8400,credit,0.74,Dividends,Credit Dividends,382.07
+2024-07-01,2024-07,PRIMARY SAVINGS 8400,debit,-14.48,GOGOT DOENER FRANKFURT,POS Withdrawal GOGOT DOENER FRANKFURT DEDE,562.49
+2024-07-01,2024-07,PRIMARY SAVINGS 8400,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,562.35
+2024-07-01,2024-07,PRIMARY SAVINGS 8400,debit,-32.18,GRIESSHEIMER CALLSHFRANKFURT AM,POS Withdrawal GRIESSHEIMER CALLSHFRANKFURT AM DEDE,530.17
+2024-07-01,2024-07,PRIMARY SAVINGS 8400,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,529.85
+2024-07-02,2024-07,PRIMARY SAVINGS 8400,debit,-13.95,GOGOT DOENER FRANKFURT,POS Withdrawal GOGOT DOENER FRANKFURT DEDE,515.90
+2024-07-02,2024-07,PRIMARY SAVINGS 8400,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,515.76
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,debit,-80.75,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,435.01
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,fee,-0.81,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,434.20
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,debit,-56.02,SHELL OBN311 FRANKFURT,POS Withdrawal SHELL OBN311 FRANKFURT DEDE,378.18
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,fee,-0.56,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,377.62
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,debit,-32.25,GRIESSHEIMER CALLSHFRANKFURT AM,POS Withdrawal GRIESSHEIMER CALLSHFRANKFURT AM DEDE,345.37
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,345.05
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,debit,-108.19,ATM Withdrawal 255001 FRANKFURTER SPARKASF-NORDWZ.3,ATM Withdrawal 255001 FRANKFURTER SPARKASF-NORDWZ.3 DEDE,236.86
+2024-07-04,2024-07,PRIMARY SAVINGS 8400,fee,-1.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,235.78
+2024-07-05,2024-07,PRIMARY SAVINGS 8400,debit,-135.08,GOERTZ RETAIL GMBH FRANKFURT,POS Withdrawal GOERTZ RETAIL GMBH FRANKFURT DEDE,100.70
+2024-07-05,2024-07,PRIMARY SAVINGS 8400,fee,-1.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,99.35
+2024-07-05,2024-07,PRIMARY SAVINGS 8409,credit,500.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,599.35
+2024-07-06,2024-07,PRIMARY SAVINGS 8409,debit,-32.45,GRIESSHEIMER CALLSHFRANKFURT AM,POS Withdrawal GRIESSHEIMER CALLSHFRANKFURT AM DEDE,566.90
+2024-07-06,2024-07,PRIMARY SAVINGS 8409,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,566.58
+2024-07-08,2024-07,PRIMARY SAVINGS 8409,debit,-33.46,Wolsdorff Tobacco Frankfurt,POS Withdrawal Wolsdorff Tobacco Frankfurt DEDE,533.12
+2024-07-08,2024-07,PRIMARY SAVINGS 8409,fee,-0.33,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,532.79
+2024-07-11,2024-07,PRIMARY SAVINGS 8409,debit,-63.84,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,468.95
+2024-07-11,2024-07,PRIMARY SAVINGS 8409,fee,-0.64,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,468.31
+2024-07-11,2024-07,PRIMARY SAVINGS 8409,debit,-92.10,SHISHAMOUR FRANKFURT,POS Withdrawal SHISHAMOUR FRANKFURT DEDE,376.21
+2024-07-11,2024-07,PRIMARY SAVINGS 8409,fee,-0.92,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,375.29
+2024-07-13,2024-07,PRIMARY SAVINGS 8409,credit,300.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,675.29
+2024-07-14,2024-07,PRIMARY SAVINGS 8409,debit,-20.45,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,654.84
+2024-07-14,2024-07,PRIMARY SAVINGS 8409,fee,-0.20,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,654.64
+2024-07-16,2024-07,PRIMARY SAVINGS 8409,debit,-111.90,REWE CENTER FrankfuFrankfurt,POS Withdrawal REWE CENTER FrankfuFrankfurt DEDE,542.74
+2024-07-16,2024-07,PRIMARY SAVINGS 8409,fee,-1.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,541.62
+2024-07-18,2024-07,PRIMARY SAVINGS 8409,debit,-14.24,Stadt FFM BuergeramFrankfurt am,POS Withdrawal Stadt FFM BuergeramFrankfurt am DEDE,527.38
+2024-07-18,2024-07,PRIMARY SAVINGS 8409,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,527.24
+2024-07-22,2024-07,PRIMARY SAVINGS 8409,debit,-70.24,Aral Tankstelle 120Frankfurt am,POS Withdrawal Aral Tankstelle 120Frankfurt am DEDE,457.00
+2024-07-22,2024-07,PRIMARY SAVINGS 8409,fee,-0.70,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,456.30
+2024-07-23,2024-07,PRIMARY SAVINGS 8409,debit,-6.91,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,449.39
+2024-07-23,2024-07,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,449.32
+2024-07-23,2024-07,PRIMARY SAVINGS 8409,debit,-74.18,SHISHAMOUR FRANKFURT,POS Withdrawal SHISHAMOUR FRANKFURT DEDE,375.14
+2024-07-23,2024-07,PRIMARY SAVINGS 8409,fee,-0.74,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,374.40
+2024-07-24,2024-07,PRIMARY SAVINGS 8409,debit,-274.40,Internet Transfer TO : XXXX8400,Withdrawal Internet Transfer TO : XXXX8400,100.00
+2024-07-24,2024-07,PRIMARY SAVINGS 8409,credit,400.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,500.00
+2024-07-25,2024-07,PRIMARY SAVINGS 8409,debit,-21.79,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,478.21
+2024-07-25,2024-07,PRIMARY SAVINGS 8409,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,477.99
+2024-07-27,2024-07,PRIMARY SAVINGS 8409,debit,-34.77,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,443.22
+2024-07-27,2024-07,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,442.87
+2024-07-30,2024-07,PRIMARY SAVINGS 8409,debit,-21.84,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,421.03
+2024-07-30,2024-07,PRIMARY SAVINGS 8409,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,420.81
+2024-07-30,2024-07,PRIMARY SAVINGS 8409,debit,-8.26,BAECKEREI SCHIESSERLIEDERBACH,POS Withdrawal BAECKEREI SCHIESSERLIEDERBACH DEDE,412.55
+2024-07-30,2024-07,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,412.47
+2024-07-31,2024-07,PRIMARY SAVINGS 8409,credit,1500.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,1912.47

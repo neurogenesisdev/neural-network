@@ -1,0 +1,26 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-01-01,2024-01,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,205.72
+2024-01-31,2024-01,PRIMARY SAVINGS 8400,credit,0.85,Dividends,Credit Dividends,206.57
+2024-01-01,2024-01,PRIMARY SAVINGS 8400,debit,-110.87,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark DEDE,435.04
+2024-01-01,2024-01,PRIMARY SAVINGS 8400,fee,-1.11,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,433.93
+2024-01-02,2024-01,PRIMARY SAVINGS 8400,debit,-25.67,MCDONALD S DEUTSCHLFRANKFURT/MAI,POS Withdrawal MCDONALD S DEUTSCHLFRANKFURT/MAI DEDE,408.26
+2024-01-02,2024-01,PRIMARY SAVINGS 8400,fee,-0.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,408.00
+2024-01-03,2024-01,PRIMARY SAVINGS 8400,debit,-49.19,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,358.81
+2024-01-03,2024-01,PRIMARY SAVINGS 8400,fee,-0.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,358.32
+2024-01-03,2024-01,PRIMARY SAVINGS 8400,debit,-177.41,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,180.91
+2024-01-03,2024-01,PRIMARY SAVINGS 8400,fee,-1.77,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,179.14
+2024-01-06,2024-01,PRIMARY SAVINGS 8400,credit,200.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,379.14
+2024-01-13,2024-01,PRIMARY SAVINGS 8400,debit,-54.95,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark DEDE,324.19
+2024-01-13,2024-01,PRIMARY SAVINGS 8400,fee,-0.55,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,323.64
+2024-01-15,2024-01,PRIMARY SAVINGS 8400,debit,-29.52,MCDONALD S DEUTSCHLFRANKFURT/MAI,POS Withdrawal MCDONALD S DEUTSCHLFRANKFURT/MAI DEDE,294.12
+2024-01-15,2024-01,PRIMARY SAVINGS 8400,fee,-0.30,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,293.82
+2024-01-16,2024-01,PRIMARY SAVINGS 8400,debit,-104.00,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,189.82
+2024-01-16,2024-01,PRIMARY SAVINGS 8400,fee,-1.04,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,188.78
+2024-01-16,2024-01,PRIMARY SAVINGS 8400,debit,-61.46,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,127.32
+2024-01-16,2024-01,PRIMARY SAVINGS 8400,fee,-0.61,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,126.71
+2024-01-18,2024-01,PRIMARY SAVINGS 8409,credit,200.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,326.71
+2024-01-25,2024-01,PRIMARY SAVINGS 8409,debit,-134.82,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,191.89
+2024-01-25,2024-01,PRIMARY SAVINGS 8409,fee,-1.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,190.54
+2024-01-26,2024-01,PRIMARY SAVINGS 8409,debit,-55.87,External Withdrawal _SCU017595 RIVERTY SERVICES GMB - FC_BIL,External Withdrawal _SCU017595 RIVERTY SERVICES GMB - FC_BILL_PD,134.67
+2024-01-26,2024-01,PRIMARY SAVINGS 8409,debit,-1.00,External Withdrawal _SCU017602 AUTO_FC_BILL_FEES - FC_PMT_FE,External Withdrawal _SCU017602 AUTO_FC_BILL_FEES - FC_PMT_FEE,133.67
+2024-01-27,2024-01,PRIMARY SAVINGS 8409,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,533.67

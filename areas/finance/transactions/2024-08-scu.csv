@@ -1,0 +1,93 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-08-01,2024-08,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,482.07
+2024-08-31,2024-08,PRIMARY SAVINGS 8400,credit,2.00,Dividends,Credit Dividends,484.07
+2024-08-01,2024-08,PRIMARY SAVINGS 8400,debit,-10.61,REWE GM Ffm-Griesh Frankfurt am,POS Withdrawal REWE GM Ffm-Griesh Frankfurt am DEDE,1901.86
+2024-08-01,2024-08,PRIMARY SAVINGS 8400,fee,-0.11,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1901.75
+2024-08-01,2024-08,PRIMARY SAVINGS 8400,debit,-325.53,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark DEDE,1576.22
+2024-08-01,2024-08,PRIMARY SAVINGS 8400,fee,-3.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1572.96
+2024-08-02,2024-08,PRIMARY SAVINGS 8400,debit,-81.38,SHISHAMOUR FRANKFURT,POS Withdrawal SHISHAMOUR FRANKFURT DEDE,1491.58
+2024-08-02,2024-08,PRIMARY SAVINGS 8400,fee,-0.81,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1490.77
+2024-08-02,2024-08,PRIMARY SAVINGS 8400,debit,-54.19,PLAZA HOTEL FRANKFURT AM,POS Withdrawal PLAZA HOTEL FRANKFURT AM DEDE,1436.58
+2024-08-02,2024-08,PRIMARY SAVINGS 8400,fee,-0.54,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1436.04
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,debit,-53.23,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1382.81
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,fee,-0.53,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1382.28
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,debit,-46.10,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,1336.18
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,fee,-0.46,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1335.72
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,debit,-94.24,Esso Station FrankfFrankfurt,POS Withdrawal Esso Station FrankfFrankfurt DEDE,1241.48
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,fee,-0.94,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1240.54
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,debit,-32.26,KFC 319 FRANKFURT,POS Withdrawal KFC 319 FRANKFURT DEDE,1208.28
+2024-08-03,2024-08,PRIMARY SAVINGS 8400,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1207.96
+2024-08-04,2024-08,PRIMARY SAVINGS 8400,debit,-58.14,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1149.82
+2024-08-04,2024-08,PRIMARY SAVINGS 8409,fee,-0.58,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1149.24
+2024-08-05,2024-08,PRIMARY SAVINGS 8409,debit,-92.68,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1056.56
+2024-08-05,2024-08,PRIMARY SAVINGS 8409,fee,-0.93,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1055.63
+2024-08-05,2024-08,PRIMARY SAVINGS 8409,credit,800.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,1855.63
+2024-08-06,2024-08,PRIMARY SAVINGS 8409,debit,-102.79,REWE CENTER FrankfuFrankfurt,POS Withdrawal REWE CENTER FrankfuFrankfurt DEDE,1752.84
+2024-08-06,2024-08,PRIMARY SAVINGS 8409,fee,-1.03,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1751.81
+2024-08-06,2024-08,PRIMARY SAVINGS 8409,debit,-14.03,Aral Tankstelle 120Frankfurt am,POS Withdrawal Aral Tankstelle 120Frankfurt am DEDE,1737.78
+2024-08-06,2024-08,PRIMARY SAVINGS 8409,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1737.64
+2024-08-07,2024-08,PRIMARY SAVINGS 8409,debit,-57.47,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1680.17
+2024-08-07,2024-08,PRIMARY SAVINGS 8409,fee,-0.57,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1679.60
+2024-08-08,2024-08,PRIMARY SAVINGS 8409,debit,-58.00,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1621.60
+2024-08-08,2024-08,PRIMARY SAVINGS 8409,fee,-0.58,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1621.02
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,debit,-28.16,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,1592.86
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,fee,-0.28,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1592.58
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,debit,-49.35,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1543.23
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,fee,-0.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1542.74
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,debit,-6.67,DM-Drogerie Markt Frankfurt,POS Withdrawal DM-Drogerie Markt Frankfurt DEDE,1536.07
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1536.00
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,debit,-109.47,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark,ATM Withdrawal 5019 Frankfurter VolksbaKaufpark DEDE,1426.53
+2024-08-09,2024-08,PRIMARY SAVINGS 8409,fee,-1.09,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1425.44
+2024-08-10,2024-08,PRIMARY SAVINGS 8409,debit,-50.37,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1375.07
+2024-08-10,2024-08,PRIMARY SAVINGS 8409,fee,-0.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1374.57
+2024-08-11,2024-08,PRIMARY SAVINGS 8409,debit,-28.29,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,1346.28
+2024-08-11,2024-08,PRIMARY SAVINGS 8409,fee,-0.28,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1346.00
+2024-08-11,2024-08,PRIMARY SAVINGS 8409,debit,-56.85,UZR*Hotel DusseldorFrankfurt am,POS Withdrawal UZR*Hotel DusseldorFrankfurt am DEDE,1289.15
+2024-08-11,2024-08,PRIMARY SAVINGS 8409,fee,-0.57,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1288.58
+2024-08-12,2024-08,PRIMARY SAVINGS 8409,debit,-6.56,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1282.02
+2024-08-12,2024-08,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1281.95
+2024-08-14,2024-08,PRIMARY SAVINGS 8409,debit,-32.79,Esso Station FrankfFrankfurt,POS Withdrawal Esso Station FrankfFrankfurt DEDE,1249.16
+2024-08-14,2024-08,PRIMARY SAVINGS 8409,fee,-0.33,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1248.83
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,debit,-14.29,Penny Auf der MainzFrankfurt,POS Withdrawal Penny Auf der MainzFrankfurt DEDE,1234.54
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1234.40
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,debit,-17.38,Trinkhalle im Turm Frankfurt am,POS Withdrawal Trinkhalle im Turm Frankfurt am DEDE,1217.02
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,fee,-0.17,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1216.85
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,debit,-13.09,ACA GASTRONOMIE UNDFRANKFURT AM,POS Withdrawal ACA GASTRONOMIE UNDFRANKFURT AM DEDE,1203.76
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,fee,-0.13,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1203.63
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,debit,-102.21,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,1101.42
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,fee,-1.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1100.40
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,debit,-71.50,SHISHAMOUR FRANKFURT,POS Withdrawal SHISHAMOUR FRANKFURT DEDE,1028.90
+2024-08-15,2024-08,PRIMARY SAVINGS 8409,fee,-0.72,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1028.18
+2024-08-16,2024-08,PRIMARY SAVINGS 8409,debit,-11.02,Uludag Doner Schwalbach am,POS Withdrawal Uludag Doner Schwalbach am DEDE,1017.16
+2024-08-16,2024-08,PRIMARY SAVINGS 8409,fee,-0.11,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1017.05
+2024-08-16,2024-08,PRIMARY SAVINGS 8409,debit,-5.78,REWE Schwalbach Li Schwalbach am,POS Withdrawal REWE Schwalbach Li Schwalbach am DEDE,1011.27
+2024-08-16,2024-08,PRIMARY SAVINGS 8409,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,1011.21
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,debit,-12.43,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,998.78
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,fee,-0.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,998.66
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,debit,-8.82,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,989.84
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,fee,-0.09,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,989.75
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,debit,-96.70,Esso Station FrankfFrankfurt,POS Withdrawal Esso Station FrankfFrankfurt DEDE,893.05
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,fee,-0.97,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,892.08
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,debit,-242.47,ATM Withdrawal 524103 Galluswart Mainzer Land,ATM Withdrawal 524103 Galluswart Mainzer Land DEDE,649.61
+2024-08-17,2024-08,PRIMARY SAVINGS 8409,fee,-2.38,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,647.23
+2024-08-18,2024-08,PRIMARY SAVINGS 8409,debit,-6.40,Kabil Kiosk Frankfurt am,POS Withdrawal Kabil Kiosk Frankfurt am DEDE,640.83
+2024-08-18,2024-08,PRIMARY SAVINGS 8409,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,640.77
+2024-08-18,2024-08,PRIMARY SAVINGS 8409,debit,-9.38,Wiener FeinbackereiMuhlheim am M,POS Withdrawal Wiener FeinbackereiMuhlheim am M DEDE,631.39
+2024-08-18,2024-08,PRIMARY SAVINGS 8409,fee,-0.09,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,631.30
+2024-08-23,2024-08,PRIMARY SAVINGS 8409,debit,-54.53,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,576.77
+2024-08-23,2024-08,PRIMARY SAVINGS 8409,fee,-0.55,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,576.22
+2024-08-24,2024-08,PRIMARY SAVINGS 8409,debit,-22.00,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,554.22
+2024-08-24,2024-08,PRIMARY SAVINGS 8409,fee,-0.22,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,554.00
+2024-08-24,2024-08,PRIMARY SAVINGS 8409,debit,-6.70,a&o Hotels and HostFrankfurt am,POS Withdrawal a&o Hotels and HostFrankfurt am DEDE,547.30
+2024-08-24,2024-08,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,547.23
+2024-08-26,2024-08,PRIMARY SAVINGS 8409,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,947.23
+2024-08-27,2024-08,PRIMARY SAVINGS 8409,debit,-159.05,SHISHAMOUR FRANKFURT,POS Withdrawal SHISHAMOUR FRANKFURT DEDE,788.18
+2024-08-27,2024-08,PRIMARY SAVINGS 8409,fee,-1.59,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,786.59
+2024-08-27,2024-08,PRIMARY SAVINGS 8409,debit,-112.03,ATM Withdrawal 5008 Commerzbank 0021060Frankfurt,ATM Withdrawal 5008 Commerzbank 0021060Frankfurt DEDE,674.56
+2024-08-27,2024-08,PRIMARY SAVINGS 8409,fee,-1.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,673.44
+2024-08-28,2024-08,PRIMARY SAVINGS 8409,debit,-34.07,REWE Schwalbach Li Schwalbach am,POS Withdrawal REWE Schwalbach Li Schwalbach am DEDE,639.37
+2024-08-28,2024-08,PRIMARY SAVINGS 8409,fee,-0.34,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,639.03
+2024-08-30,2024-08,PRIMARY SAVINGS 8409,debit,-4.62,SHELL OBN319 SCHWALBACH,POS Withdrawal SHELL OBN319 SCHWALBACH DEDE,634.41
+2024-08-30,2024-08,PRIMARY SAVINGS 8409,fee,-0.05,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,634.36
+2024-08-31,2024-08,PRIMARY SAVINGS 8409,debit,-16.08,REWE Schwalbach Li Schwalbach am,POS Withdrawal REWE Schwalbach Li Schwalbach am DEDE,618.28
+2024-08-31,2024-08,PRIMARY SAVINGS 8409,fee,-0.16,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,618.12

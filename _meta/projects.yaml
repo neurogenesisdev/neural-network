@@ -1,0 +1,38 @@
+# Code projects tracked by the vault (master-vault design v4 §6).
+# slug -> remote -> per-host checkout -> card. Repos own STATUS.md; cards own purpose and links.
+# A missing checkout shows as "unavailable" in _generated/projects-status.md; nothing is backfilled.
+# Facts checked on the laptop on 2026-10-21. Server checkouts were not checked from the laptop:
+# each server path is the intended location under /home/dev/code/ and is marked unverified.
+# No project card exists yet for any entry; the card path is where it will go.
+version: 1
+projects:
+  - slug: infra-tools
+    remote: git@github.com:neurogenesisdev/infra-tools.git
+    laptop: ~/dev/infra-tools
+    server: /home/dev/code/infra-tools   # cloned at merge step 8; unverified
+    card: projects/infra-tools.md        # not written yet
+  - slug: flashcard-tools
+    remote: unknown                      # ~/dev/flashcard-tools is not a git checkout
+    laptop: ~/dev/flashcard-tools
+    server: /home/dev/code/flashcard-tools   # unverified
+    card: projects/flashcard-tools.md    # not written yet
+  - slug: neurogenesis-dev
+    remote: unknown                      # ~/dev/neurogenesis-dev is not a git checkout
+    laptop: ~/dev/neurogenesis-dev
+    server: /home/dev/code/neurogenesis-dev  # unverified
+    card: projects/neurogenesis-dev.md   # not written yet
+  - slug: vast-vllm
+    remote: unknown                      # ~/dev/vast-vllm is not a git checkout
+    laptop: ~/dev/vast-vllm
+    server: /home/dev/code/vast-vllm     # unverified
+    card: projects/vast-vllm.md          # not written yet
+  - slug: devbox
+    remote: git@github.com:neurogenesisdev/devbox.git
+    laptop: ~/dev/devbox
+    server: /home/dev/code/devbox        # unverified
+    card: projects/devbox.md             # not written yet
+  - slug: kp-audit
+    remote: unknown                      # the laptop repo has no remote configured
+    laptop: ~/dev/kp-audit
+    server: /home/dev/code/kp-audit      # unverified
+    card: projects/kp-audit.md           # not written yet

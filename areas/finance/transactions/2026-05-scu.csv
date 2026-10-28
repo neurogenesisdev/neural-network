@@ -1,0 +1,77 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2026-05-01,2026-05,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,522.04
+2026-05-07,2026-05,PRIMARY SAVINGS 8400,debit,-300.00,Transfer to EVERYDAY CHECKING,Withdrawal Transfer to EVERYDAY CHECKING,222.04
+2026-05-12,2026-05,PRIMARY SAVINGS 8400,credit,200.00,Transfer from DIVIDEND CHECKING,Deposit Transfer from DIVIDEND CHECKING,422.04
+2026-05-14,2026-05,PRIMARY SAVINGS 8400,debit,-350.00,Transfer to EVERYDAY CHECKING,Withdrawal Transfer to EVERYDAY CHECKING,72.04
+2026-05-21,2026-05,PRIMARY SAVINGS 8400,credit,250.00,Transfer from PRIMARY SAVINGS,Deposit Transfer from PRIMARY SAVINGS,322.04
+2026-05-26,2026-05,PRIMARY SAVINGS 8400,credit,400.00,Transfer from DIVIDEND CHECKING,Deposit Transfer from DIVIDEND CHECKING,722.04
+2026-05-30,2026-05,PRIMARY SAVINGS 8400,debit,-400.00,Transfer to EVERYDAY CHECKING,Withdrawal Transfer to EVERYDAY CHECKING,322.04
+2026-05-31,2026-05,PRIMARY SAVINGS 8400,credit,1.31,Dividends,Credit Dividends,323.35
+2026-05-01,2026-05,PRIMARY SAVINGS 8400,debit,-5.86,SOUNDIIZ PREMIUM COUERON,POS Withdrawal SOUNDIIZ PREMIUM COUERON FRFR,478.05
+2026-05-01,2026-05,PRIMARY SAVINGS 8400,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,477.99
+2026-05-01,2026-05,PRIMARY SAVINGS 8400,debit,-5.00,TAILSCALE US INC. WWW.TAILSCALE,POS Withdrawal TAILSCALE US INC. WWW.TAILSCALE CAUS,472.99
+2026-05-02,2026-05,PRIMARY SAVINGS 8400,debit,-11.63,BOLT.EUTallinn,POS Withdrawal BOLT.EU/O/260501164Tallinn EEEE,461.36
+2026-05-02,2026-05,PRIMARY SAVINGS 8400,fee,-0.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,461.24
+2026-05-02,2026-05,PRIMARY SAVINGS 8400,debit,-167.06,BKG*HOTEL AT BOOKIN(888)850-3958,POS Withdrawal BKG*HOTEL AT BOOKIN(888)850-3958 NLNL,294.18
+2026-05-02,2026-05,PRIMARY SAVINGS 8400,fee,-1.67,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,292.51
+2026-05-05,2026-05,PRIMARY SAVINGS 8400,debit,-179.63,BKG*HOTEL AT BOOKIN(888)850-3958,POS Withdrawal BKG*HOTEL AT BOOKIN(888)850-3958 NLNL,112.88
+2026-05-05,2026-05,PRIMARY SAVINGS 8400,fee,-1.80,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,111.08
+2026-05-07,2026-05,PRIMARY SAVINGS 8400,credit,300.00,Transfer from PRIMARY SAVINGS,Deposit Transfer from PRIMARY SAVINGS,411.08
+2026-05-07,2026-05,PRIMARY SAVINGS 8400,debit,-24.72,"CURSOR, AI POWERED CURSOR.COM","POS Withdrawal CURSOR, AI POWERED CURSOR.COM CAUS",386.36
+2026-05-08,2026-05,PRIMARY SAVINGS 8400,debit,-216.99,BKG*HOTEL AT BOOKIN(888)850-3958,POS Withdrawal BKG*HOTEL AT BOOKIN(888)850-3958 NLNL,169.37
+2026-05-08,2026-05,PRIMARY SAVINGS 8400,fee,-2.17,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,167.20
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,debit,-27.12,OPENAI * SUBDUBLIN,POS Withdrawal OPENAI *CHATGPT SUBDUBLIN IEIE,140.08
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,fee,-0.27,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,139.81
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,debit,-26.99,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,112.82
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,fee,-0.27,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,112.55
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,debit,-34.65,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,77.90
+2026-05-11,2026-05,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,77.55
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,debit,-27.48,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,50.07
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,fee,-0.27,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,49.80
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,debit,-5.61,Patreon* MembershipInternet,POS Withdrawal Patreon* MembershipInternet CAUS,44.19
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,debit,-33.61,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,10.58
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,fee,-0.34,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,10.24
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,debit,-2.36,The New York Times Amsterdam,POS Withdrawal The New York Times Amsterdam NLNL,7.88
+2026-05-12,2026-05,PRIMARY SAVINGS 8409,fee,-0.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,7.86
+2026-05-14,2026-05,PRIMARY SAVINGS 8409,credit,350.00,Transfer from PRIMARY SAVINGS,Deposit Transfer from PRIMARY SAVINGS,357.86
+2026-05-14,2026-05,PRIMARY SAVINGS 8409,debit,-11.90,OBSIDIAN OAKVILLE,POS Withdrawal OBSIDIAN OAKVILLE ONCA,345.96
+2026-05-14,2026-05,PRIMARY SAVINGS 8409,fee,-0.12,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,345.84
+2026-05-15,2026-05,PRIMARY SAVINGS 8409,debit,-28.79,ECHST.NET 8664525108,POS Withdrawal ECHST.NET 8664525108 WAUS,317.05
+2026-05-16,2026-05,PRIMARY SAVINGS 8409,debit,-15.67,UPSAMPLER.COM UPSAMPLER.COM,POS Withdrawal UPSAMPLER.COM UPSAMPLER.COM DEUS,301.38
+2026-05-20,2026-05,PRIMARY SAVINGS 8409,debit,-15.69,WILLOW WILLOWVOICE.C,POS Withdrawal WILLOW WILLOWVOICE.C CAUS,285.69
+2026-05-22,2026-05,PRIMARY SAVINGS 8409,credit,500.00,Transfer from PRIMARY SAVINGS - Happy 31st Birthday,Deposit Transfer from PRIMARY SAVINGS - Happy 31st Birthday,785.69
+2026-05-23,2026-05,PRIMARY SAVINGS 8409,debit,-14.28,RECRAFT RECRAFT.AI,POS Withdrawal RECRAFT RECRAFT.AI CAUS,771.41
+2026-05-23,2026-05,PRIMARY SAVINGS 8409,debit,-11.62,LEDGER TRUST SERVICPARIS,POS Withdrawal LEDGER TRUST SERVICPARIS FRFR,759.79
+2026-05-23,2026-05,PRIMARY SAVINGS 8409,fee,-0.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,759.67
+2026-05-25,2026-05,PRIMARY SAVINGS 8409,debit,-27.79,CENTRAL LOTTOCAFE FRANKFURT,POS Withdrawal CENTRAL LOTTOCAFE FRANKFURT DEDE,731.88
+2026-05-25,2026-05,PRIMARY SAVINGS 8409,fee,-0.28,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,731.60
+2026-05-25,2026-05,PRIMARY SAVINGS 8409,debit,-51.29,UBER *EATS HELP.UBEAmsterdam,POS Withdrawal UBER *EATS HELP.UBEAmsterdam NLNL,680.31
+2026-05-25,2026-05,PRIMARY SAVINGS 8409,fee,-0.51,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,679.80
+2026-05-26,2026-05,PRIMARY SAVINGS 8409,debit,-44.11,UBER *EATS HELP.UBEAmsterdam,POS Withdrawal UBER *EATS HELP.UBEAmsterdam NLNL,635.69
+2026-05-26,2026-05,PRIMARY SAVINGS 8409,fee,-0.44,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,635.25
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,debit,-48.71,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,586.54
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,fee,-0.49,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,586.05
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,debit,-27.67,CENTRAL LOTTOCAFE FRANKFURT,POS Withdrawal CENTRAL LOTTOCAFE FRANKFURT DEDE,558.38
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,fee,-0.28,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,558.10
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,debit,-4.28,CNP* WIRED - DIGITACONDENAST.COM,POS Withdrawal CNP* WIRED - DIGITACONDENAST.COM NYUS,553.82
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,debit,-11.79,Patreon* MembershipDublin,POS Withdrawal Patreon* MembershipDublin IEIE,542.03
+2026-05-27,2026-05,PRIMARY SAVINGS 8409,fee,-0.12,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,541.91
+2026-05-28,2026-05,PRIMARY SAVINGS 8409,debit,-150.03,BKG*HOTEL AT BOOKIN(888)850-3958,POS Withdrawal BKG*HOTEL AT BOOKIN(888)850-3958 NLNL,391.88
+2026-05-28,2026-05,PRIMARY SAVINGS 8409,fee,-1.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,390.38
+2026-05-28,2026-05,PRIMARY SAVINGS 8409,debit,-35.32,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,355.06
+2026-05-28,2026-05,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,354.71
+2026-05-29,2026-05,PRIMARY SAVINGS 8409,debit,-5.82,UBER *ONE MEMBERSUBER.COM/BILL,POS Withdrawal UBER *ONE MEMBERSUBER.COM/BILL NLNL,348.89
+2026-05-29,2026-05,PRIMARY SAVINGS 8409,fee,-0.06,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,348.83
+2026-05-29,2026-05,PRIMARY SAVINGS 8409,debit,-19.99,ECHST.NET 866-452-5108,POS Withdrawal ECHST.NET 866-452-5108 NVUS,328.84
+2026-05-29,2026-05,PRIMARY SAVINGS 8409,debit,-33.27,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,295.57
+2026-05-29,2026-05,PRIMARY SAVINGS 8409,fee,-0.33,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,295.24
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,debit,-29.02,UBER *EATS HELP.UBER.COM,POS Withdrawal UBER *EATS HELP.UBER.COM NLNL,266.22
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,fee,-0.29,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,265.93
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,debit,-31.72,CENTRAL LOTTOCAFE FRANKFURT,POS Withdrawal CENTRAL LOTTOCAFE FRANKFURT DEDE,234.21
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,233.89
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,credit,400.00,Transfer from PRIMARY SAVINGS,Deposit Transfer from PRIMARY SAVINGS,633.89
+2026-05-30,2026-05,PRIMARY SAVINGS 8409,debit,-25.04,CLAUDE.AI SUBSCRIPTANTHROPIC.COM,POS Withdrawal CLAUDE.AI SUBSCRIPTANTHROPIC.COM CAUS,608.85
+2026-05-31,2026-05,PRIMARY SAVINGS 8409,debit,-182.96,BKG*HOTEL AT BOOKIN(888)850-3958,POS Withdrawal BKG*HOTEL AT BOOKIN(888)850-3958 NLNL,425.89
+2026-05-31,2026-05,PRIMARY SAVINGS 8409,fee,-1.83,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,424.06
+2026-05-31,2026-05,PRIMARY SAVINGS 8409,debit,-34.62,Flink SE Berlin,POS Withdrawal Flink SE Berlin DEDE,389.44
+2026-05-31,2026-05,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,389.09

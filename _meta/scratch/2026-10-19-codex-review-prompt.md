@@ -1,0 +1,20 @@
+# Codex review brief — master vault consolidation (v3)
+
+You are reviewing, with the real data on disk, a design for consolidating three Obsidian vaults into one. Read-only task: do not modify anything under /srv except the one report file named at the end. All three vaults are live Obsidian Sync mirrors — a stray write would propagate to Luis's laptop and phone.
+
+## What is on disk
+- `/srv/vault/` — the `infra-docs` vault (currently the live operator vault on this host). The design document is `/srv/vault/_scratch/2026-10-19-master-vault-design-v2.md` (titled v3 inside). Also read `/srv/vault/netcup-vps/decisions/20261018-single-operator-rebuild.md` (ADR-0038, accepted) and `/srv/vault/netcup-vps/runbooks/rebuild-2026-10.md` (how this host was built; §As actually done).
+- `/srv/neural-network/` — the life vault that becomes the master. Read its `CLAUDE.md`, `maps/home.md`, `system/documentation.md`, `_templates/`, a sample of `areas/admin/cases/`, `areas/finance/`, `journal/daily/` (196 notes), `maps/`.
+- `/srv/freelance-practice/` — the business vault. Read its `CLAUDE.md`, `_index.md`, `decisions/`, `standards/`, `clients/`.
+- Two independent reviews already happened (a research report and a ChatGPT critical review); their accepted/rejected findings are in §12–§13 of the design document. Do not repeat them unless you disagree with a disposition — then say so with the reason.
+
+## What I want from you
+1. **Measure, don't assume.** Count notes, links, `_index.md` files, bare `[[_index]]` links, basename collisions across the three vaults, frontmatter keys actually in use and their value sets, tags actually in use, Templater includes and hardcoded paths, Dataview/Datacore/Bases queries and the folders they reference, attachments and how they are referenced. Report the numbers. The design's assumptions (e.g. "~50 `_index.md`", "43 ADR files vs numbering to 0038", "196 daily notes") must be confirmed or corrected.
+2. **Link-breakage forecast.** Given the planned moves in §10 step 5 (`personal/`→`self/`, `publish/`→`areas/writing/`, `system/`→`_meta/`, journal→`YYYY/MM/`, `templates/`→`deliverables/`, infra-docs→`areas/infrastructure/<device>/`, freelance→`areas/freelance/`), list which existing links would change meaning or break if the move were done outside Obsidian, and which bare links collide after the merge. Produce the collision list.
+3. **Templates, queries, plugins.** Which templates, Datacore/Dataview/Bases blocks and plugin settings (Daily Notes, Periodic Notes, Templater folder templates, QuickAdd, Homepage) reference paths that the new layout changes? List each with file and line.
+4. **Frontmatter reality vs §9.** Compare the proposed small-core schema and the `origin`/`evidence` split against what the notes actually carry today. Which existing keys map cleanly, which conflict, and what would a minimal, non-destructive migration of frontmatter look like (no backfill of absent fields)?
+5. **The three rule sets.** Read the three `CLAUDE.md` files. Produce a draft of the root vault `CLAUDE.md` (≤ 60 lines) and the nested `areas/infrastructure/CLAUDE.md` and `areas/freelance/CLAUDE.md` that preserve every rule that still applies after the merge and drop every rule that only made sense for a separate vault (mirrors, deploy keys, "this vault is synced to Luis's devices only", etc.). Flag contradictions between the three.
+6. **Permissions on this host.** `/srv/vault` ownership/ACL model is in ADR-0038 §3 and the runbook Phase 3. Check it against the design's kernel-enforcement claims (§3, §6, §8): which files would be dev-writable after Sync creates them, and what exact `chmod`/`setfacl` would the nightly admin job need?
+7. **Verdict.** Ranked defects with concrete failure scenarios; what to change in the design; what to change in the migration order; anything that should be decided before the merge because it is expensive afterwards. Be terse; bullets; mark measured vs judgment.
+
+Write the report to `/srv/vault/_scratch/2026-10-19-codex-review.md` (this is the one file you may create; it syncs to the laptop). Cite file paths for every finding.

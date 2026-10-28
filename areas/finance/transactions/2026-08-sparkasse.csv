@@ -1,0 +1,39 @@
+date,period,kind,amount,payee,details
+2026-08-03,2026-08,Entgeltabrechnung / Wert: 30.07.2026,-4.90,siehe Anlage Nr. 1,siehe Anlage Nr. 1
+2026-08-04,2026-08,Benachrichtigungsentg,-1.50,Rücklastschriftgebühr Rechnung RÜCKGABE LASTSCHRIFT EINR: RSG,"Rücklastschriftgebühr Rechnung RÜCKGABE LASTSCHRIFT EINR: RSG Group GmbH BETRAG: 59,80 EUR BIC: RZOODE77 IBAN:DE62740201000208500944 F0001--0165-0004662 F0001-2 5140770 Sommer Special 24.9 0 EUR 01.07.26-31.07.26/Geb 20260804-BW035-00042135354"
+2026-08-05,2026-08,Gutschr. Überweisung,1126.00,Bundesagentur für Arbeit-Service-Ha us 41920//0137178 /,"Bundesagentur für Arbeit-Service-Ha us 41920//0137178 / 41920 1/ 1.126,00 EUR 052062770453/1700144190332"
+2026-08-05,2026-08,Gutschr. Überweisung,563.00,Bundesagentur für Arbeit-Service-Ha us 41920//0137178 /,"Bundesagentur für Arbeit-Service-Ha us 41920//0137178 / 41920 1/ 563,00 EU R 052062770454/1700144190332"
+2026-08-06,2026-08,Echtzeitüberw. Online / Wert: 05.08.2026,-392.35,"Klarna Bank AB (publ) XA5MJEITWXCRJHOAUOR1YL8TXB, Lagerbo","Klarna Bank AB (publ) XA5MJEITWXCRJHOAUOR1YL8TXB, Lagerbo x Frankfurt GmbH, gou5fe6XpzIOclptQ QNhk, HZQNXTQ8DD53NGX3 DATUM 05.08.2026, 22.47 UHR"
+2026-08-07,2026-08,Basislastschrift,-25.00,ADD TO BALANCE,"PayPal (Europe) S.a r.l. et Cie, S. C.A. 1052169965531 ADD TO BALANCE"
+2026-08-07,2026-08,Echtzeitüberw. Online,-0.01,Klarna Bank AB (publ) ZA436PEHRJ1LT8ZKTZ1I0IMFZB DATUM,"Klarna Bank AB (publ) ZA436PEHRJ1LT8ZKTZ1I0IMFZB DATUM 07.08.2026, 19.27 UHR"
+2026-08-10,2026-08,Echtzeitüberw. Online / Wert: 07.08.2026,-0.01,Klarna Bank AB (publ) ZA4IE7BRYNFRDMJOTVVIKW2GZB DATUM,"Klarna Bank AB (publ) ZA4IE7BRYNFRDMJOTVVIKW2GZB DATUM 07.08.2026, 20.16 UHR"
+2026-08-10,2026-08,Echtzeitüberw. Online / Wert: 07.08.2026,-426.19,"Klarna Bank AB (publ) XA4UT6GVBTXDHU41NXULKQAMXB, kleinan","Klarna Bank AB (publ) XA4UT6GVBTXDHU41NXULKQAMXB, kleinan zeigen.de GmbH, fb95c1a0-92a9-11f1- -a09e-1b5903c87f6f, FZVPFLDD94T399Z DATUM 07.08.2026, 23.51 UHR"
+2026-08-10,2026-08,Basislastschrift,-43.69,Hetzner Online GmbH Customer No. K0637893825,Hetzner Online GmbH Customer No. K0637893825 Invoice No . 085001148503
+2026-08-13,2026-08,Basislastschrift,-23.79,"Adobe Sy stems Software Ireland LTD,","PayPal Europe S.a.r.l. et Cie S.C.A 1052313779902/PP.3113.PP/. Adobe Sy stems Software Ireland LTD, Ihr Ein kauf bei Adobe Systems Software Ire land LTD"
+2026-08-13,2026-08,Gutschr. Überweisung,0.01,Klarna Bank AB ZA4IE7BRYNFRDMJOTVVIKW2GZB,Klarna Bank AB ZA4IE7BRYNFRDMJOTVVIKW2GZB
+2026-08-13,2026-08,Gutschr. Überweisung,0.01,Klarna Bank AB ZA436PEHRJ1LT8ZKTZ1I0IMFZB,Klarna Bank AB ZA436PEHRJ1LT8ZKTZ1I0IMFZB
+2026-08-17,2026-08,Debitkartenzahlung,-19.00,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE 2026-08-15T16:59 Debitk.3 2026-12
+2026-08-17,2026-08,Debitkartenzahlung,-14.19,ROSSMANN/Kaiserstr. 58/Frankfurt/DE 2026-08-15T17:06 Debitk.3 2026-12,ROSSMANN/Kaiserstr. 58/Frankfurt/DE 2026-08-15T17:06 Debitk.3 2026-12
+2026-08-17,2026-08,Debitkartenzahlung,-1.89,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302112/Waldschu ls/Frankfurt Grieshei /DE 2026-08-15T21:29 Debitk.3 2026-12
+2026-08-17,2026-08,Debitkartenzahlung,-20.03,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-14T22:00 Debitk.3 2026-12
+2026-08-17,2026-08,Debitkartenzahlung,-7.17,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302112/Waldschu ls/Frankfurt Grieshei /DE 2026-08-15T21:34 Debitk.3 2026-12
+2026-08-17,2026-08,Debitkartenzahlung,-1.50,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302112/Waldschu ls/Frankfurt Grieshei /DE 2026-08-15T20:02 Debitk.3 2026-12
+2026-08-19,2026-08,Debitkartenzahlung,-2.10,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-18T19:28 Debitk.3 2026-12
+2026-08-21,2026-08,Debitkartenzahlung,-6.10,Wiener Feinbackerei Heberer Gm/Zeil 27/Frankfurt am,Wiener Feinbackerei Heberer Gm/Zeil 27/Frankfurt am Main/DE 2026-08-20T17:04 Debitk.3 2026-12
+2026-08-21,2026-08,Debitkartenzahlung,-11.99,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302003/Leipzige r /Frankfurt Bockenhe /DE 2026-08-20T20:24 Debitk.3 2026-12
+2026-08-24,2026-08,Debitkartenzahlung,-16.00,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE 2026-08-22T17:08 Debitk.3 2026-12
+2026-08-24,2026-08,Debitkartenzahlung,-9.40,Brezel Point//Frankfurt am Main/DE 2026-08-21T12:14 Debitk.3,Brezel Point//Frankfurt am Main/DE 2026-08-21T12:14 Debitk.3 2026-12
+2026-08-24,2026-08,Debitkartenzahlung,-2.48,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302003/Leipzige r /Frankfurt Bockenhe /DE 2026-08-21T14:43 Debitk.3 2026-12
+2026-08-25,2026-08,Debitkartenzahlung,-34.80,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-24T21:36 Debitk.3 2026-12
+2026-08-25,2026-08,Debitkartenzahlung,-2.10,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-24T18:17 Debitk.3 2026-12
+2026-08-26,2026-08,Debitkartenzahlung,-5.75,BACKHAUS SCHROEER GMBH 54 GIR 79965,BACKHAUS SCHROEER GMBH 54 GIR 79965 456//RÜSSELSHEIM/DE 2026-08-25T20:32 Debitk.3 2026-12
+2026-08-26,2026-08,Debitkartenzahlung,-10.00,HAUS DES DOENERS GIR,HAUS DES DOENERS GIR 79909202//FRAN KFURT/DE 2026-08-22T17:05 Debitk.3 2026-12
+2026-08-28,2026-08,Debitkartenzahlung,-27.40,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-27T21:39 Debitk.3 2026-12
+2026-08-28,2026-08,Debitkartenzahlung,-4.09,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-27T18:16 Debitk.3 2026-12
+2026-08-31,2026-08,Basislastschrift,-1.68,"Bolt Operations OU, Bolt Operations OU","PayPal Europe S.a.r.l. et Cie S.C.A 1052652064433/. Bolt Operations OU, Ihr Einkauf bei Bolt Operations OU"
+2026-08-31,2026-08,Debitkartenzahlung,-8.00,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE,7 STARKIOSK/Kaiserstrasse 58/Frankf urt am Main/DE 2026-08-29T12:10 Debitk.3 2026-12
+2026-08-31,2026-08,Debitkartenzahlung,-22.61,ROSSMANN/Kaiserstr. 58/Frankfurt/DE 2026-08-29T12:07 Debitk.3 2026-12,ROSSMANN/Kaiserstr. 58/Frankfurt/DE 2026-08-29T12:07 Debitk.3 2026-12
+2026-08-31,2026-08,Debitkartenzahlung,-6.50,Der Baecker Eifler Vertriebs G/Kons tabler,Der Baecker Eifler Vertriebs G/Kons tabler Wache/Frankfurt am Main/DE 2026-08-29T09:30 Debitk.3 2026-12
+2026-08-31,2026-08,Debitkartenzahlung,-0.99,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302003/Leipzige r /Frankfurt Bockenhe /DE 2026-08-29T15:09 Debitk.3 2026-12
+2026-08-31,2026-08,Debitkartenzahlung,-3.80,PENNY SAGT DANKE.,PENNY SAGT DANKE. 63302388/Moerf. L st/Frankfurt /DE 2026-08-28T20:56 Debitk.3 2026-12
+2026-08-31,2026-08,Debitkartenzahlung,-3.48,PENNY SAGT DANKE.,"PENNY SAGT DANKE. 63302003/Leipzige r /Frankfurt Bockenhe /DE 2026-08-29T14:24 Debitk.3 2026-12 Kontostand am 31.08.2026 um 20:04 Uhr                                                                     500,21"

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(set -x)",
+      "Bash(claude --version)",
+      "Read(//home/luis/.config/systemd/user/**)",
+      "Bash(loginctl show-user *)",
+      "Read(//opt/infra-tools/claude/**)",
+      "Bash(getent passwd *)",
+      "Read(//home/luis/.claude/**)",
+      "Read(//home/luis/**)",
+      "Bash(zsh -ic 'whence -w a cc-ls cc-new cc-rm cc-rc')",
+      "Bash(python3 -I - hooks/tests/test_scope.py)",
+      "Bash(PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s hooks/tests)",
+      "Read(//srv/**)",
+      "Bash(git --version)",
+      "Read(//var/lib/**)",
+      "Bash(getent group *)",
+      "Bash(git config *)",
+      "Bash(ps -eo user,cmd)",
+      "Bash(ssh-keygen -F github.com -f ~/.ssh/known_hosts)",
+      "Read(//etc/**)",
+      "Bash(umask)",
+      "Bash(ssh-keygen -q -t ed25519 -N '' -C 'netcup-vps vault-autocommit' -f ~/.ssh/vault-deploy)",
+      "Bash(chmod 0600 ~/.ssh/vault-deploy)",
+      "Bash(cat)",
+      "Bash(vault-snap *)"
+    ]
+  }
+}

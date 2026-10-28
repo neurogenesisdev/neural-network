@@ -1,0 +1,862 @@
+# Copy of migration map v2 with the 9 .remember session-UUID file names masked as <SESSION_UUID_1..9>. The exact map is at ~/dev/scratch/merge/migration-map.csv. Daily notes moved again on 2026-10-22 (addendum A1 in migration-log): journal/daily/YYYY-MM-DD.md is now journal/daily/YYYY/MM/YYYY-MM-DD.md
+source_vault,source_path,dest_path,action,rule,note
+infra-docs,.claude/settings.local.json,,drop,R-I2,replaced by council install; in git history
+infra-docs,.githooks/pre-commit,,drop,R-I3,hook lives in infra-tools .githooks/redaction-pre-commit since step 2 (79e66aa); vault repo calls it via core.hooksPath
+infra-docs,.gitignore,.gitignore,merge-into,R-X1,
+infra-docs,.obsidian/app.json,,drop,R-X2,master keeps neural-network settings
+infra-docs,.obsidian/appearance.json,,drop,R-X2,master keeps neural-network settings
+infra-docs,.obsidian/core-plugins.json,,drop,R-X2,master keeps neural-network settings
+infra-docs,.obsidian/workspace.json,,drop,R-X2,master keeps neural-network settings
+infra-docs,.remember/.gitignore,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/archive.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/autonomous/save-142559.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/autonomous/save-142823.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/autonomous/save-143028.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/hook-errors.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/logs-2026-08.tar.gz,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-23.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-24.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-25.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-26.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-27.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-28.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/logs/memory-2026-08-31.log,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/now.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/recent.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_1>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_2>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_3>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_4>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_5>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_6>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_7>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_8>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/capture-alive.d/<SESSION_UUID_9>,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/case-divergence,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/last-ndc.ts,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/last-save-ts,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/last-save.json,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/now-day,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/post-tool-ran,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/tmp/session-slug,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-22.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-23.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-24.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-25.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-26.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-27.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,.remember/today-2026-08-28.done.md,,keep-outside,R-I1,"Claude Code ""remember"" plugin memory, ignored, not synced; stays in ~/dev/infra-docs (archived repo) and in restic d9c9c425"
+infra-docs,AGENTS.md,_meta/legacy-rules/infra-docs-root-AGENTS.md,retire,R-X3,v4 §8: all 8 imported instruction files retire
+infra-docs,CLAUDE.md,_meta/legacy-rules/infra-docs-root-CLAUDE.md,retire,R-X3,v4 §8: all 8 imported instruction files retire
+infra-docs,_index.md,areas/infrastructure/_index.md,move,R-I5,
+infra-docs,_scratch/2026-09-10-ai-coding-rig-and-automation-plan.md,_meta/scratch/2026-09-10-ai-coding-rig-and-automation-plan.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-09-12-stage-2-automations-design.md,_meta/scratch/2026-09-12-stage-2-automations-design.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-19-claude-projects-export.md,_meta/scratch/2026-10-19-claude-projects-export.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-19-codex-review-prompt.md,_meta/scratch/2026-10-19-codex-review-prompt.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-19-codex-review.md,_meta/scratch/2026-10-19-codex-review.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-19-master-vault-design-v2.md,_meta/scratch/2026-10-19-master-vault-design-v2.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-19-projects-analysis.md,_meta/scratch/2026-10-19-projects-analysis.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-20-council-design.md,_meta/scratch/2026-10-20-council-design.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/2026-10-20-master-vault-design-v4.md,_meta/scratch/2026-10-20-master-vault-design-v4.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/design-the-replacement-container-wise-lighthouse.md,_meta/scratch/design-the-replacement-container-wise-lighthouse.md,move,R-I8,v4 §1; protected after ADR-0040
+infra-docs,_scratch/mcp-write-test.md,,delete,R-I7,write test artefact
+infra-docs,_scratch/sync-heartbeat.md,_generated/sync-heartbeat.md,move,R-I6,watchdog writes it: update ~/.local/bin/sync-watchdog path at v4 step 8
+infra-docs,_templates/_index.md,_templates/_index.md,merge-into,R-X4,three template indexes → one
+infra-docs,_templates/tpl-backlog-items.md,_templates/tpl-backlog-items.md,move,R-X5,fix device chooser (hive→netcup-vps) at step 4
+infra-docs,_templates/tpl-decisions.md,_templates/tpl-decisions.md,move,R-X5,fix device chooser (hive→netcup-vps) at step 4
+infra-docs,arch-thinkpad/_index.md,areas/infrastructure/arch-thinkpad/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/_source/Arch_Linux_Setup_PRD_T14-AMD-Gen1_v5.md,areas/infrastructure/arch-thinkpad/_source/Arch_Linux_Setup_PRD_T14-AMD-Gen1_v5.md,move,R-I0,
+infra-docs,arch-thinkpad/_source/Block-B-AppArmor-Confinement.md,areas/infrastructure/arch-thinkpad/_source/Block-B-AppArmor-Confinement.md,move,R-I0,
+infra-docs,arch-thinkpad/_source/Block-C-Dev-Environment.md,areas/infrastructure/arch-thinkpad/_source/Block-C-Dev-Environment.md,move,R-I0,
+infra-docs,arch-thinkpad/_source/Build-Spec Artifact Shape for a Hardened Arch Workstation: An AI-Executor-First Design.md,areas/infrastructure/arch-thinkpad/_source/Build-Spec Artifact Shape for a Hardened Arch Workstation: An AI-Executor-First Design.md,move,R-I0,
+infra-docs,arch-thinkpad/_source/README.md,areas/infrastructure/arch-thinkpad/_source/README.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/_index.md,areas/infrastructure/arch-thinkpad/backlog/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/apparmor-enforce-stage-2.md,areas/infrastructure/arch-thinkpad/backlog/apparmor-enforce-stage-2.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/backup-staleness-alarm.md,areas/infrastructure/arch-thinkpad/backlog/backup-staleness-alarm.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/claude-code-history-backup-scope.md,areas/infrastructure/arch-thinkpad/backlog/claude-code-history-backup-scope.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/codex-manual-fetch-broken.md,areas/infrastructure/arch-thinkpad/backlog/codex-manual-fetch-broken.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/collector-desktop-blind-spots.md,areas/infrastructure/arch-thinkpad/backlog/collector-desktop-blind-spots.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/collector-posix-awk-lint.md,areas/infrastructure/arch-thinkpad/backlog/collector-posix-awk-lint.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/collector-stale-file-detection.md,areas/infrastructure/arch-thinkpad/backlog/collector-stale-file-detection.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devbox-cleanup-next-rebuild.md,areas/infrastructure/arch-thinkpad/backlog/devbox-cleanup-next-rebuild.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devbox-contents-audit.md,areas/infrastructure/arch-thinkpad/backlog/devbox-contents-audit.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devbox-recipe-repo-unmirrored.md,areas/infrastructure/arch-thinkpad/backlog/devbox-recipe-repo-unmirrored.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devbox-shell-configuration.md,areas/infrastructure/arch-thinkpad/backlog/devbox-shell-configuration.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devbox-wiki-mount.md,areas/infrastructure/arch-thinkpad/backlog/devbox-wiki-mount.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/devcontainer-ipc-bridge-hardening.md,areas/infrastructure/arch-thinkpad/backlog/devcontainer-ipc-bridge-hardening.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/dotfiles-versioning.md,areas/infrastructure/arch-thinkpad/backlog/dotfiles-versioning.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/explain-two-ethernet-controllers.md,areas/infrastructure/arch-thinkpad/backlog/explain-two-ethernet-controllers.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/git-hooks-activation-and-parity.md,areas/infrastructure/arch-thinkpad/backlog/git-hooks-activation-and-parity.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/lid-and-hibernation-handling.md,areas/infrastructure/arch-thinkpad/backlog/lid-and-hibernation-handling.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/login-path-unreviewed.md,areas/infrastructure/arch-thinkpad/backlog/login-path-unreviewed.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/luks-second-keyslot.md,areas/infrastructure/arch-thinkpad/backlog/luks-second-keyslot.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/remote-restic-repository.md,areas/infrastructure/arch-thinkpad/backlog/remote-restic-repository.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/restic-exclusion-list-maintenance.md,areas/infrastructure/arch-thinkpad/backlog/restic-exclusion-list-maintenance.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/restic-restore-untested.md,areas/infrastructure/arch-thinkpad/backlog/restic-restore-untested.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/seagate-ntfs-migration.md,areas/infrastructure/arch-thinkpad/backlog/seagate-ntfs-migration.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/shutdown-hang-black-screen.md,areas/infrastructure/arch-thinkpad/backlog/shutdown-hang-black-screen.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/ssh-key-diversification.md,areas/infrastructure/arch-thinkpad/backlog/ssh-key-diversification.md,move,R-I0,
+infra-docs,arch-thinkpad/backlog/undeliberate-listeners-review.md,areas/infrastructure/arch-thinkpad/backlog/undeliberate-listeners-review.md,move,R-I0,
+infra-docs,arch-thinkpad/collect/collect.sh,arch-thinkpad/collect/collect.sh,to-repo,R-I10,executable; v4 §3
+infra-docs,arch-thinkpad/collect/gen-redact-map.sh,arch-thinkpad/collect/gen-redact-map.sh,to-repo,R-I10,executable; v4 §3
+infra-docs,arch-thinkpad/collect/redact.sh,arch-thinkpad/collect/redact.sh,to-repo,R-I10,executable; v4 §3
+infra-docs,arch-thinkpad/decisions/20260813-dns-ownership-by-mode.md,areas/infrastructure/arch-thinkpad/decisions/20260813-dns-ownership-by-mode.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260815-t5-rescue-partition-unencrypted.md,areas/infrastructure/arch-thinkpad/decisions/20260815-t5-rescue-partition-unencrypted.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260816-container-storage-and-bind-mounts.md,areas/infrastructure/arch-thinkpad/decisions/20260816-container-storage-and-bind-mounts.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260816-hyprland-ipc-never-granted.md,areas/infrastructure/arch-thinkpad/decisions/20260816-hyprland-ipc-never-granted.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260817-rootless-podman-over-docker.md,areas/infrastructure/arch-thinkpad/decisions/20260817-rootless-podman-over-docker.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260818-backup-cadence-open.md,areas/infrastructure/arch-thinkpad/decisions/20260818-backup-cadence-open.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260818-base-image-pinned-by-digest.md,areas/infrastructure/arch-thinkpad/decisions/20260818-base-image-pinned-by-digest.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260818-devcontainer-agent-exposure.md,areas/infrastructure/arch-thinkpad/decisions/20260818-devcontainer-agent-exposure.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260818-restic-exclusions.md,areas/infrastructure/arch-thinkpad/decisions/20260818-restic-exclusions.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260819-noctalia-userland-consolidation.md,areas/infrastructure/arch-thinkpad/decisions/20260819-noctalia-userland-consolidation.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260819-zsh-without-plugin-framework.md,areas/infrastructure/arch-thinkpad/decisions/20260819-zsh-without-plugin-framework.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260820-thunar-retained-during-yazi-transition.md,areas/infrastructure/arch-thinkpad/decisions/20260820-thunar-retained-during-yazi-transition.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260823-continuous-trim-both-layers.md,areas/infrastructure/arch-thinkpad/decisions/20260823-continuous-trim-both-layers.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260823-tpm2-pcr-selection.md,areas/infrastructure/arch-thinkpad/decisions/20260823-tpm2-pcr-selection.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260825-devbox-base-is-arch.md,areas/infrastructure/arch-thinkpad/decisions/20260825-devbox-base-is-arch.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260825-devbox-pinning-four-layers.md,areas/infrastructure/arch-thinkpad/decisions/20260825-devbox-pinning-four-layers.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260825-harness-state-and-identity.md,areas/infrastructure/arch-thinkpad/decisions/20260825-harness-state-and-identity.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260828-plasma-replaces-hyprland-userland.md,areas/infrastructure/arch-thinkpad/decisions/20260828-plasma-replaces-hyprland-userland.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260828-power-management-stays-with-tlp.md,areas/infrastructure/arch-thinkpad/decisions/20260828-power-management-stays-with-tlp.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260828-secret-service-provider-is-ksecretd.md,areas/infrastructure/arch-thinkpad/decisions/20260828-secret-service-provider-is-ksecretd.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260830-remote-repository-is-b2.md,areas/infrastructure/arch-thinkpad/decisions/20260830-remote-repository-is-b2.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260902-dotfiles-bare-git-repo.md,areas/infrastructure/arch-thinkpad/decisions/20260902-dotfiles-bare-git-repo.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260902-plasma-login-path-accepted.md,areas/infrastructure/arch-thinkpad/decisions/20260902-plasma-login-path-accepted.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260902-what-listens-and-why.md,areas/infrastructure/arch-thinkpad/decisions/20260902-what-listens-and-why.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/20260903-agent-containment-two-lanes.md,areas/infrastructure/arch-thinkpad/decisions/20260903-agent-containment-two-lanes.md,move,R-I0,
+infra-docs,arch-thinkpad/decisions/AGENTS.md,,drop,R-I4,symlink to sibling CLAUDE.md; Sync does not carry symlinks
+infra-docs,arch-thinkpad/decisions/CLAUDE.md,_meta/legacy-rules/infra-docs-arch-thinkpad-decisions-CLAUDE.md,retire,R-X3,nested contract; live rules fold into areas/infrastructure/CLAUDE.md
+infra-docs,arch-thinkpad/decisions/_index.md,areas/infrastructure/arch-thinkpad/decisions/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/devenv/Containerfile,arch-thinkpad/devenv/Containerfile,to-repo,R-I10,executable/config; devenv/_index.md stays and links here
+infra-docs,arch-thinkpad/devenv/_index.md,areas/infrastructure/arch-thinkpad/devenv/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/devenv/build.sh,arch-thinkpad/devenv/build.sh,to-repo,R-I10,executable/config; devenv/_index.md stays and links here
+infra-docs,arch-thinkpad/devenv/codex-config.toml,arch-thinkpad/devenv/codex-config.toml,to-repo,R-I10,executable/config; devenv/_index.md stays and links here
+infra-docs,arch-thinkpad/devenv/devbox,arch-thinkpad/devenv/devbox,to-repo,R-I10,executable/config; devenv/_index.md stays and links here
+infra-docs,arch-thinkpad/devenv/devcontainer-template/devcontainer.json,arch-thinkpad/devenv/devcontainer-template/devcontainer.json,to-repo,R-I10,executable/config; devenv/_index.md stays and links here
+infra-docs,arch-thinkpad/runbooks/_index.md,areas/infrastructure/arch-thinkpad/runbooks/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/runbooks/bootloader-reinstall.md,areas/infrastructure/arch-thinkpad/runbooks/bootloader-reinstall.md,move,R-I0,
+infra-docs,arch-thinkpad/runbooks/restic-restore.md,areas/infrastructure/arch-thinkpad/runbooks/restic-restore.md,move,R-I0,
+infra-docs,arch-thinkpad/runbooks/tpm2-reenroll.md,areas/infrastructure/arch-thinkpad/runbooks/tpm2-reenroll.md,move,R-I0,
+infra-docs,arch-thinkpad/scripts/restic-not-metered,arch-thinkpad/scripts/restic-not-metered,to-repo,R-I10,executable; v4 §3
+infra-docs,arch-thinkpad/sessions/20260823-build-spec-schema.md,areas/infrastructure/arch-thinkpad/sessions/20260823-build-spec-schema.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260823-spec-boot-promotion.md,areas/infrastructure/arch-thinkpad/sessions/20260823-spec-boot-promotion.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260823-spec-disk.md,areas/infrastructure/arch-thinkpad/sessions/20260823-spec-disk.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260824-spec-base.md,areas/infrastructure/arch-thinkpad/sessions/20260824-spec-base.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260824-spec-containers.md,areas/infrastructure/arch-thinkpad/sessions/20260824-spec-containers.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260828-desktop-kde-migration.md,areas/infrastructure/arch-thinkpad/sessions/20260828-desktop-kde-migration.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260830-remote-restic-b2.md,areas/infrastructure/arch-thinkpad/sessions/20260830-remote-restic-b2.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/20260902-root-session-backlog-sweep.md,areas/infrastructure/arch-thinkpad/sessions/20260902-root-session-backlog-sweep.md,move,R-I0,
+infra-docs,arch-thinkpad/sessions/_index.md,areas/infrastructure/arch-thinkpad/sessions/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/_index.md,areas/infrastructure/arch-thinkpad/spec/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/_schema.md,areas/infrastructure/arch-thinkpad/spec/_schema.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/backups.md,areas/infrastructure/arch-thinkpad/spec/backups.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/base.md,areas/infrastructure/arch-thinkpad/spec/base.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/boot.md,areas/infrastructure/arch-thinkpad/spec/boot.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/containers.md,areas/infrastructure/arch-thinkpad/spec/containers.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/devenv.md,areas/infrastructure/arch-thinkpad/spec/devenv.md,move,R-I0,
+infra-docs,arch-thinkpad/spec/disk.md,areas/infrastructure/arch-thinkpad/spec/disk.md,move,R-I0,
+infra-docs,arch-thinkpad/state/AGENTS.md,,drop,R-I4,symlink to sibling CLAUDE.md; Sync does not carry symlinks
+infra-docs,arch-thinkpad/state/CLAUDE.md,_meta/legacy-rules/infra-docs-arch-thinkpad-state-CLAUDE.md,retire,R-X3,nested contract; live rules fold into areas/infrastructure/CLAUDE.md
+infra-docs,arch-thinkpad/state/_index.md,areas/infrastructure/arch-thinkpad/state/_index.md,move,R-I0,
+infra-docs,arch-thinkpad/state/boot.md,areas/infrastructure/arch-thinkpad/state/boot.md,move,R-I0,
+infra-docs,arch-thinkpad/state/collector-run.md,areas/infrastructure/arch-thinkpad/state/collector-run.md,move,R-I0,
+infra-docs,arch-thinkpad/state/hardware.md,areas/infrastructure/arch-thinkpad/state/hardware.md,move,R-I0,
+infra-docs,arch-thinkpad/state/harness.md,areas/infrastructure/arch-thinkpad/state/harness.md,move,R-I0,
+infra-docs,arch-thinkpad/state/network.md,areas/infrastructure/arch-thinkpad/state/network.md,move,R-I0,
+infra-docs,arch-thinkpad/state/notes.md,areas/infrastructure/arch-thinkpad/state-notes.md,rename,R-I9,curated file leaves protected state/
+infra-docs,arch-thinkpad/state/packages.md,areas/infrastructure/arch-thinkpad/state/packages.md,move,R-I0,
+infra-docs,arch-thinkpad/state/services.md,areas/infrastructure/arch-thinkpad/state/services.md,move,R-I0,
+infra-docs,arch-thinkpad/state/storage.md,areas/infrastructure/arch-thinkpad/state/storage.md,move,R-I0,
+infra-docs,netcup-vps/_index.md,areas/infrastructure/netcup-vps/_index.md,move,R-I0,
+infra-docs,netcup-vps/backlog/_index.md,areas/infrastructure/netcup-vps/backlog/_index.md,move,R-I0,
+infra-docs,netcup-vps/backlog/apparmor-baseline.md,areas/infrastructure/netcup-vps/backlog/apparmor-baseline.md,move,R-I0,
+infra-docs,netcup-vps/backlog/cpu-topology-and-ipv6-rdns.md,areas/infrastructure/netcup-vps/backlog/cpu-topology-and-ipv6-rdns.md,move,R-I0,
+infra-docs,netcup-vps/backlog/mcp-read-access-from-desktop.md,areas/infrastructure/netcup-vps/backlog/mcp-read-access-from-desktop.md,move,R-I0,
+infra-docs,netcup-vps/backlog/netcup-collector.md,areas/infrastructure/netcup-vps/backlog/netcup-collector.md,move,R-I0,
+infra-docs,netcup-vps/backlog/panel-firewall-outer-ring.md,areas/infrastructure/netcup-vps/backlog/panel-firewall-outer-ring.md,move,R-I0,
+infra-docs,netcup-vps/backlog/restic-client.md,areas/infrastructure/netcup-vps/backlog/restic-client.md,move,R-I0,
+infra-docs,netcup-vps/backlog/stage-3b-lockdown.md,areas/infrastructure/netcup-vps/backlog/stage-3b-lockdown.md,move,R-I0,
+infra-docs,netcup-vps/backlog/tailscale-ssh-decision.md,areas/infrastructure/netcup-vps/backlog/tailscale-ssh-decision.md,move,R-I0,
+infra-docs,netcup-vps/backlog/vps-trust-direction.md,areas/infrastructure/netcup-vps/backlog/vps-trust-direction.md,move,R-I0,
+infra-docs,netcup-vps/build/CLAUDE.md,_meta/legacy-rules/infra-docs-netcup-vps-build-CLAUDE.md,retire,R-X3,nested contract; live rules fold into areas/infrastructure/CLAUDE.md + copy to CLAUDE.md (infra-tools repo root) as basis (build guards)
+infra-docs,netcup-vps/build/_index.md,areas/infrastructure/netcup-vps/build/_index.md,move,R-I11,stays as the doc index; rewritten to link into infra-tools
+infra-docs,netcup-vps/build/auto/auto-digest.service,netcup-vps/archive/auto/auto-digest.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/auto-digest.timer,netcup-vps/archive/auto/auto-digest.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/auto-inbox-selftest.service,netcup-vps/archive/auto/auto-inbox-selftest.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/auto-inbox-selftest.timer,netcup-vps/archive/auto/auto-inbox-selftest.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/auto-triage.service,netcup-vps/archive/auto/auto-triage.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/auto-triage.timer,netcup-vps/archive/auto/auto-triage.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/digest.py,netcup-vps/archive/auto/digest.py,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/feeds.txt,netcup-vps/archive/auto/feeds.txt,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/hc-run.sh,netcup-vps/archive/auto/hc-run.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/inbox-selftest.sh,netcup-vps/archive/auto/inbox-selftest.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/interests.md,netcup-vps/archive/auto/interests.md,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/laptop-hours.sh,netcup-vps/archive/auto/laptop-hours.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/laptop-inbox-sync.sh,netcup-vps/archive/auto/laptop-inbox-sync.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/laptop-vault-push.sh,netcup-vps/archive/auto/laptop-vault-push.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/triage-prompt.md,netcup-vps/archive/auto/triage-prompt.md,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/triage.sh,netcup-vps/archive/auto/triage.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/vault-mirror.service,netcup-vps/archive/auto/vault-mirror.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/vault-mirror.sh,netcup-vps/archive/auto/vault-mirror.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/auto/vault-mirror.timer,netcup-vps/archive/auto/vault-mirror.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/SOUL.md,netcup-vps/archive/hermes/SOUL.md,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/config.yaml,netcup-vps/archive/hermes/config.yaml,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/env.template,netcup-vps/archive/hermes/env.template,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-alive.service,netcup-vps/archive/hermes/hermes-alive.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-alive.sh,netcup-vps/archive/hermes/hermes-alive.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-alive.timer,netcup-vps/archive/hermes/hermes-alive.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-inbox-push.service,netcup-vps/archive/hermes/hermes-inbox-push.service,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-inbox-push.sh,netcup-vps/archive/hermes/hermes-inbox-push.sh,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes-inbox-push.timer,netcup-vps/archive/hermes/hermes-inbox-push.timer,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/hermes/hermes.container,netcup-vps/archive/hermes/hermes.container,to-repo,R-I13,"retired automation (auto-* not recreated, Hermes gone); triage-prompt.md collision disappears"
+infra-docs,netcup-vps/build/n8n/Caddyfile,netcup-vps/build/n8n/Caddyfile,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/gmail-classifier.json,netcup-vps/build/n8n/gmail-classifier.json,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-alive.service,netcup-vps/build/n8n/n8n-alive.service,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-alive.sh,netcup-vps/build/n8n/n8n-alive.sh,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-alive.timer,netcup-vps/build/n8n/n8n-alive.timer,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-db-dump.service,netcup-vps/build/n8n/n8n-db-dump.service,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-db-dump.sh,netcup-vps/build/n8n/n8n-db-dump.sh,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-db-dump.timer,netcup-vps/build/n8n/n8n-db-dump.timer,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-db.container,netcup-vps/build/n8n/n8n-db.container,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n-error-ntfy.json,netcup-vps/build/n8n/n8n-error-ntfy.json,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n.container,netcup-vps/build/n8n/n8n.container,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n.env.template,netcup-vps/build/n8n/n8n.env.template,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/n8n/n8n.network,netcup-vps/build/n8n/n8n.network,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/stage1-partition-bootstrap.sh,netcup-vps/archive/debian-2026-08/stage1-partition-bootstrap.sh,to-repo,R-I12,superseded Debian scripts; resolves 3 ambiguous link groups
+infra-docs,netcup-vps/build/stage2-configure-boot.sh,netcup-vps/archive/debian-2026-08/stage2-configure-boot.sh,to-repo,R-I12,superseded Debian scripts; resolves 3 ambiguous link groups
+infra-docs,netcup-vps/build/stage3-baseline.sh,netcup-vps/archive/debian-2026-08/stage3-baseline.sh,to-repo,R-I12,superseded Debian scripts; resolves 3 ambiguous link groups
+infra-docs,netcup-vps/build/ubuntu-2604/stage1-partition-bootstrap.sh,netcup-vps/build/ubuntu-2604/stage1-partition-bootstrap.sh,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/ubuntu-2604/stage2-configure-boot.sh,netcup-vps/build/ubuntu-2604/stage2-configure-boot.sh,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/build/ubuntu-2604/stage3-baseline.sh,netcup-vps/build/ubuntu-2604/stage3-baseline.sh,to-repo,R-I10,current build artefacts
+infra-docs,netcup-vps/collect/gen-redact-map.sh,netcup-vps/collect/gen-redact-map.sh,to-repo,R-I10,executable; v4 §3
+infra-docs,netcup-vps/decisions/20260830-bios-boot-retained.md,areas/infrastructure/netcup-vps/decisions/20260830-bios-boot-retained.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-boot-filesystem-is-ext4.md,areas/infrastructure/netcup-vps/decisions/20260830-boot-filesystem-is-ext4.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-debian-over-rhel-family.md,areas/infrastructure/netcup-vps/decisions/20260830-debian-over-rhel-family.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-debootstrap-over-image-installer.md,areas/infrastructure/netcup-vps/decisions/20260830-debootstrap-over-image-installer.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-no-luks-on-always-online-vps.md,areas/infrastructure/netcup-vps/decisions/20260830-no-luks-on-always-online-vps.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-subvolume-layout.md,areas/infrastructure/netcup-vps/decisions/20260830-subvolume-layout.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260830-vps-holds-no-credentials-upward.md,areas/infrastructure/netcup-vps/decisions/20260830-vps-holds-no-credentials-upward.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260831-sshd-binds-wildcard-nftables-is-the-control.md,areas/infrastructure/netcup-vps/decisions/20260831-sshd-binds-wildcard-nftables-is-the-control.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260911-persistent-credentials-on-netcup-vps.md,areas/infrastructure/netcup-vps/decisions/20260911-persistent-credentials-on-netcup-vps.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260912-netcup-vps-is-the-coding-host.md,areas/infrastructure/netcup-vps/decisions/20260912-netcup-vps-is-the-coding-host.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260913-contained-secretary-hermes.md,areas/infrastructure/netcup-vps/decisions/20260913-contained-secretary-hermes.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20260920-public-mcp-endpoint-claude-ai.md,areas/infrastructure/netcup-vps/decisions/20260920-public-mcp-endpoint-claude-ai.md,move,R-I0,
+infra-docs,netcup-vps/decisions/20261018-single-operator-rebuild.md,areas/infrastructure/netcup-vps/decisions/20261018-single-operator-rebuild.md,move,R-I0,
+infra-docs,netcup-vps/decisions/CLAUDE.md,_meta/legacy-rules/infra-docs-netcup-vps-decisions-CLAUDE.md,retire,R-X3,nested contract; live rules fold into areas/infrastructure/CLAUDE.md
+infra-docs,netcup-vps/decisions/_index.md,areas/infrastructure/netcup-vps/decisions/_index.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/_index.md,areas/infrastructure/netcup-vps/runbooks/_index.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/automations-stage-2.md,areas/infrastructure/netcup-vps/runbooks/automations-stage-2.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/coding-rig-stage-1.md,areas/infrastructure/netcup-vps/runbooks/coding-rig-stage-1.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/mcp-endpoint.md,areas/infrastructure/netcup-vps/runbooks/mcp-endpoint.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/model-routing.md,areas/infrastructure/netcup-vps/runbooks/model-routing.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/panel-firewall-outer-ring.md,areas/infrastructure/netcup-vps/runbooks/panel-firewall-outer-ring.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/rebuild-2026-10.md,areas/infrastructure/netcup-vps/runbooks/rebuild-2026-10.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/rescue-system-entry.md,areas/infrastructure/netcup-vps/runbooks/rescue-system-entry.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/restic-b2-backup.md,areas/infrastructure/netcup-vps/runbooks/restic-b2-backup.md,move,R-I0,
+infra-docs,netcup-vps/runbooks/ssh-lockout-recovery.md,areas/infrastructure/netcup-vps/runbooks/ssh-lockout-recovery.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20260830-netcup-vps-rebuild.md,areas/infrastructure/netcup-vps/sessions/20260830-netcup-vps-rebuild.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20260831-stage-3b-lockdown.md,areas/infrastructure/netcup-vps/sessions/20260831-stage-3b-lockdown.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20260911-panel-firewall-outer-ring.md,areas/infrastructure/netcup-vps/sessions/20260911-panel-firewall-outer-ring.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20260912-coding-rig-stage-1-complete.md,areas/infrastructure/netcup-vps/sessions/20260912-coding-rig-stage-1-complete.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20260912-stage-2-0-auto-bootstrap.md,areas/infrastructure/netcup-vps/sessions/20260912-stage-2-0-auto-bootstrap.md,move,R-I0,
+infra-docs,netcup-vps/sessions/20261018-rebuild.md,areas/infrastructure/netcup-vps/sessions/20261018-rebuild.md,move,R-I0,
+infra-docs,netcup-vps/sessions/_index.md,areas/infrastructure/netcup-vps/sessions/_index.md,move,R-I0,
+infra-docs,pixel-graphene/_index.md,areas/infrastructure/pixel-graphene/_index.md,move,R-I0,
+infra-docs,shared/_index.md,areas/infrastructure/shared/_index.md,move,R-I0,
+infra-docs,shared/decisions/20260921-neurogenesis-dev-i18n-routing.md,areas/infrastructure/shared/decisions/20260921-neurogenesis-dev-i18n-routing.md,move,R-I0,
+infra-docs,shared/runbooks/keepassxc-database.md,areas/infrastructure/shared/runbooks/keepassxc-database.md,move,R-I0,
+infra-docs,shared/runbooks/neurogenesis-dev-dns-and-email.md,areas/infrastructure/shared/runbooks/neurogenesis-dev-dns-and-email.md,move,R-I0,
+infra-docs,shared/runbooks/neurogenesis-dev-site.md,areas/infrastructure/shared/runbooks/neurogenesis-dev-site.md,move,R-I0,
+neural-network,.gitignore,.gitignore,keep,R-X1,base for the merged .gitignore
+neural-network,.obsidian/app.json,.obsidian/app.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/appearance.json,.obsidian/appearance.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/backlink.json,.obsidian/backlink.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/command-palette.json,.obsidian/command-palette.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/community-plugins.json,.obsidian/community-plugins.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/core-plugins-migration.json,.obsidian/core-plugins-migration.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/core-plugins.json,.obsidian/core-plugins.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/daily-notes.json,.obsidian/daily-notes.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/graph.json,.obsidian/graph.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/hotkeys.json,.obsidian/hotkeys.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/calendar/data.json,.obsidian/plugins/calendar/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/calendar/main.js,.obsidian/plugins/calendar/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/calendar/manifest.json,.obsidian/plugins/calendar/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/datacore/data.json,.obsidian/plugins/datacore/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/datacore/main.js,.obsidian/plugins/datacore/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/datacore/manifest.json,.obsidian/plugins/datacore/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/datacore/styles.css,.obsidian/plugins/datacore/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/dataview/data.json,.obsidian/plugins/dataview/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/dataview/main.js,.obsidian/plugins/dataview/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/dataview/manifest.json,.obsidian/plugins/dataview/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/dataview/styles.css,.obsidian/plugins/dataview/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-minimal-settings/data.json,.obsidian/plugins/obsidian-minimal-settings/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-minimal-settings/main.js,.obsidian/plugins/obsidian-minimal-settings/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-minimal-settings/manifest.json,.obsidian/plugins/obsidian-minimal-settings/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-minimal-settings/styles.css,.obsidian/plugins/obsidian-minimal-settings/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-style-settings/main.js,.obsidian/plugins/obsidian-style-settings/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-style-settings/manifest.json,.obsidian/plugins/obsidian-style-settings/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-style-settings/styles.css,.obsidian/plugins/obsidian-style-settings/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-tasks-plugin/data.json,.obsidian/plugins/obsidian-tasks-plugin/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-tasks-plugin/main.js,.obsidian/plugins/obsidian-tasks-plugin/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-tasks-plugin/manifest.json,.obsidian/plugins/obsidian-tasks-plugin/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/obsidian-tasks-plugin/styles.css,.obsidian/plugins/obsidian-tasks-plugin/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/periodic-notes/data.json,.obsidian/plugins/periodic-notes/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/periodic-notes/main.js,.obsidian/plugins/periodic-notes/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/periodic-notes/manifest.json,.obsidian/plugins/periodic-notes/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/periodic-notes/styles.css,.obsidian/plugins/periodic-notes/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/templater-obsidian/data.json,.obsidian/plugins/templater-obsidian/data.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/templater-obsidian/main.js,.obsidian/plugins/templater-obsidian/main.js,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/templater-obsidian/manifest.json,.obsidian/plugins/templater-obsidian/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/plugins/templater-obsidian/styles.css,.obsidian/plugins/templater-obsidian/styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/snippets/prompt-styles.css,.obsidian/snippets/prompt-styles.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/snippets/task-dashboard.css,.obsidian/snippets/task-dashboard.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/templates.json,.obsidian/templates.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/text-generator.json,.obsidian/text-generator.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/themes/Minimal/manifest.json,.obsidian/themes/Minimal/manifest.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/themes/Minimal/theme.css,.obsidian/themes/Minimal/theme.css,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/types.json,.obsidian/types.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.obsidian/workspace.json,.obsidian/workspace.json,keep,R-N1,master settings; paths reconfigured at step 6
+neural-network,.trash/2026-10-03.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/Awazon.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/Screenshot_20260929-142607.png,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/Snuzone.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/Untitled 1.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/Untitled.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/WhatsApp Screenshot.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/_inbox.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/cake wallet.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/claude code resume.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/personal.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/untitled.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-10T07-44-54-943Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-10T17-00-08-190Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-12T07-53-37-817Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-12T07-56-21-262Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-20T11-08-51-683Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/speech/2025-08-20T11-13-13-124Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,.trash/whisper/text/2026-03-03T16-56-45-355Z.md,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+neural-network,2026-10-19-master-vault-design-v2.md,,delete,R-N3,"older copy, superseded by v4"
+neural-network,CLAUDE.md,_meta/legacy-rules/neural-network-root-CLAUDE.md,retire,R-X3,replaced by the new root contract
+neural-network,IMG_20260930_151306_343.jpg,_attachments/IMG_20260930_151306_343.jpg,move,R-N4,root images; no inbound links found
+neural-network,IMG_20260930_152543_316.jpg,_attachments/IMG_20260930_152543_316.jpg,move,R-N4,root images; no inbound links found
+neural-network,IMG_20260930_152634_791.jpg,_attachments/IMG_20260930_152634_791.jpg,move,R-N4,root images; no inbound links found
+neural-network,IMG_20260930_152645_185.jpg,_attachments/IMG_20260930_152645_185.jpg,move,R-N4,root images; no inbound links found
+neural-network,_attachments/Gmail - Dringend_ Statusabfrage zu abgeschlepptem Fahrzeug HD-OO-661 _ Halter derzeit in Notunterkunft.pdf,_attachments/letters/Gmail - Dringend_ Statusabfrage zu abgeschlepptem Fahrzeug HD-OO-661 _ Halter derzeit in Notunterkunft.pdf,move,R-N5,correspondence evidence → letters/ (immutable)
+neural-network,_inbox/2026-10-04.md,_inbox/2026-10-04-capture.md,rename,R-N6,basename collision with the daily note
+neural-network,_inbox/Links.md,_inbox/Links.md,keep,R-N0,
+neural-network,_inbox/_index.md,_inbox/_index.md,keep,R-N0,
+neural-network,_inbox/draft-rueckforderung-reifegerste.md,_inbox/draft-rueckforderung-reifegerste.md,keep,R-N0,
+neural-network,_inbox/gpu-fix-claude-handoff.md,_inbox/gpu-fix-claude-handoff.md,keep,R-N0,
+neural-network,_inbox/gpu-fix-handoff.md,_inbox/gpu-fix-handoff.md,keep,R-N0,
+neural-network,_inbox/gpu-fix-plan.md,_inbox/gpu-fix-plan.md,keep,R-N0,
+neural-network,_inbox/gpu-fix-safe-mode-instructions.md,_inbox/gpu-fix-safe-mode-instructions.md,keep,R-N0,
+neural-network,_inbox/syncthing.md,_inbox/syncthing.md,keep,R-N0,
+neural-network,_inbox/whatsapp-coworker-draft.md,_inbox/whatsapp-coworker-draft.md,keep,R-N0,
+neural-network,_templates/_index.md,_templates/_index.md,merge-into,R-X4,
+neural-network,_templates/blog-post.md,_templates/blog-post.md,keep,R-N0,
+neural-network,_templates/daily-note.md,_templates/daily-note.md,keep,R-N0,
+neural-network,_templates/fleeting-note.md,_templates/fleeting-note.md,keep,R-N0,
+neural-network,_templates/literature-note.md,_templates/literature-note.md,keep,R-N0,
+neural-network,_templates/moc.md,_templates/moc.md,keep,R-N0,
+neural-network,_templates/monthly-note.md,_templates/monthly-note.md,keep,R-N0,
+neural-network,_templates/permanent-note.md,_templates/permanent-note.md,keep,R-N0,
+neural-network,_templates/project-note.md,_templates/project-note.md,keep,R-N0,
+neural-network,_templates/startup-open-home.md,_templates/startup-open-home.md,keep,R-N0,
+neural-network,_templates/tpl-case.md,_templates/tpl-case.md,keep,R-N0,
+neural-network,_templates/tpl-correspondence.md,_templates/tpl-correspondence.md,keep,R-N0,
+neural-network,_templates/weekly-note.md,_templates/weekly-note.md,keep,R-N0,
+neural-network,_templates/yearly-note.md,_templates/yearly-note.md,keep,R-N0,
+neural-network,archive/_index.md,archive/_index.md,keep,R-N0,
+neural-network,archive/career/marriott-sheraton-evakuierung.md,archive/career/marriott-sheraton-evakuierung.md,keep,R-N0,
+neural-network,archive/career/marriott-sheraton-security-training.md,archive/career/marriott-sheraton-security-training.md,keep,R-N0,
+neural-network,archive/career/security-exam-notes.md,archive/career/security-exam-notes.md,keep,R-N0,
+neural-network,archive/career/security-night-patrol.md,archive/career/security-night-patrol.md,keep,R-N0,
+neural-network,areas/_index.md,areas/_index.md,keep,R-N0,
+neural-network,areas/admin/_index.md,areas/admin/_index.md,keep,R-N0,
+neural-network,areas/admin/accounts.md,areas/admin/accounts.md,keep,R-N0,
+neural-network,areas/admin/cases/abschleppung-hd-oo-661.md,areas/admin/cases/abschleppung-hd-oo-661.md,keep,R-N0,
+neural-network,areas/admin/cases/beratungshilfe.md,areas/admin/cases/beratungshilfe.md,keep,R-N0,
+neural-network,areas/admin/cases/fm-safe-protect-insolvenz.md,areas/admin/cases/fm-safe-protect-insolvenz.md,keep,R-N0,
+neural-network,areas/admin/cases/jobcenter-rueckforderung.md,areas/admin/cases/jobcenter-rueckforderung.md,keep,R-N0,
+neural-network,areas/admin/cases/vermieterin-rueckforderung.md,areas/admin/cases/vermieterin-rueckforderung.md,keep,R-N0,
+neural-network,areas/admin/contacts.md,areas/admin/contacts.md,keep,R-N0,
+neural-network,areas/admin/correspondence/2026-09-29-luis-stadt-frankfurt-statusanfrage.md,areas/admin/correspondence/2026-09-29-luis-stadt-frankfurt-statusanfrage.md,keep,R-N0,
+neural-network,areas/admin/correspondence/_index.md,areas/admin/correspondence/_index.md,keep,R-N0,
+neural-network,areas/career/it-career-paths.md,areas/career/it-career-paths.md,keep,R-N0,
+neural-network,areas/career/job-search.md,areas/career/job-search.md,keep,R-N0,
+neural-network,areas/career/security-companies.md,areas/career/security-companies.md,keep,R-N0,
+neural-network,areas/finance/_index.md,areas/finance/_index.md,keep,R-N0,
+neural-network,areas/finance/budget.md,areas/finance/budget.md,keep,R-N0,
+neural-network,areas/finance/debts.md,areas/finance/debts.md,keep,R-N0,
+neural-network,areas/finance/income.md,areas/finance/income.md,keep,R-N0,
+neural-network,areas/finance/lagerraum-versicherung.md,areas/finance/lagerraum-versicherung.md,keep,R-N0,
+neural-network,areas/finance/recurring.md,areas/finance/recurring.md,keep,R-N0,
+neural-network,areas/finance/subscriptions.md,areas/finance/subscriptions.md,keep,R-N0,
+neural-network,areas/finance/transactions/2024-01-scu.csv,areas/finance/transactions/2024-01-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-01-sparkasse.csv,areas/finance/transactions/2024-01-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-02-scu.csv,areas/finance/transactions/2024-02-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-02-sparkasse.csv,areas/finance/transactions/2024-02-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-03-scu.csv,areas/finance/transactions/2024-03-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-03-sparkasse.csv,areas/finance/transactions/2024-03-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-04-scu.csv,areas/finance/transactions/2024-04-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-04-sparkasse.csv,areas/finance/transactions/2024-04-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-05-scu.csv,areas/finance/transactions/2024-05-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-05-sparkasse.csv,areas/finance/transactions/2024-05-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-06-scu.csv,areas/finance/transactions/2024-06-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-06-sparkasse.csv,areas/finance/transactions/2024-06-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-07-scu.csv,areas/finance/transactions/2024-07-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-07-sparkasse.csv,areas/finance/transactions/2024-07-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-08-scu.csv,areas/finance/transactions/2024-08-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-08-sparkasse.csv,areas/finance/transactions/2024-08-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-09-scu.csv,areas/finance/transactions/2024-09-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-09-sparkasse.csv,areas/finance/transactions/2024-09-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-10-scu.csv,areas/finance/transactions/2024-10-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-10-sparkasse.csv,areas/finance/transactions/2024-10-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-11-scu.csv,areas/finance/transactions/2024-11-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-11-sparkasse.csv,areas/finance/transactions/2024-11-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-12-scu.csv,areas/finance/transactions/2024-12-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2024-12-sparkasse.csv,areas/finance/transactions/2024-12-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-01-scu.csv,areas/finance/transactions/2025-01-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-01-sparkasse.csv,areas/finance/transactions/2025-01-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-02-scu.csv,areas/finance/transactions/2025-02-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-02-sparkasse.csv,areas/finance/transactions/2025-02-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-03-sparkasse.csv,areas/finance/transactions/2025-03-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-04-scu.csv,areas/finance/transactions/2025-04-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-04-sparkasse.csv,areas/finance/transactions/2025-04-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-05-scu.csv,areas/finance/transactions/2025-05-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-05-sparkasse.csv,areas/finance/transactions/2025-05-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-06-scu.csv,areas/finance/transactions/2025-06-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-06-sparkasse.csv,areas/finance/transactions/2025-06-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-07-scu.csv,areas/finance/transactions/2025-07-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-07-sparkasse.csv,areas/finance/transactions/2025-07-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-08-scu.csv,areas/finance/transactions/2025-08-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-08-sparkasse.csv,areas/finance/transactions/2025-08-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-09-scu.csv,areas/finance/transactions/2025-09-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-09-sparkasse.csv,areas/finance/transactions/2025-09-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-10-scu.csv,areas/finance/transactions/2025-10-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-10-sparkasse.csv,areas/finance/transactions/2025-10-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-11-scu.csv,areas/finance/transactions/2025-11-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-11-sparkasse.csv,areas/finance/transactions/2025-11-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-12-scu.csv,areas/finance/transactions/2025-12-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2025-12-sparkasse.csv,areas/finance/transactions/2025-12-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-01-scu.csv,areas/finance/transactions/2026-01-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-01-sparkasse.csv,areas/finance/transactions/2026-01-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-02-scu.csv,areas/finance/transactions/2026-02-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-02-sparkasse.csv,areas/finance/transactions/2026-02-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-03-scu.csv,areas/finance/transactions/2026-03-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-03-sparkasse.csv,areas/finance/transactions/2026-03-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-04-scu.csv,areas/finance/transactions/2026-04-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-04-sparkasse.csv,areas/finance/transactions/2026-04-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-05-scu.csv,areas/finance/transactions/2026-05-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-05-sparkasse.csv,areas/finance/transactions/2026-05-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-06-scu.csv,areas/finance/transactions/2026-06-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-06-sparkasse.csv,areas/finance/transactions/2026-06-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-07-scu.csv,areas/finance/transactions/2026-07-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-07-sparkasse.csv,areas/finance/transactions/2026-07-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-08-scu.csv,areas/finance/transactions/2026-08-scu.csv,keep,R-N0,
+neural-network,areas/finance/transactions/2026-08-sparkasse.csv,areas/finance/transactions/2026-08-sparkasse.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_flagged.csv,areas/finance/transactions/_flagged.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_landlady.csv,areas/finance/transactions/_landlady.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_monthly-summary.csv,areas/finance/transactions/_monthly-summary.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_recurring-candidates.csv,areas/finance/transactions/_recurring-candidates.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_scu-coverage.txt,areas/finance/transactions/_scu-coverage.txt,keep,R-N0,
+neural-network,areas/finance/transactions/_scu-recurring.csv,areas/finance/transactions/_scu-recurring.csv,keep,R-N0,
+neural-network,areas/finance/transactions/_scu-summary.csv,areas/finance/transactions/_scu-summary.csv,keep,R-N0,
+neural-network,areas/finance/transactions/scu-all.csv,areas/finance/transactions/scu-all.csv,keep,R-N0,
+neural-network,areas/finance/transactions/sparkasse-all.csv,areas/finance/transactions/sparkasse-all.csv,keep,R-N0,
+neural-network,areas/health/531-bbb-training.md,areas/health/531-bbb-training.md,keep,R-N0,
+neural-network,areas/health/cardiovascular-health.md,areas/health/cardiovascular-health.md,keep,R-N0,
+neural-network,areas/health/daily-supplement-stack.md,areas/health/daily-supplement-stack.md,keep,R-N0,
+neural-network,areas/health/friends-supplement-stacks.md,areas/health/friends-supplement-stacks.md,keep,R-N0,
+neural-network,areas/health/morning-routine.md,areas/health/morning-routine.md,keep,R-N0,
+neural-network,areas/health/physical-assessment.md,areas/health/physical-assessment.md,keep,R-N0,
+neural-network,areas/health/stronglifts-5x5.md,areas/health/stronglifts-5x5.md,keep,R-N0,
+neural-network,areas/health/what-alcohol-does-for-me.md,areas/health/what-alcohol-does-for-me.md,keep,R-N0,
+neural-network,areas/learning/linear-algebra.md,areas/self/learning/linear-algebra.md,move,R-N10,learning tags preserved
+neural-network,areas/personal/2026-04-bfas-report.pdf,areas/self/2026-04-bfas-report.pdf,move,R-N8,
+neural-network,areas/personal/big-five-scores.md,areas/self/big-five-scores.md,move,R-N8,
+neural-network,areas/personal/composite-typology.md,areas/self/composite-typology.md,move,R-N8,
+neural-network,areas/personal/enneagram-assessment.md,areas/self/enneagram-assessment.md,move,R-N8,
+neural-network,areas/personal/habits-list.md,areas/self/habits-list.md,move,R-N8,
+neural-network,areas/personal/luis-profile-raw.md,areas/self/luis-profile-raw.md,move,R-N8,
+neural-network,areas/personal/personal-attributes.md,areas/self/personal-attributes.md,move,R-N8,
+neural-network,areas/personal/personal-goals.md,areas/self/personal-goals.md,move,R-N8,
+neural-network,areas/personal/personal-philosophy.md,areas/self/personal-philosophy.md,move,R-N8,
+neural-network,areas/personal/preferred-cities.md,areas/self/preferred-cities.md,move,R-N8,
+neural-network,areas/personal/socionics-typology.md,areas/self/socionics-typology.md,move,R-N8,
+neural-network,areas/personal/tattoo-ideas.md,areas/self/tattoo-ideas.md,move,R-N8,
+neural-network,areas/self-experiments/intermittent-fasting-16-8.md,areas/self/experiments/intermittent-fasting-16-8.md,move,R-N9,
+neural-network,areas/self-experiments/ketogenic-diet.md,areas/self/experiments/ketogenic-diet.md,move,R-N9,
+neural-network,areas/self-experiments/regaining-control-of-alcohol.md,areas/self/experiments/regaining-control-of-alcohol.md,move,R-N9,
+neural-network,areas/self-experiments/sexual-resensitization.md,areas/self/experiments/sexual-resensitization.md,move,R-N9,
+neural-network,journal/_index.md,journal/_index.md,keep,R-N0,
+neural-network,journal/daily/2021-10-25.md,journal/daily/2021-10-25.md,keep,R-N0,
+neural-network,journal/daily/2021-10-27.md,journal/daily/2021-10-27.md,keep,R-N0,
+neural-network,journal/daily/2021-10-28.md,journal/daily/2021-10-28.md,keep,R-N0,
+neural-network,journal/daily/2024-12-22.md,journal/daily/2024-12-22.md,keep,R-N0,
+neural-network,journal/daily/2025-05-19.md,journal/daily/2025-05-19.md,keep,R-N0,
+neural-network,journal/daily/2025-05-20.md,journal/daily/2025-05-20.md,keep,R-N0,
+neural-network,journal/daily/2025-05-21.md,journal/daily/2025-05-21.md,keep,R-N0,
+neural-network,journal/daily/2025-05-22.md,journal/daily/2025-05-22.md,keep,R-N0,
+neural-network,journal/daily/2025-05-23.md,journal/daily/2025-05-23.md,keep,R-N0,
+neural-network,journal/daily/2025-05-24.md,journal/daily/2025-05-24.md,keep,R-N0,
+neural-network,journal/daily/2025-06-09.md,journal/daily/2025-06-09.md,keep,R-N0,
+neural-network,journal/daily/2025-06-11.md,journal/daily/2025-06-11.md,keep,R-N0,
+neural-network,journal/daily/2025-06-17.md,journal/daily/2025-06-17.md,keep,R-N0,
+neural-network,journal/daily/2025-06-30.md,journal/daily/2025-06-30.md,keep,R-N0,
+neural-network,journal/daily/2025-07-02.md,journal/daily/2025-07-02.md,keep,R-N0,
+neural-network,journal/daily/2025-07-05.md,journal/daily/2025-07-05.md,keep,R-N0,
+neural-network,journal/daily/2025-07-09.md,journal/daily/2025-07-09.md,keep,R-N0,
+neural-network,journal/daily/2025-07-10.md,journal/daily/2025-07-10.md,keep,R-N0,
+neural-network,journal/daily/2025-07-15.md,journal/daily/2025-07-15.md,keep,R-N0,
+neural-network,journal/daily/2025-07-16.md,journal/daily/2025-07-16.md,keep,R-N0,
+neural-network,journal/daily/2025-07-17.md,journal/daily/2025-07-17.md,keep,R-N0,
+neural-network,journal/daily/2025-07-18.md,journal/daily/2025-07-18.md,keep,R-N0,
+neural-network,journal/daily/2025-07-21.md,journal/daily/2025-07-21.md,keep,R-N0,
+neural-network,journal/daily/2025-07-22.md,journal/daily/2025-07-22.md,keep,R-N0,
+neural-network,journal/daily/2025-07-23.md,journal/daily/2025-07-23.md,keep,R-N0,
+neural-network,journal/daily/2025-07-24.md,journal/daily/2025-07-24.md,keep,R-N0,
+neural-network,journal/daily/2025-07-25.md,journal/daily/2025-07-25.md,keep,R-N0,
+neural-network,journal/daily/2025-07-26.md,journal/daily/2025-07-26.md,keep,R-N0,
+neural-network,journal/daily/2025-07-27.md,journal/daily/2025-07-27.md,keep,R-N0,
+neural-network,journal/daily/2025-07-31.md,journal/daily/2025-07-31.md,keep,R-N0,
+neural-network,journal/daily/2025-08-01.md,journal/daily/2025-08-01.md,keep,R-N0,
+neural-network,journal/daily/2025-08-02.md,journal/daily/2025-08-02.md,keep,R-N0,
+neural-network,journal/daily/2025-08-03.md,journal/daily/2025-08-03.md,keep,R-N0,
+neural-network,journal/daily/2025-08-04.md,journal/daily/2025-08-04.md,keep,R-N0,
+neural-network,journal/daily/2025-08-08.md,journal/daily/2025-08-08.md,keep,R-N0,
+neural-network,journal/daily/2025-08-09.md,journal/daily/2025-08-09.md,keep,R-N0,
+neural-network,journal/daily/2025-08-10.md,journal/daily/2025-08-10.md,keep,R-N0,
+neural-network,journal/daily/2025-08-11.md,journal/daily/2025-08-11.md,keep,R-N0,
+neural-network,journal/daily/2025-08-12.md,journal/daily/2025-08-12.md,keep,R-N0,
+neural-network,journal/daily/2025-08-14.md,journal/daily/2025-08-14.md,keep,R-N0,
+neural-network,journal/daily/2025-08-15.md,journal/daily/2025-08-15.md,keep,R-N0,
+neural-network,journal/daily/2025-08-16.md,journal/daily/2025-08-16.md,keep,R-N0,
+neural-network,journal/daily/2025-08-17.md,journal/daily/2025-08-17.md,keep,R-N0,
+neural-network,journal/daily/2025-08-18.md,journal/daily/2025-08-18.md,keep,R-N0,
+neural-network,journal/daily/2025-08-20.md,journal/daily/2025-08-20.md,keep,R-N0,
+neural-network,journal/daily/2025-08-21.md,journal/daily/2025-08-21.md,keep,R-N0,
+neural-network,journal/daily/2025-08-22.md,journal/daily/2025-08-22.md,keep,R-N0,
+neural-network,journal/daily/2025-08-24.md,journal/daily/2025-08-24.md,keep,R-N0,
+neural-network,journal/daily/2025-08-25.md,journal/daily/2025-08-25.md,keep,R-N0,
+neural-network,journal/daily/2025-08-26.md,journal/daily/2025-08-26.md,keep,R-N0,
+neural-network,journal/daily/2025-08-28.md,journal/daily/2025-08-28.md,keep,R-N0,
+neural-network,journal/daily/2025-08-29.md,journal/daily/2025-08-29.md,keep,R-N0,
+neural-network,journal/daily/2025-08-30.md,journal/daily/2025-08-30.md,keep,R-N0,
+neural-network,journal/daily/2025-08-31.md,journal/daily/2025-08-31.md,keep,R-N0,
+neural-network,journal/daily/2025-09-01.md,journal/daily/2025-09-01.md,keep,R-N0,
+neural-network,journal/daily/2025-09-02.md,journal/daily/2025-09-02.md,keep,R-N0,
+neural-network,journal/daily/2025-09-03.md,journal/daily/2025-09-03.md,keep,R-N0,
+neural-network,journal/daily/2025-09-04.md,journal/daily/2025-09-04.md,keep,R-N0,
+neural-network,journal/daily/2025-09-08.md,journal/daily/2025-09-08.md,keep,R-N0,
+neural-network,journal/daily/2025-09-09.md,journal/daily/2025-09-09.md,keep,R-N0,
+neural-network,journal/daily/2025-09-12.md,journal/daily/2025-09-12.md,keep,R-N0,
+neural-network,journal/daily/2025-09-13.md,journal/daily/2025-09-13.md,keep,R-N0,
+neural-network,journal/daily/2025-09-17.md,journal/daily/2025-09-17.md,keep,R-N0,
+neural-network,journal/daily/2025-09-18.md,journal/daily/2025-09-18.md,keep,R-N0,
+neural-network,journal/daily/2025-09-19.md,journal/daily/2025-09-19.md,keep,R-N0,
+neural-network,journal/daily/2025-09-21.md,journal/daily/2025-09-21.md,keep,R-N0,
+neural-network,journal/daily/2025-09-23.md,journal/daily/2025-09-23.md,keep,R-N0,
+neural-network,journal/daily/2025-09-24.md,journal/daily/2025-09-24.md,keep,R-N0,
+neural-network,journal/daily/2025-09-25.md,journal/daily/2025-09-25.md,keep,R-N0,
+neural-network,journal/daily/2025-09-26.md,journal/daily/2025-09-26.md,keep,R-N0,
+neural-network,journal/daily/2025-09-29.md,journal/daily/2025-09-29.md,keep,R-N0,
+neural-network,journal/daily/2025-09-30.md,journal/daily/2025-09-30.md,keep,R-N0,
+neural-network,journal/daily/2025-10-01.md,journal/daily/2025-10-01.md,keep,R-N0,
+neural-network,journal/daily/2025-10-02.md,journal/daily/2025-10-02.md,keep,R-N0,
+neural-network,journal/daily/2025-10-03.md,journal/daily/2025-10-03.md,keep,R-N0,
+neural-network,journal/daily/2025-10-04.md,journal/daily/2025-10-04.md,keep,R-N0,
+neural-network,journal/daily/2025-10-06.md,journal/daily/2025-10-06.md,keep,R-N0,
+neural-network,journal/daily/2025-10-07.md,journal/daily/2025-10-07.md,keep,R-N0,
+neural-network,journal/daily/2025-10-08.md,journal/daily/2025-10-08.md,keep,R-N0,
+neural-network,journal/daily/2025-10-09.md,journal/daily/2025-10-09.md,keep,R-N0,
+neural-network,journal/daily/2025-10-10.md,journal/daily/2025-10-10.md,keep,R-N0,
+neural-network,journal/daily/2025-10-13.md,journal/daily/2025-10-13.md,keep,R-N0,
+neural-network,journal/daily/2025-10-14.md,journal/daily/2025-10-14.md,keep,R-N0,
+neural-network,journal/daily/2025-10-15.md,journal/daily/2025-10-15.md,keep,R-N0,
+neural-network,journal/daily/2025-10-16.md,journal/daily/2025-10-16.md,keep,R-N0,
+neural-network,journal/daily/2025-10-17.md,journal/daily/2025-10-17.md,keep,R-N0,
+neural-network,journal/daily/2025-10-18.md,journal/daily/2025-10-18.md,keep,R-N0,
+neural-network,journal/daily/2025-10-21.md,journal/daily/2025-10-21.md,keep,R-N0,
+neural-network,journal/daily/2025-10-22.md,journal/daily/2025-10-22.md,keep,R-N0,
+neural-network,journal/daily/2025-10-23.md,journal/daily/2025-10-23.md,keep,R-N0,
+neural-network,journal/daily/2025-10-24.md,journal/daily/2025-10-24.md,keep,R-N0,
+neural-network,journal/daily/2025-10-25.md,journal/daily/2025-10-25.md,keep,R-N0,
+neural-network,journal/daily/2025-10-27.md,journal/daily/2025-10-27.md,keep,R-N0,
+neural-network,journal/daily/2025-10-28.md,journal/daily/2025-10-28.md,keep,R-N0,
+neural-network,journal/daily/2025-10-29.md,journal/daily/2025-10-29.md,keep,R-N0,
+neural-network,journal/daily/2025-10-30.md,journal/daily/2025-10-30.md,keep,R-N0,
+neural-network,journal/daily/2025-10-31.md,journal/daily/2025-10-31.md,keep,R-N0,
+neural-network,journal/daily/2025-11-03.md,journal/daily/2025-11-03.md,keep,R-N0,
+neural-network,journal/daily/2025-11-04.md,journal/daily/2025-11-04.md,keep,R-N0,
+neural-network,journal/daily/2025-11-05.md,journal/daily/2025-11-05.md,keep,R-N0,
+neural-network,journal/daily/2025-11-06.md,journal/daily/2025-11-06.md,keep,R-N0,
+neural-network,journal/daily/2025-11-07.md,journal/daily/2025-11-07.md,keep,R-N0,
+neural-network,journal/daily/2025-11-08.md,journal/daily/2025-11-08.md,keep,R-N0,
+neural-network,journal/daily/2025-11-10.md,journal/daily/2025-11-10.md,keep,R-N0,
+neural-network,journal/daily/2025-11-12.md,journal/daily/2025-11-12.md,keep,R-N0,
+neural-network,journal/daily/2025-11-13.md,journal/daily/2025-11-13.md,keep,R-N0,
+neural-network,journal/daily/2025-11-14.md,journal/daily/2025-11-14.md,keep,R-N0,
+neural-network,journal/daily/2025-11-18.md,journal/daily/2025-11-18.md,keep,R-N0,
+neural-network,journal/daily/2025-11-19.md,journal/daily/2025-11-19.md,keep,R-N0,
+neural-network,journal/daily/2025-11-20.md,journal/daily/2025-11-20.md,keep,R-N0,
+neural-network,journal/daily/2025-11-21.md,journal/daily/2025-11-21.md,keep,R-N0,
+neural-network,journal/daily/2025-11-25.md,journal/daily/2025-11-25.md,keep,R-N0,
+neural-network,journal/daily/2025-11-26.md,journal/daily/2025-11-26.md,keep,R-N0,
+neural-network,journal/daily/2025-11-27.md,journal/daily/2025-11-27.md,keep,R-N0,
+neural-network,journal/daily/2025-11-28.md,journal/daily/2025-11-28.md,keep,R-N0,
+neural-network,journal/daily/2025-11-29.md,journal/daily/2025-11-29.md,keep,R-N0,
+neural-network,journal/daily/2025-12-01.md,journal/daily/2025-12-01.md,keep,R-N0,
+neural-network,journal/daily/2025-12-02.md,journal/daily/2025-12-02.md,keep,R-N0,
+neural-network,journal/daily/2025-12-03.md,journal/daily/2025-12-03.md,keep,R-N0,
+neural-network,journal/daily/2025-12-04.md,journal/daily/2025-12-04.md,keep,R-N0,
+neural-network,journal/daily/2025-12-09.md,journal/daily/2025-12-09.md,keep,R-N0,
+neural-network,journal/daily/2025-12-10.md,journal/daily/2025-12-10.md,keep,R-N0,
+neural-network,journal/daily/2025-12-11.md,journal/daily/2025-12-11.md,keep,R-N0,
+neural-network,journal/daily/2025-12-12.md,journal/daily/2025-12-12.md,keep,R-N0,
+neural-network,journal/daily/2025-12-13.md,journal/daily/2025-12-13.md,keep,R-N0,
+neural-network,journal/daily/2025-12-16.md,journal/daily/2025-12-16.md,keep,R-N0,
+neural-network,journal/daily/2025-12-17.md,journal/daily/2025-12-17.md,keep,R-N0,
+neural-network,journal/daily/2025-12-18.md,journal/daily/2025-12-18.md,keep,R-N0,
+neural-network,journal/daily/2025-12-19.md,journal/daily/2025-12-19.md,keep,R-N0,
+neural-network,journal/daily/2025-12-20.md,journal/daily/2025-12-20.md,keep,R-N0,
+neural-network,journal/daily/2025-12-21.md,journal/daily/2025-12-21.md,keep,R-N0,
+neural-network,journal/daily/2025-12-23.md,journal/daily/2025-12-23.md,keep,R-N0,
+neural-network,journal/daily/2025-12-24.md,journal/daily/2025-12-24.md,keep,R-N0,
+neural-network,journal/daily/2025-12-25.md,journal/daily/2025-12-25.md,keep,R-N0,
+neural-network,journal/daily/2025-12-26.md,journal/daily/2025-12-26.md,keep,R-N0,
+neural-network,journal/daily/2025-12-27.md,journal/daily/2025-12-27.md,keep,R-N0,
+neural-network,journal/daily/2025-12-29.md,journal/daily/2025-12-29.md,keep,R-N0,
+neural-network,journal/daily/2025-12-30.md,journal/daily/2025-12-30.md,keep,R-N0,
+neural-network,journal/daily/2026-01-02.md,journal/daily/2026-01-02.md,keep,R-N0,
+neural-network,journal/daily/2026-01-05.md,journal/daily/2026-01-05.md,keep,R-N0,
+neural-network,journal/daily/2026-01-06.md,journal/daily/2026-01-06.md,keep,R-N0,
+neural-network,journal/daily/2026-01-07.md,journal/daily/2026-01-07.md,keep,R-N0,
+neural-network,journal/daily/2026-01-10.md,journal/daily/2026-01-10.md,keep,R-N0,
+neural-network,journal/daily/2026-01-12.md,journal/daily/2026-01-12.md,keep,R-N0,
+neural-network,journal/daily/2026-01-13.md,journal/daily/2026-01-13.md,keep,R-N0,
+neural-network,journal/daily/2026-01-14.md,journal/daily/2026-01-14.md,keep,R-N0,
+neural-network,journal/daily/2026-01-15.md,journal/daily/2026-01-15.md,keep,R-N0,
+neural-network,journal/daily/2026-01-17.md,journal/daily/2026-01-17.md,keep,R-N0,
+neural-network,journal/daily/2026-01-19.md,journal/daily/2026-01-19.md,keep,R-N0,
+neural-network,journal/daily/2026-01-21.md,journal/daily/2026-01-21.md,keep,R-N0,
+neural-network,journal/daily/2026-01-22.md,journal/daily/2026-01-22.md,keep,R-N0,
+neural-network,journal/daily/2026-01-26.md,journal/daily/2026-01-26.md,keep,R-N0,
+neural-network,journal/daily/2026-01-27.md,journal/daily/2026-01-27.md,keep,R-N0,
+neural-network,journal/daily/2026-01-28.md,journal/daily/2026-01-28.md,keep,R-N0,
+neural-network,journal/daily/2026-01-29.md,journal/daily/2026-01-29.md,keep,R-N0,
+neural-network,journal/daily/2026-02-02.md,journal/daily/2026-02-02.md,keep,R-N0,
+neural-network,journal/daily/2026-02-04.md,journal/daily/2026-02-04.md,keep,R-N0,
+neural-network,journal/daily/2026-02-05.md,journal/daily/2026-02-05.md,keep,R-N0,
+neural-network,journal/daily/2026-02-06.md,journal/daily/2026-02-06.md,keep,R-N0,
+neural-network,journal/daily/2026-02-10.md,journal/daily/2026-02-10.md,keep,R-N0,
+neural-network,journal/daily/2026-02-11.md,journal/daily/2026-02-11.md,keep,R-N0,
+neural-network,journal/daily/2026-02-12.md,journal/daily/2026-02-12.md,keep,R-N0,
+neural-network,journal/daily/2026-02-13.md,journal/daily/2026-02-13.md,keep,R-N0,
+neural-network,journal/daily/2026-02-14.md,journal/daily/2026-02-14.md,keep,R-N0,
+neural-network,journal/daily/2026-02-16.md,journal/daily/2026-02-16.md,keep,R-N0,
+neural-network,journal/daily/2026-02-17.md,journal/daily/2026-02-17.md,keep,R-N0,
+neural-network,journal/daily/2026-02-18.md,journal/daily/2026-02-18.md,keep,R-N0,
+neural-network,journal/daily/2026-02-19.md,journal/daily/2026-02-19.md,keep,R-N0,
+neural-network,journal/daily/2026-02-20.md,journal/daily/2026-02-20.md,keep,R-N0,
+neural-network,journal/daily/2026-02-24.md,journal/daily/2026-02-24.md,keep,R-N0,
+neural-network,journal/daily/2026-02-25.md,journal/daily/2026-02-25.md,keep,R-N0,
+neural-network,journal/daily/2026-02-26.md,journal/daily/2026-02-26.md,keep,R-N0,
+neural-network,journal/daily/2026-02-27.md,journal/daily/2026-02-27.md,keep,R-N0,
+neural-network,journal/daily/2026-03-02.md,journal/daily/2026-03-02.md,keep,R-N0,
+neural-network,journal/daily/2026-03-03.md,journal/daily/2026-03-03.md,keep,R-N0,
+neural-network,journal/daily/2026-03-04.md,journal/daily/2026-03-04.md,keep,R-N0,
+neural-network,journal/daily/2026-03-06.md,journal/daily/2026-03-06.md,keep,R-N0,
+neural-network,journal/daily/2026-03-10.md,journal/daily/2026-03-10.md,keep,R-N0,
+neural-network,journal/daily/2026-03-12.md,journal/daily/2026-03-12.md,keep,R-N0,
+neural-network,journal/daily/2026-03-13.md,journal/daily/2026-03-13.md,keep,R-N0,
+neural-network,journal/daily/2026-03-16.md,journal/daily/2026-03-16.md,keep,R-N0,
+neural-network,journal/daily/2026-03-17.md,journal/daily/2026-03-17.md,keep,R-N0,
+neural-network,journal/daily/2026-03-18.md,journal/daily/2026-03-18.md,keep,R-N0,
+neural-network,journal/daily/2026-03-23.md,journal/daily/2026-03-23.md,keep,R-N0,
+neural-network,journal/daily/2026-03-24.md,journal/daily/2026-03-24.md,keep,R-N0,
+neural-network,journal/daily/2026-03-25.md,journal/daily/2026-03-25.md,keep,R-N0,
+neural-network,journal/daily/2026-03-27.md,journal/daily/2026-03-27.md,keep,R-N0,
+neural-network,journal/daily/2026-08-22.md,journal/daily/2026-08-22.md,keep,R-N0,
+neural-network,journal/daily/2026-09-28.md,journal/daily/2026-09-28.md,keep,R-N0,
+neural-network,journal/daily/2026-10-01.md,journal/daily/2026-10-01.md,keep,R-N0,
+neural-network,journal/daily/2026-10-02.md,journal/daily/2026-10-02.md,keep,R-N0,
+neural-network,journal/daily/2026-10-03.md,journal/daily/2026-10-03.md,keep,R-N0,
+neural-network,journal/daily/2026-10-04.md,journal/daily/2026-10-04.md,keep,R-N0,
+neural-network,journal/daily/2026-10-05.md,journal/daily/2026-10-05.md,keep,R-N0,
+neural-network,journal/daily/2026-10-06.md,journal/daily/2026-10-06.md,keep,R-N0,
+neural-network,journal/daily/2026-10-10.md,journal/daily/2026-10-10.md,keep,R-N0,
+neural-network,maps/_index.md,maps/_index.md,keep,R-N0,
+neural-network,maps/biohacking-moc.md,maps/biohacking-moc.md,keep,R-N0,
+neural-network,maps/habit-dashboard.md,maps/habit-dashboard.md,keep,R-N0,
+neural-network,maps/home.md,maps/home.md,keep,R-N0,
+neural-network,maps/neuroplasticity-moc.md,maps/neuroplasticity-moc.md,keep,R-N0,
+neural-network,projects/_index.md,projects/_index.md,keep,R-N0,
+neural-network,projects/altlasten-2026.md,projects/altlasten-2026.md,keep,R-N0,
+neural-network,projects/autobiography/autobiography.md,projects/autobiography/autobiography.md,keep,R-N0,
+neural-network,projects/autobiography/drafts/draft-1-life.md,projects/autobiography/drafts/draft-1-life.md,keep,R-N0,
+neural-network,projects/autobiography/drafts/draft-2-life-history.md,projects/autobiography/drafts/draft-2-life-history.md,keep,R-N0,
+neural-network,projects/autobiography/drafts/draft-3-life-continued.md,projects/autobiography/drafts/draft-3-life-continued.md,keep,R-N0,
+neural-network,projects/autobiography/drafts/draft-4-comprehensive-chronicle.md,projects/autobiography/drafts/draft-4-comprehensive-chronicle.md,keep,R-N0,
+neural-network,projects/autobiography/life-writing-prompts.md,projects/autobiography/life-writing-prompts.md,keep,R-N0,
+neural-network,projects/self-authoring/future/_index.md,projects/self-authoring/future/_index.md,keep,R-N0,
+neural-network,projects/self-authoring/past/_index.md,projects/self-authoring/past/_index.md,keep,R-N0,
+neural-network,projects/self-authoring/present/_index.md,projects/self-authoring/present/_index.md,keep,R-N0,
+neural-network,publish/_index.md,areas/writing/_index.md,move,R-N11,
+neural-network,publish/blog/self-experiments-post.md,areas/writing/drafts/self-experiments-post.md,move,R-N11,frontmatter status: draft
+neural-network,publish/blog/test-pipeline.md,areas/writing/published/test-pipeline.md,move,R-N11,frontmatter status: published
+neural-network,resources/_index.md,resources/_index.md,keep,R-N0,
+neural-network,resources/automation/n8n/caddyfile.md,resources/automation/n8n/caddyfile.md,keep,R-N0,
+neural-network,resources/automation/n8n/docker-compose-yml.md,resources/automation/n8n/docker-compose-yml.md,keep,R-N0,
+neural-network,resources/brainstorming/coding-project-ideas.md,resources/brainstorming/coding-project-ideas.md,keep,R-N0,
+neural-network,resources/brainstorming/saas-ideas.md,resources/brainstorming/saas-ideas.md,keep,R-N0,
+neural-network,resources/brainstorming/software-ideas.md,resources/brainstorming/software-ideas.md,keep,R-N0,
+neural-network,resources/brainstorming/tasker-ideas.md,resources/brainstorming/tasker-ideas.md,keep,R-N0,
+neural-network,resources/computer-science/layer-2s-destroying-crypto.md,resources/computer-science/layer-2s-destroying-crypto.md,keep,R-N0,
+neural-network,resources/computer-science/what-are-blockchain-rollups.md,resources/computer-science/what-are-blockchain-rollups.md,keep,R-N0,
+neural-network,resources/concepts/bdnf.md,notes/bdnf.md,move,R-N12,permanent note; v4 §7b
+neural-network,resources/concepts/intermittent-fasting.md,notes/intermittent-fasting.md,move,R-N12,permanent note; v4 §7b
+neural-network,resources/concepts/neurogenesis.md,notes/neurogenesis.md,move,R-N12,permanent note; v4 §7b
+neural-network,resources/concepts/neuroplasticity.md,notes/neuroplasticity.md,move,R-N12,permanent note; v4 §7b
+neural-network,resources/concepts/self-experiments.md,notes/self-experiments.md,move,R-N12,permanent note; v4 §7b
+neural-network,resources/cooking/chili-con-carne.md,resources/cooking/chili-con-carne.md,keep,R-N0,
+neural-network,resources/cooking/cooking-notes.md,resources/cooking/cooking-notes.md,keep,R-N0,
+neural-network,resources/games/chess/caro-kann-defense.md,resources/games/chess/caro-kann-defense.md,keep,R-N0,
+neural-network,resources/games/chess/kings-indian-defense.md,resources/games/chess/kings-indian-defense.md,keep,R-N0,
+neural-network,resources/games/chess/scotch-game.md,resources/games/chess/scotch-game.md,keep,R-N0,
+neural-network,resources/health/addiction-healing-protocol.md,resources/health/addiction-healing-protocol.md,keep,R-N0,
+neural-network,resources/health/bwf-recommended-routine.md,resources/health/bwf-recommended-routine.md,keep,R-N0,
+neural-network,resources/health/electrolyte-recipe.md,resources/health/electrolyte-recipe.md,keep,R-N0,
+neural-network,resources/health/increase-testosterone.md,resources/health/increase-testosterone.md,keep,R-N0,
+neural-network,resources/health/stretching.md,resources/health/stretching.md,keep,R-N0,
+neural-network,resources/health/trapezius-exercises.md,resources/health/trapezius-exercises.md,keep,R-N0,
+neural-network,resources/housing/wohnungsgesellschaften.md,resources/housing/wohnungsgesellschaften.md,keep,R-N0,
+neural-network,resources/links/articles.md,resources/links/articles.md,keep,R-N0,
+neural-network,resources/literature/book-readlist.md,resources/literature/book-readlist.md,keep,R-N0,
+neural-network,resources/music/reading-music.md,resources/music/reading-music.md,keep,R-N0,
+neural-network,resources/music/vocal-training.md,resources/music/vocal-training.md,keep,R-N0,
+neural-network,resources/poetry/alone-poe.md,resources/poetry/alone-poe.md,keep,R-N0,
+neural-network,resources/poetry/do-not-go-gentle-dylan-thomas.md,resources/poetry/do-not-go-gentle-dylan-thomas.md,keep,R-N0,
+neural-network,resources/poetry/if-kipling.md,resources/poetry/if-kipling.md,keep,R-N0,
+neural-network,resources/poetry/invictus-henley.md,resources/poetry/invictus-henley.md,keep,R-N0,
+neural-network,resources/poetry/still-i-rise-angelou.md,resources/poetry/still-i-rise-angelou.md,keep,R-N0,
+neural-network,resources/programming/programming-languages-overview.md,resources/programming/programming-languages-overview.md,keep,R-N0,
+neural-network,resources/prompts/chatgpt-config.md,resources/prompts/chatgpt-config.md,keep,R-N0,
+neural-network,resources/prompts/openclaw-boot.md,resources/prompts/openclaw-boot.md,keep,R-N0,
+neural-network,resources/prompts/project-forge-config.md,resources/prompts/project-forge-config.md,keep,R-N0,
+neural-network,resources/prompts/projekt-werkstatt-konfiguration.md,resources/prompts/projekt-werkstatt-konfiguration.md,keep,R-N0,
+neural-network,resources/prompts/python-development.md,resources/prompts/python-development.md,keep,R-N0,
+neural-network,resources/psychology/socionics.md,resources/psychology/socionics.md,keep,R-N0,
+neural-network,resources/work/commute.md,resources/work/commute.md,keep,R-N0,
+neural-network,system/_index.md,_meta/_index.md,move,R-N14,
+neural-network,system/documentation.md,_meta/documentation.md,move,R-N14,
+neural-network,system/link-allowlist.md,_meta/link-allowlist.md,move,R-N14,
+neural-network,system/migration-log.md,_meta/migration-log.md,move,R-N14,this merge appends to it
+neural-network,system/pkm-reference.md,_meta/pkm-reference.md,move,R-N14,
+neural-network,system/scripts/parse_scu.py,finance/parse_scu.py,to-repo,R-N13,bank-statement parsers; never synced to the server anyway
+neural-network,system/scripts/parse_sparkasse.py,finance/parse_sparkasse.py,to-repo,R-N13,bank-statement parsers; never synced to the server anyway
+freelance-practice,.gitignore,.gitignore,merge-into,R-X1,contact.md patterns carried
+freelance-practice,.obsidian/app.json,,drop,R-X2,
+freelance-practice,.obsidian/appearance.json,,drop,R-X2,
+freelance-practice,.obsidian/core-plugins.json,,drop,R-X2,
+freelance-practice,.obsidian/workspace.json,,drop,R-X2,
+freelance-practice,.trash/IMG_20251218_215835_425.webp,,drop,R-X6,"trash; not in git, kept in restic d9c9c425"
+freelance-practice,AGENTS.md,_meta/legacy-rules/freelance-practice-root-AGENTS.md,retire,R-X3,
+freelance-practice,CLAUDE.md,_meta/legacy-rules/freelance-practice-root-CLAUDE.md,retire,R-X3,
+freelance-practice,_attachments/Chantal-Website-Fragen-und-To-dos.html,_attachments/Chantal-Website-Fragen-und-To-dos.html,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_attachments/Chantal-Website-Fragen-und-To-dos.pdf,_attachments/Chantal-Website-Fragen-und-To-dos.pdf,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_attachments/Chantal-Websites-anschauen.html,_attachments/Chantal-Websites-anschauen.html,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_attachments/Headshot.md,_attachments/Headshot.md,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_attachments/headshot-interim-2025-12.jpg,_attachments/headshot-interim-2025-12.jpg,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_attachments/headshot-interim-2025-12.webp,_attachments/headshot-interim-2025-12.webp,move,R-F2,root attachments; Headshot.md keeps its backlink into business/
+freelance-practice,_inbox/Client Google Links.md,_inbox/freelance-client-google-links.md,move,R-F4,"root inbox, prefixed (README collides)"
+freelance-practice,_inbox/README.md,_inbox/freelance-readme.md,move,R-F4,"root inbox, prefixed (README collides)"
+freelance-practice,_inbox/datenschutz.md,_inbox/freelance-datenschutz.md,move,R-F4,"root inbox, prefixed (README collides)"
+freelance-practice,_inbox/digest/2026-09-14.md,archive/freelance/digest/digest-2026-09-14.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-15.md,archive/freelance/digest/digest-2026-09-15.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-16.md,archive/freelance/digest/digest-2026-09-16.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-17.md,archive/freelance/digest/digest-2026-09-17.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-18.md,archive/freelance/digest/digest-2026-09-18.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-19.md,archive/freelance/digest/digest-2026-09-19.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-20.md,archive/freelance/digest/digest-2026-09-20.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-21.md,archive/freelance/digest/digest-2026-09-21.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-22.md,archive/freelance/digest/digest-2026-09-22.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-23.md,archive/freelance/digest/digest-2026-09-23.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-24.md,archive/freelance/digest/digest-2026-09-24.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-25.md,archive/freelance/digest/digest-2026-09-25.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-26.md,archive/freelance/digest/digest-2026-09-26.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-27.md,archive/freelance/digest/digest-2026-09-27.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/digest/2026-09-28.md,archive/freelance/digest/digest-2026-09-28.md,archive,R-F3,15 unread digests; prefix fixes the 2026-09-28 collision
+freelance-practice,_inbox/triage-prompt.md,_inbox/freelance-triage-prompt.md,move,R-F4,"root inbox, prefixed (README collides)"
+freelance-practice,_index.md,areas/freelance/_index.md,move,R-F0,
+freelance-practice,_templates/_index.md,_templates/_index.md,merge-into,R-X4,
+freelance-practice,_templates/tpl-client.md,_templates/tpl-client.md,move,R-X5,
+freelance-practice,_templates/tpl-decision.md,_templates/tpl-decision.md,move,R-X5,
+freelance-practice,_templates/tpl-lesson.md,_templates/tpl-lesson.md,move,R-X5,
+freelance-practice,_templates/tpl-standard.md,_templates/tpl-standard.md,move,R-X5,
+freelance-practice,backlog/_index.md,areas/freelance/backlog/_index.md,move,R-F0,
+freelance-practice,business/_index.md,areas/freelance/business/_index.md,move,R-F0,
+freelance-practice,business/gruendung.md,areas/freelance/business/gruendung.md,move,R-F0,
+freelance-practice,business/hours.csv,areas/freelance/business/hours.csv,move,R-F0,
+freelance-practice,business/model.md,areas/freelance/business/model.md,move,R-F0,
+freelance-practice,business/nebentaetigkeit-anzeige.md,areas/freelance/business/nebentaetigkeit-anzeige.md,move,R-F0,
+freelance-practice,business/site-design-brief.md,areas/freelance/business/site-design-brief.md,move,R-F0,
+freelance-practice,business/site-design-system.md,areas/freelance/business/site-design-system.md,move,R-F0,
+freelance-practice,business/site-redesign-round-one.md,areas/freelance/business/site-redesign-round-one.md,move,R-F0,
+freelance-practice,business/site-redesign-round-two.md,areas/freelance/business/site-redesign-round-two.md,move,R-F0,
+freelance-practice,business/web-presence.md,areas/freelance/business/web-presence.md,move,R-F0,
+freelance-practice,clients/_index.md,areas/freelance/clients/_index.md,move,R-F0,
+freelance-practice,clients/chantal-fuelber/_index.md,areas/freelance/clients/chantal-fuelber/_index.md,move,R-F0,
+freelance-practice,clients/chantal-fuelber/discovery-inventory.md,areas/freelance/clients/chantal-fuelber/discovery-inventory.md,move,R-F0,
+freelance-practice,clients/chantal-fuelber/feature-menu.md,areas/freelance/clients/chantal-fuelber/feature-menu.md,move,R-F0,
+freelance-practice,clients/chantal-fuelber/reference-addendum.md,areas/freelance/clients/chantal-fuelber/reference-addendum.md,move,R-F0,
+freelance-practice,clients/twitch-friend/_index.md,areas/freelance/clients/twitch-friend/_index.md,move,R-F0,
+freelance-practice,decisions/_index.md,areas/freelance/decisions/_index.md,move,R-F0,
+freelance-practice,decisions/fdr-001-no-hosting-on-personal-infra.md,areas/freelance/decisions/fdr-001-no-hosting-on-personal-infra.md,move,R-F0,
+freelance-practice,decisions/fdr-002-client-pays-third-party-costs-directly.md,areas/freelance/decisions/fdr-002-client-pays-third-party-costs-directly.md,move,R-F0,
+freelance-practice,decisions/fdr-003-separate-vault-from-infra-docs.md,areas/freelance/decisions/fdr-003-separate-vault-from-infra-docs.md,move,R-F0,
+freelance-practice,decisions/fdr-004-business-identity-on-neurogenesis-dev.md,areas/freelance/decisions/fdr-004-business-identity-on-neurogenesis-dev.md,move,R-F0,
+freelance-practice,decisions/fdr-005-no-public-prices-until-first-paid-quote.md,areas/freelance/decisions/fdr-005-no-public-prices-until-first-paid-quote.md,move,R-F0,
+freelance-practice,decisions/fdr-006-gewerbe-einzelunternehmen-kleinunternehmer.md,areas/freelance/decisions/fdr-006-gewerbe-einzelunternehmen-kleinunternehmer.md,move,R-F0,
+freelance-practice,decisions/fdr-007-bilingual-site-with-language-switch.md,areas/freelance/decisions/fdr-007-bilingual-site-with-language-switch.md,move,R-F0,
+freelance-practice,lessons/2026-09-15-admin-blockers-first.md,areas/freelance/lessons/2026-09-15-admin-blockers-first.md,move,R-F0,
+freelance-practice,lessons/2026-09-17-newsletter-form-silent-outage.md,areas/freelance/lessons/2026-09-17-newsletter-form-silent-outage.md,move,R-F0,
+freelance-practice,lessons/2026-09-24-taste-emerges-from-reaction.md,areas/freelance/lessons/2026-09-24-taste-emerges-from-reaction.md,move,R-F0,
+freelance-practice,lessons/_index.md,areas/freelance/lessons/_index.md,move,R-F0,
+freelance-practice,marketing/_index.md,areas/freelance/marketing/_index.md,move,R-F0,
+freelance-practice,marketing/positioning.md,areas/freelance/marketing/positioning.md,move,R-F0,
+freelance-practice,marketing/profiles.md,areas/freelance/marketing/profiles.md,move,R-F0,
+freelance-practice,marketing/socials.md,areas/freelance/marketing/socials.md,move,R-F0,
+freelance-practice,profile/_index.md,areas/freelance/profile/_index.md,move,R-F0,
+freelance-practice,profile/background.md,areas/freelance/profile/background.md,move,R-F0,
+freelance-practice,profile/founder.md,areas/freelance/profile/founder.md,move,R-F0,
+freelance-practice,profile/personality-and-voice.md,areas/freelance/profile/personality-and-voice.md,move,R-F0,
+freelance-practice,runbooks/_index.md,areas/freelance/runbooks/_index.md,move,R-F0,
+freelance-practice,services/_index.md,areas/freelance/services/_index.md,move,R-F0,
+freelance-practice,standards/_index.md,areas/freelance/standards/_index.md,move,R-F0,
+freelance-practice,standards/communication.md,areas/freelance/standards/communication.md,move,R-F0,
+freelance-practice,standards/delivery.md,areas/freelance/standards/delivery.md,move,R-F0,
+freelance-practice,standards/pricing.md,areas/freelance/standards/pricing.md,move,R-F0,
+freelance-practice,standards/scope.md,areas/freelance/standards/scope.md,move,R-F0,
+freelance-practice,templates/_index.md,areas/freelance/deliverables/_index.md,move,R-F5,v4 §4
+freelance-practice,templates/discovery-form-scripts.md,areas/freelance/deliverables/discovery-form-scripts.md,move,R-F5,v4 §4
+freelance-practice,templates/discovery-inventory.md,areas/freelance/deliverables/discovery-inventory.md,move,R-F5,v4 §4
+(new),,CLAUDE.md,create,R-C,new root contract ≤60 lines
+(new),,AGENTS.md,create,R-C,3 lines → CLAUDE.md
+(new),,areas/infrastructure/CLAUDE.md,create,R-C,from Codex draft + retired nested rules
+(new),,areas/freelance/CLAUDE.md,create,R-C,from Codex draft + Business Mentor persona
+(new),,areas/health/CLAUDE.md,create,R-C,Health coach rules ≤25 lines
+(new),,areas/health/_status.md,create,R-C,"old Project description, Luis keeps current"
+(new),,areas/writing/CLAUDE.md,create,R-C,Writing Mentor feedback rules
+(new),,areas/self/music.md,create,R-C,Music Tutor student profile
+(new),,areas/self/japanese.md,create,R-C,Japanese Tutor learner profile + card limits
+(new),,_meta/schema.md,create,R-C,v4 §9
+(new),,_meta/vocabulary.md,create,R-C,union of the three tag sets
+(new),,_meta/decisions/_index.md,create,R-C,"ADR allocator, Luis-maintained"
+(new),,_meta/migration-map.csv,create,R-C,this file
+(new),,_meta/projects.yaml,create,R-C,v4 §6 manifest
+(new),,_inbox/n8n/.keep,create,R-C,n8n landing zone (v4 §0 #5)
+(new),,_generated/.keep,create,R-C,protected machine output root
+(new),,notes/_index.md,create,R-C,permanent-note index

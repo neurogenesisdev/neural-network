@@ -1,0 +1,7 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-12-01,2024-12,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,215.86
+2024-12-31,2024-12,PRIMARY SAVINGS 8400,credit,0.89,Dividends,Credit Dividends,216.75
+2024-12-19,2024-12,PRIMARY SAVINGS 8400,credit,500.00,merry Christmas,Deposit merry Christmas,1212.45
+2024-12-26,2024-12,PRIMARY SAVINGS 8400,debit,-1065.64,External Withdrawal _SCU021465 LUIS GORDON - FC_BILL_PD,External Withdrawal _SCU021465 LUIS GORDON - FC_BILL_PD,146.81
+2024-12-26,2024-12,PRIMARY SAVINGS 8400,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,546.81
+2024-12-27,2024-12,PRIMARY SAVINGS 8400,debit,-1.00,External Withdrawal _SCU021491 AUTO_FC_BILL_FEES - FC_PMT_FE,External Withdrawal _SCU021491 AUTO_FC_BILL_FEES - FC_PMT_FEE,545.81

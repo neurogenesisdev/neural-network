@@ -1,0 +1,4 @@
+months found: 31  (2024-01 → 2026-08)
+gaps: 2025-03
+duplicates (ignored): 2024-03 (5ea6638a4ee853c3f8ed28149c13f7d4.txt)
+unreadable: none

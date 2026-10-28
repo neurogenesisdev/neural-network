@@ -1,0 +1,69 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2025-09-01,2025-09,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,116.39
+2025-09-24,2025-09,PRIMARY SAVINGS 8400,debit,-100.00,Internet Transfer TO : XXXX8409,Withdrawal Internet Transfer TO : XXXX8409,16.39
+2025-09-30,2025-09,PRIMARY SAVINGS 8400,credit,0.37,Dividends,Credit Dividends,16.76
+2025-09-01,2025-09,PRIMARY SAVINGS 8400,debit,-1.16,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,596.92
+2025-09-01,2025-09,PRIMARY SAVINGS 8400,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,596.91
+2025-09-02,2025-09,PRIMARY SAVINGS 8400,debit,-77.77,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,519.14
+2025-09-02,2025-09,PRIMARY SAVINGS 8400,fee,-0.78,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,518.36
+2025-09-02,2025-09,PRIMARY SAVINGS 8400,debit,-70.21,SP KETO MOJO EUROPEAMSTERDAM DUI,POS Withdrawal SP KETO MOJO EUROPEAMSTERDAM DUI NLNL,448.15
+2025-09-02,2025-09,PRIMARY SAVINGS 8400,fee,-0.70,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,447.45
+2025-09-04,2025-09,PRIMARY SAVINGS 8400,debit,-2.11,RSG Group GmbH Schluesselfel,POS Withdrawal RSG Group GmbH Schluesselfel DEDE,445.34
+2025-09-04,2025-09,PRIMARY SAVINGS 8400,fee,-0.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,445.32
+2025-09-04,2025-09,PRIMARY SAVINGS 8400,debit,-30.38,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,414.94
+2025-09-04,2025-09,PRIMARY SAVINGS 8400,fee,-0.30,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,414.64
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,debit,-25.66,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,388.98
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,fee,-0.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,388.72
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,debit,-110.19,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,278.53
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,fee,-1.10,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,277.43
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,debit,-101.83,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,175.60
+2025-09-06,2025-09,PRIMARY SAVINGS 8400,fee,-1.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,174.58
+2025-09-07,2025-09,PRIMARY SAVINGS 8400,credit,200.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,374.58
+2025-09-11,2025-09,PRIMARY SAVINGS 8400,debit,-41.96,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*Z891A5AMAZON.DE LULU,332.62
+2025-09-11,2025-09,PRIMARY SAVINGS 8400,fee,-0.42,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,332.20
+2025-09-11,2025-09,PRIMARY SAVINGS 8409,debit,-49.68,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,282.52
+2025-09-11,2025-09,PRIMARY SAVINGS 8409,fee,-0.50,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,282.02
+2025-09-12,2025-09,PRIMARY SAVINGS 8409,debit,-1.76,RSG Group GmbH Schluesselfel,POS Withdrawal RSG Group GmbH Schluesselfel DEDE,280.26
+2025-09-12,2025-09,PRIMARY SAVINGS 8409,fee,-0.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,280.24
+2025-09-12,2025-09,PRIMARY SAVINGS 8409,debit,-30.22,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,250.02
+2025-09-12,2025-09,PRIMARY SAVINGS 8409,fee,-0.30,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,249.72
+2025-09-14,2025-09,PRIMARY SAVINGS 8409,debit,-101.83,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,147.89
+2025-09-14,2025-09,PRIMARY SAVINGS 8409,fee,-1.02,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,146.87
+2025-09-14,2025-09,PRIMARY SAVINGS 8409,credit,200.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,346.87
+2025-09-14,2025-09,PRIMARY SAVINGS 8409,credit,300.00,Internet Transfer FROM: XXXX5730,Deposit Internet Transfer FROM: XXXX5730,646.87
+2025-09-15,2025-09,PRIMARY SAVINGS 8409,debit,-310.23,WHOOP WHOOP.COM,POS Withdrawal WHOOP WHOOP.COM MAUS,336.64
+2025-09-15,2025-09,PRIMARY SAVINGS 8409,debit,-2.57,LIME*FAHRT 2MFK FRANKFURT,POS Withdrawal LIME*FAHRT 2MFK FRANKFURT DEDE,334.07
+2025-09-15,2025-09,PRIMARY SAVINGS 8409,fee,-0.03,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,334.04
+2025-09-17,2025-09,PRIMARY SAVINGS 8409,debit,-89.13,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,244.91
+2025-09-17,2025-09,PRIMARY SAVINGS 8409,fee,-0.89,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,244.02
+2025-09-17,2025-09,PRIMARY SAVINGS 8409,debit,-30.89,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,213.13
+2025-09-17,2025-09,PRIMARY SAVINGS 8409,fee,-0.31,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,212.82
+2025-09-20,2025-09,PRIMARY SAVINGS 8409,debit,-37.22,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,175.60
+2025-09-20,2025-09,PRIMARY SAVINGS 8409,fee,-0.37,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,175.23
+2025-09-20,2025-09,PRIMARY SAVINGS 8409,credit,200.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,375.23
+2025-09-21,2025-09,PRIMARY SAVINGS 8409,debit,-0.78,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,374.45
+2025-09-21,2025-09,PRIMARY SAVINGS 8409,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,374.44
+2025-09-23,2025-09,PRIMARY SAVINGS 8409,debit,-110.95,MyProtein Magnice,POS Withdrawal MyProtein Magnice PLPL,263.49
+2025-09-23,2025-09,PRIMARY SAVINGS 8409,fee,-1.11,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,262.38
+2025-09-24,2025-09,PRIMARY SAVINGS 8409,debit,-0.52,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,261.86
+2025-09-24,2025-09,PRIMARY SAVINGS 8409,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,261.85
+2025-09-24,2025-09,PRIMARY SAVINGS 8409,debit,-117.93,IHERB.COM iherb.com,POS Withdrawal IHERB.COM iherb.com NLNL,143.92
+2025-09-24,2025-09,PRIMARY SAVINGS 8409,fee,-1.18,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,142.74
+2025-09-24,2025-09,PRIMARY SAVINGS 8409,credit,100.00,Internet Transfer FROM: XXXX8400,Deposit Internet Transfer FROM: XXXX8400,242.74
+2025-09-25,2025-09,PRIMARY SAVINGS 8409,debit,-104.88,MON COIN SANTE TRELON,POS Withdrawal MON COIN SANTE TRELON FRFR,137.86
+2025-09-25,2025-09,PRIMARY SAVINGS 8409,fee,-1.05,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,136.81
+2025-09-25,2025-09,PRIMARY SAVINGS 8409,credit,200.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,336.81
+2025-09-25,2025-09,PRIMARY SAVINGS 8409,debit,-13.00,FS *stardock fsprg.nl,POS Withdrawal FS *stardock fsprg.nl NLNL,323.81
+2025-09-25,2025-09,PRIMARY SAVINGS 8409,fee,-0.13,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,323.68
+2025-09-26,2025-09,PRIMARY SAVINGS 8409,debit,-74.28,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*JG2K27AMAZON.DE LULU,249.40
+2025-09-26,2025-09,PRIMARY SAVINGS 8409,fee,-0.74,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,248.66
+2025-09-26,2025-09,PRIMARY SAVINGS 8409,credit,104.04,Point Of Sale Deposit MON COIN SANTE TRELON,Point Of Sale Deposit MON COIN SANTE TRELON FRFR,352.70
+2025-09-27,2025-09,PRIMARY SAVINGS 8409,debit,-88.90,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*MM2R34AMAZON.DE LULU,263.80
+2025-09-27,2025-09,PRIMARY SAVINGS 8409,fee,-0.89,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,262.91
+2025-09-28,2025-09,PRIMARY SAVINGS 8409,debit,-7.08,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,255.83
+2025-09-28,2025-09,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,255.76
+2025-09-29,2025-09,PRIMARY SAVINGS 8409,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,655.76
+2025-09-30,2025-09,PRIMARY SAVINGS 8409,debit,-2.93,RSG Group GmbH Schluesselfel,POS Withdrawal RSG Group GmbH Schluesselfel DEDE,652.83
+2025-09-30,2025-09,PRIMARY SAVINGS 8409,fee,-0.03,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,652.80
+2025-09-30,2025-09,PRIMARY SAVINGS 8409,debit,-8.18,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,644.62
+2025-09-30,2025-09,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,644.54

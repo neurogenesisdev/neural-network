@@ -1,0 +1,7 @@
+/* Adjust size of prompt lines in Live Preview mode */
+.cm-s-obsidian span.cm-line span.cm-em:not(.cm-formatting) {
+  font-size: 0.9em !important;   /* Adjust to your desired size, e.g., 0.85em, 13px */
+  /* font-weight: normal !important; */ /* Probably not needed if it already looks normal weight */
+  /* color: var(--text-faint) !important; */ /* Optional: if you want them dimmer */
+  font-style: italic !important; /* Ensures it remains italic */
+}

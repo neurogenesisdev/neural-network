@@ -1,0 +1,55 @@
+date,period,kind,amount,payee,details
+2025-10-01,2025-10,Entgeltabrechnung / Wert: 30.09.2025,-12.99,siehe Anlage Nr. 1,siehe Anlage Nr. 1
+2025-10-01,2025-10,Abrechnung 30.09.2025 / Wert: 30.09.2025,0.10,siehe Anlage Nr. 2,siehe Anlage Nr. 2
+2025-10-01,2025-10,Basislastschrift,-24.90,RSG Group GmbH F0001--0145-0007886 F0001-25140770 Sommer,RSG Group GmbH F0001--0145-0007886 F0001-25140770 Sommer Special 24.90 EUR 01.10.25-3 1.10.25
+2025-10-01,2025-10,Basislastschrift,-54.00,Allg.Deutscher Automobil-Club ADAC e.V. ADAC E.V.,Allg.Deutscher Automobil-Club ADAC e.V. ADAC E.V. Gordon Luis BEITRAG: 01.1 0.25-30.09.26
+2025-10-01,2025-10,Basislastschrift,-119.23,Telekom Deutschland GmbH Mobilfunk Kundenkonto,Telekom Deutschland GmbH Mobilfunk Kundenkonto 0055959706 RG 35870332000621/12.09.2025 RG 35870 332000621/12.09.2025
+2025-10-01,2025-10,Dauerauftrag,-890.00,Lilija Reifegerste Miete Luis Gordon,Lilija Reifegerste Miete Luis Gordon
+2025-10-02,2025-10,Basislastschrift,-9.95,AUDIBLE GMBH D01-4962412-3877416 Audible Gmbh 75,AUDIBLE GMBH D01-4962412-3877416 Audible Gmbh 75 LWTSHLKC52PCFN
+2025-10-02,2025-10,Basislastschrift,-23.79,"Adobe Sy stems Software Ireland LTD,","PayPal Europe S.a.r.l. et Cie S.C.A 1045191482734/PP.3113.PP/. Adobe Sy stems Software Ireland LTD, Ihr Ein kauf bei Adobe Systems Software Ire land LTD"
+2025-10-02,2025-10,Debitkartenzahlung,-107.39,REWE SAGT DANKE.,REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-01T17:35 Debitk.3 2026-12
+2025-10-06,2025-10,Überweisung Online,-200.00,"Payward Ireland Limited irfbcbbfecb15742f DATUM 04.10.2025,","Payward Ireland Limited irfbcbbfecb15742f DATUM 04.10.2025, 13.55 UHR"
+2025-10-06,2025-10,Basislastschrift,-2.96,"G2A.COM Limited, Ih r Einkauf bei","PayPal Europe S.a.r.l. et Cie S.C.A 1045239745230/. G2A.COM Limited, Ih r Einkauf bei G2A.COM Limited"
+2025-10-06,2025-10,Basislastschrift,-11.75,AMAZON MEDIA EU S.A R.L. D01-4442284-2642210,AMAZON MEDIA EU S.A R.L. D01-4442284-2642210 Kindle Unltd 5F U4WYGCONTXKAT9
+2025-10-06,2025-10,Debitkartenzahlung,-2.50,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-03T12:22,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-03T12:22 Debitk.3 2026-12
+2025-10-06,2025-10,Debitkartenzahlung,-125.72,REWE SAGT DANKE.,REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-04T19:18 Debitk.3 2026-12
+2025-10-07,2025-10,Basislastschrift,-204.92,"Payward Ireland LTD ., Payward Ireland","PayPal Europe S.a.r.l. et Cie S.C.A 1045312644603/. Payward Ireland LTD ., Ihr Einkauf bei Payward Ireland LTD."
+2025-10-07,2025-10,Basislastschrift,-4.45,"Free Cod e Camp, Free Code","PayPal Europe S.a.r.l. et Cie S.C.A 1045310775436/PP.3113.PP/. Free Cod e Camp, Ihr Einkauf bei Free Code C amp"
+2025-10-07,2025-10,Debitkartenzahlung,-2.50,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-04T17:04,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-04T17:04 Debitk.3 2026-12
+2025-10-08,2025-10,Debitkartenzahlung,-1.50,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-06T20:34,RSG Group GmbH/Tannenberg 4/Schlues selfel/DE/0 2025-10-06T20:34 Debitk.3 2026-12
+2025-10-08,2025-10,Debitkartenzahlung,-56.03,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-07T19:50 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-07T19:50 Debitk.3 2026-12
+2025-10-09,2025-10,Basislastschrift,-5.03,Hetzner Online GmbH Customer No. K0637893825,Hetzner Online GmbH Customer No. K0637893825 Invoice No . 084000459404
+2025-10-09,2025-10,Basislastschrift,-8.99,"AMAZON EU S.A R.L., NIEDERLASSUNG D","AMAZON EU S.A R.L., NIEDERLASSUNG D EUTSCHLAND D01-0676168-7583010 AMZNPrime DE 29 3IEFXCE7DZN13G"
+2025-10-10,2025-10,Basislastschrift,-4.48,"Dynalist Inc., Dynalist Inc","PayPal Europe S.a.r.l. et Cie S.C.A 1045388103483/PP.3113.PP/. Dynalist Inc., Ihr Einkauf bei Dynalist Inc ."
+2025-10-10,2025-10,Basislastschrift,-4.47,"A Medium Corporation, A Med ium","PayPal Europe S.a.r.l. et Cie S.C.A 1045376052402/PP.3113.PP/. A Medium Corporation, Ihr Einkauf bei A Med ium Corporation"
+2025-10-10,2025-10,Echtzeitüberw. Online,-62.00,RMV Servicegesellschaft mbH RNR 2/2508/11182660/2277851 DATUM,"RMV Servicegesellschaft mbH RNR 2/2508/11182660/2277851 DATUM 10.10.2025, 07.45 UHR"
+2025-10-10,2025-10,Gutschr. Überweisung,1797.35,FM Safe + Protect GmbH Lohn,FM Safe + Protect GmbH Lohn 09/25
+2025-10-13,2025-10,Basislastschrift,-6.99,"Crunchyr oll, LLC, Crunchyro ll, LLC","PayPal Europe S.a.r.l. et Cie S.C.A 1045400612026/PP.3113.PP/. Crunchyr oll, LLC, Ihr Einkauf bei Crunchyro ll, LLC"
+2025-10-13,2025-10,Basislastschrift,-21.99,"Google P ayment Ireland Ltd., Ihr","PayPal Europe S.a.r.l. et Cie S.C.A 1045402023413/PP.3113.PP/. Google P ayment Ireland Ltd., Ihr Einkauf be i Google Payment Ireland Ltd."
+2025-10-13,2025-10,Debitkartenzahlung,-50.11,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-10T20:50 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-10T20:50 Debitk.3 2026-12
+2025-10-13,2025-10,Debitkartenzahlung,-135.41,REWE SAGT DANKE.,REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-11T18:09 Debitk.3 2026-12
+2025-10-14,2025-10,Basislastschrift,-12.99,"Proton E urope S.a.r.l., Pro ton","PayPal Europe S.a.r.l. et Cie S.C.A 1045423944350/PP.3113.PP/. Proton E urope S.a.r.l., Ihr Einkauf bei Pro ton Europe S.a.r.l."
+2025-10-14,2025-10,Basislastschrift,-17.99,"Google P ayment Ireland Limited, Google","PayPal Europe S.a.r.l. et Cie S.C.A 1045470380334/PP.3113.PP/. Google P ayment Ireland Limited, Ihr Einkauf bei Google Payment Ireland Limited"
+2025-10-14,2025-10,Debitkartenzahlung,-55.15,REWE SAGT DANKE.,REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-13T20:00 Debitk.3 2026-12
+2025-10-16,2025-10,BargAuszDebitFremdGA,-105.99,CARDPOINT GA//Frankfurt am Main/DE 2025-10-15T07:20 Debitk.3,"CARDPOINT GA//Frankfurt am Main/DE 2025-10-15T07:20 Debitk.3 2026-12 Fremdentgelt 5,99 EUR"
+2025-10-16,2025-10,Debitkartenzahlung,-65.88,REWE SAGT DANKE.,REWE SAGT DANKE. 44401020/Ernst-Wis s/Frankfurt Griesh /DE 2025-10-15T18:00 Debitk.3 2026-12
+2025-10-16,2025-10,Debitkartenzahlung,-90.15,APOTHEKE IM REWE CENTER//Frankfurt/ DE 2025-10-15T17:45,APOTHEKE IM REWE CENTER//Frankfurt/ DE 2025-10-15T17:45 Debitk.3 2026-12
+2025-10-17,2025-10,Basislastschrift,-4.99,WORLDPAY HP Inc Instant Ink DE,WORLDPAY HP Inc Instant Ink DE
+2025-10-20,2025-10,Echtzeitüberw. Online / Wert: 19.10.2025,-20.85,UNLIMINT PSP FZ-LLC,"UNLIMINT PSP FZ-LLC 1415638129 DATUM 19.10.2025, 12.37 UHR"
+2025-10-20,2025-10,Debitkartenzahlung,-65.76,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-18T20:58 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-18T20:58 Debitk.3 2026-12
+2025-10-21,2025-10,Basislastschrift,-58.00,Rhein-Main-Verkehrsverbund Serviceg esellschaft mbH (rms GmbH),"Rhein-Main-Verkehrsverbund Serviceg esellschaft mbH (rms GmbH) Treuhand RNR 2/2510/11444175/2277851, RMV-HA NDYTICKET"
+2025-10-21,2025-10,Basislastschrift,-19.99,"Immobili en Scout GmbH, Immo bilien","PayPal Europe S.a.r.l. et Cie S.C.A 1045627520747/PP.3113.PP/. Immobili en Scout GmbH, Ihr Einkauf bei Immo bilien Scout GmbH"
+2025-10-21,2025-10,Debitkartenzahlung,-42.51,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-20T20:28 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-20T20:28 Debitk.3 2026-12
+2025-10-22,2025-10,Basislastschrift,-22.47,"Immobili en Scout GmbH, Immo bilien","PayPal Europe S.a.r.l. et Cie S.C.A 1045647769906/PP.3113.PP/. Immobili en Scout GmbH, Ihr Einkauf bei Immo bilien Scout GmbH"
+2025-10-22,2025-10,Debitkartenzahlung,-33.35,REWE SAGT DANKE.,REWE SAGT DANKE. 44401020/Ernst-Wis s/Frankfurt Griesh /DE 2025-10-21T21:31 Debitk.3 2026-12
+2025-10-23,2025-10,Basislastschrift,-4.09,"Google P ayment Ireland Ltd., Ihr","PayPal Europe S.a.r.l. et Cie S.C.A 1045672859381/PP.3113.PP/. Google P ayment Ireland Ltd., Ihr Einkauf be i Google Payment Ireland Ltd."
+2025-10-23,2025-10,Echtzeitüberw. Online,-100.00,Luis William Gordon Trade Republic DATUM,"Luis William Gordon Trade Republic DATUM 23.10.2025, 10.37 UHR"
+2025-10-24,2025-10,Debitkartenzahlung,-60.16,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-23T20:47 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-23T20:47 Debitk.3 2026-12
+2025-10-24,2025-10,Echtzeitüberw. Online,-37.70,UNLIMINT PSP FZ-LLC,"UNLIMINT PSP FZ-LLC 1419149405 DATUM 24.10.2025, 11.23 UHR"
+2025-10-27,2025-10,Debitkartenzahlung,-64.34,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-25T20:51 Debitk.3,LIDL SAGT DANKE//Frankfurt-Sossenhe im/DE 2025-10-25T20:51 Debitk.3 2026-12
+2025-10-28,2025-10,Basislastschrift,-33.99,"Google P ayment Ireland Ltd., Ihr","PayPal Europe S.a.r.l. et Cie S.C.A 1045742150947/PP.3113.PP/. Google P ayment Ireland Ltd., Ihr Einkauf be i Google Payment Ireland Ltd."
+2025-10-28,2025-10,Basislastschrift,-103.85,"iHerb Netherlands B V, iHerb Netherland","PayPal Europe S.a.r.l. et Cie S.C.A 1045728859784/. iHerb Netherlands B V, Ihr Einkauf bei iHerb Netherland s BV"
+2025-10-29,2025-10,Debitkartenzahlung,-72.69,REWE SAGT DANKE.,REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-28T21:28 Debitk.3 2026-12
+2025-10-30,2025-10,Basislastschrift,-119.00,"See Tick ets, See Tickets","PayPal Europe S.a.r.l. et Cie S.C.A 1045805186634/PP.3113.PP/. See Tick ets, Ihr Einkauf bei See Tickets"
+2025-10-30,2025-10,Gutschr. Überweisung,563.00,Bundesagentur für Arbeit-Service-Ha us 41920//0137178 /,"Bundesagentur für Arbeit-Service-Ha us 41920//0137178 / 41920 1/ 563,00 EU R 060060306973/1700144190332"
+2025-10-31,2025-10,Debitkartenzahlung,-36.34,REWE SAGT DANKE.,"REWE SAGT DANKE. 44400238/Westerbac h/Frankfurt am Main /DE 2025-10-30T21:01 Debitk.3 2026-12 Kontostand am 31.10.2025 um 20:04 Uhr                                                                  1.193,92"

@@ -1,0 +1,11 @@
+{
+  "nativeMenus": false,
+  "accentColor": "#615fb9",
+  "theme": "obsidian",
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "task-dashboard"
+  ],
+  "baseFontSize": 18,
+  "textFontFamily": ""
+}

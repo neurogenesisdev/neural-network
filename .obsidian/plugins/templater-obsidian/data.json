@@ -1,0 +1,57 @@
+{
+  "data_version": 2,
+  "command_timeout": 5,
+  "templates_folder": "_templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation_mode": "folder",
+  "auto_jump_to_cursor": true,
+  "jump_to_cursor_after_file_name": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "folder_templates": [
+    {
+      "folder": "_inbox",
+      "template": "_templates/fleeting-note.md"
+    },
+    {
+      "folder": "notes",
+      "template": "_templates/permanent-note.md"
+    },
+    {
+      "folder": "resources/literature",
+      "template": "_templates/literature-note.md"
+    },
+    {
+      "folder": "areas/writing/drafts",
+      "template": "_templates/blog-post.md"
+    },
+    {
+      "folder": "projects",
+      "template": "_templates/project-note.md"
+    },
+    {
+      "folder": "maps",
+      "template": "_templates/moc.md"
+    },
+    {
+      "folder": "areas/admin/cases",
+      "template": "_templates/tpl-case.md"
+    },
+    {
+      "folder": "areas/admin/correspondence",
+      "template": "_templates/tpl-correspondence.md"
+    },
+    {
+      "folder": "journal/daily",
+      "template": "_templates/daily-note.md"
+    }
+  ],
+  "file_templates": [],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [],
+  "intellisense_render": "1",
+  "ignore_folders_on_creation": [],
+  "trigger_on_file_creation": true
+}

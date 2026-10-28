@@ -1,0 +1,27 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2025-04-01,2025-04,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,506.83
+2025-04-09,2025-04,PRIMARY SAVINGS 8400,debit,-401.83,Internet Transfer TO : XXXX8409,Withdrawal Internet Transfer TO : XXXX8409,105.00
+2025-04-30,2025-04,PRIMARY SAVINGS 8400,credit,0.85,Dividends,Credit Dividends,105.85
+2025-04-01,2025-04,PRIMARY SAVINGS 8400,debit,-554.57,External Withdrawal _SCU022545 LUIS GORDON - FC_BILL_PD,External Withdrawal _SCU022545 LUIS GORDON - FC_BILL_PD,176.45
+2025-04-01,2025-04,PRIMARY SAVINGS 8400,debit,-1.00,External Withdrawal _SCU022549 AUTO_FC_BILL_FEES - FC_PMT_FE,External Withdrawal _SCU022549 AUTO_FC_BILL_FEES - FC_PMT_FEE,175.45
+2025-04-09,2025-04,PRIMARY SAVINGS 8400,credit,401.83,Internet Transfer FROM: XXXX8400,Deposit Internet Transfer FROM: XXXX8400,577.28
+2025-04-10,2025-04,PRIMARY SAVINGS 8400,debit,-453.46,External Withdrawal _SCU022644 LUIS GORDON - FC_BILL_PD,External Withdrawal _SCU022644 LUIS GORDON - FC_BILL_PD,123.82
+2025-04-10,2025-04,PRIMARY SAVINGS 8400,debit,-1.00,External Withdrawal _SCU022650 AUTO_FC_BILL_FEES - FC_PMT_FE,External Withdrawal _SCU022650 AUTO_FC_BILL_FEES - FC_PMT_FEE,122.82
+2025-04-19,2025-04,PRIMARY SAVINGS 8400,credit,300.00,Internet Transfer FROM: XXXX1400,Deposit Internet Transfer FROM: XXXX1400,422.82
+2025-04-20,2025-04,PRIMARY SAVINGS 8400,debit,-4.70,Penny Sossenheim Frankfurt am,POS Withdrawal Penny Sossenheim Frankfurt am DEDE,418.12
+2025-04-20,2025-04,PRIMARY SAVINGS 8400,fee,-0.05,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,418.07
+2025-04-20,2025-04,PRIMARY SAVINGS 8400,debit,-32.31,Penny Sossenheim Frankfurt am,POS Withdrawal Penny Sossenheim Frankfurt am DEDE,385.76
+2025-04-20,2025-04,PRIMARY SAVINGS 8400,fee,-0.32,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,385.44
+2025-04-22,2025-04,PRIMARY SAVINGS 8400,debit,-6.72,Esso Station FrankfFrankfurt,POS Withdrawal Esso Station FrankfFrankfurt DEDE,378.72
+2025-04-22,2025-04,PRIMARY SAVINGS 8400,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,378.65
+2025-04-22,2025-04,PRIMARY SAVINGS 8400,debit,-9.58,SHELL 0314 FRANKFURT,POS Withdrawal SHELL 0314 FRANKFURT DEDE,369.07
+2025-04-22,2025-04,PRIMARY SAVINGS 8400,fee,-0.10,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,368.97
+2025-04-23,2025-04,PRIMARY SAVINGS 8400,debit,-165.27,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,203.70
+2025-04-23,2025-04,PRIMARY SAVINGS 8400,fee,-1.65,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,202.05
+2025-04-25,2025-04,PRIMARY SAVINGS 8400,debit,-21.11,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,180.94
+2025-04-25,2025-04,PRIMARY SAVINGS 8400,fee,-0.21,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,180.73
+2025-04-25,2025-04,PRIMARY SAVINGS 8400,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,580.73
+2025-04-26,2025-04,PRIMARY SAVINGS 8409,debit,-52.75,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,527.98
+2025-04-26,2025-04,PRIMARY SAVINGS 8409,fee,-0.53,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,527.45
+2025-04-27,2025-04,PRIMARY SAVINGS 8409,debit,-22.57,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,504.88
+2025-04-27,2025-04,PRIMARY SAVINGS 8409,fee,-0.23,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,504.65

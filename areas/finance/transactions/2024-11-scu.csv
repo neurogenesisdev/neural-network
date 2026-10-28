@@ -1,0 +1,10 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,115.40
+2024-11-30,2024-11,PRIMARY SAVINGS 8400,credit,0.46,Dividends,Credit Dividends,115.86
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,debit,-66.00,Lidl sagt Danke Frankfurt am,POS Withdrawal Lidl sagt Danke Frankfurt am DEDE,394.76
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,fee,-0.66,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,394.10
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,debit,-26.07,Esso Station FrankfFrankfurt,POS Withdrawal Esso Station FrankfFrankfurt DEDE,368.03
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,fee,-0.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,367.77
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,debit,-54.77,Aral Tankstelle 120Frankfurt am,POS Withdrawal Aral Tankstelle 120Frankfurt am DEDE,313.00
+2024-11-01,2024-11,PRIMARY SAVINGS 8400,fee,-0.55,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,312.45
+2024-11-27,2024-11,PRIMARY SAVINGS 8400,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,712.45

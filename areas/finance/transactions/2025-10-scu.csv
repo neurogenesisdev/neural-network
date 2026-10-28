@@ -1,0 +1,43 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2025-10-01,2025-10,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,116.76
+2025-10-31,2025-10,PRIMARY SAVINGS 8400,credit,0.48,Dividends,Credit Dividends,117.24
+2025-10-01,2025-10,PRIMARY SAVINGS 8400,debit,-1.16,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,643.38
+2025-10-01,2025-10,PRIMARY SAVINGS 8400,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,643.37
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,debit,-25.86,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,617.51
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,fee,-0.26,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,617.25
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,debit,-1.23,LIME*RIDE 2MFK FRANKFURT,POS Withdrawal LIME*RIDE 2MFK FRANKFURT DEDE,616.02
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,616.01
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,debit,-39.99,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,576.02
+2025-10-06,2025-10,PRIMARY SAVINGS 8400,fee,-0.40,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,575.62
+2025-10-13,2025-10,PRIMARY SAVINGS 8400,debit,-71.38,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*FV6NF3AMAZON.DE LULU,504.24
+2025-10-13,2025-10,PRIMARY SAVINGS 8400,fee,-0.71,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,503.53
+2025-10-14,2025-10,PRIMARY SAVINGS 8400,debit,-240.75,ANSONS Herrenhaus Sulzbach (Tau,POS Withdrawal ANSONS Herrenhaus Sulzbach (Tau DEDE,262.78
+2025-10-14,2025-10,PRIMARY SAVINGS 8400,fee,-2.41,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,260.37
+2025-10-16,2025-10,PRIMARY SAVINGS 8400,debit,-89.25,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*SP5FF0AMAZON.DE LULU,171.12
+2025-10-16,2025-10,PRIMARY SAVINGS 8400,fee,-0.89,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,170.23
+2025-10-16,2025-10,PRIMARY SAVINGS 8400,debit,-23.88,BOLT.EUTallinn,POS Withdrawal BOLT.EU/O/251016053Tallinn EEEE,146.35
+2025-10-16,2025-10,PRIMARY SAVINGS 8400,fee,-0.24,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,146.11
+2025-10-17,2025-10,PRIMARY SAVINGS 8400,credit,200.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,346.11
+2025-10-17,2025-10,PRIMARY SAVINGS 8409,debit,-13.86,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM NLNL,332.25
+2025-10-17,2025-10,PRIMARY SAVINGS 8409,fee,-0.14,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,332.11
+2025-10-18,2025-10,PRIMARY SAVINGS 8409,debit,-0.77,VOI DE MUNCHEN,POS Withdrawal VOI DE MUNCHEN DEDE,331.34
+2025-10-18,2025-10,PRIMARY SAVINGS 8409,fee,-0.01,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,331.33
+2025-10-22,2025-10,PRIMARY SAVINGS 8409,debit,-148.90,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*3C7002AMAZON.DE LULU,182.43
+2025-10-22,2025-10,PRIMARY SAVINGS 8409,fee,-1.49,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,180.94
+2025-10-25,2025-10,PRIMARY SAVINGS 8409,debit,-49.92,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*3Z6D02AMAZON.DE LULU,131.02
+2025-10-25,2025-10,PRIMARY SAVINGS 8409,fee,-0.50,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,130.52
+2025-10-25,2025-10,PRIMARY SAVINGS 8409,debit,-19.69,BOLT.EUTallinn,POS Withdrawal BOLT.EU/O/251025070Tallinn EEEE,110.83
+2025-10-25,2025-10,PRIMARY SAVINGS 8409,fee,-0.20,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,110.63
+2025-10-26,2025-10,PRIMARY SAVINGS 8409,debit,-61.75,TREATWELL BERLIN,POS Withdrawal TREATWELL BERLIN DEDE,48.88
+2025-10-26,2025-10,PRIMARY SAVINGS 8409,fee,-0.62,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,48.26
+2025-10-26,2025-10,PRIMARY SAVINGS 8409,credit,400.00,TRANSFER FROM 3798241409,Deposit TRANSFER FROM 3798241409,448.26
+2025-10-28,2025-10,PRIMARY SAVINGS 8409,debit,-6.98,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,441.28
+2025-10-28,2025-10,PRIMARY SAVINGS 8409,fee,-0.07,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,441.21
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,debit,-29.84,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*1P7R68AMAZON.DE LULU,411.37
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,fee,-0.30,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,411.07
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,debit,-5.97,AMZN Mktp DE*.DE,POS Withdrawal AMZN Mktp DE*DY98Z5AMAZON.DE LULU,405.10
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,fee,-0.06,International Fee US Funds International Fee US Funds,International Fee US Funds International Fee US Funds,405.04
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,debit,-34.90,UBER *TRIP HELP.UBER.COM,POS Withdrawal UBER *TRIP HELP.UBER.COM NLNL,370.14
+2025-10-29,2025-10,PRIMARY SAVINGS 8409,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,369.79
+2025-10-30,2025-10,PRIMARY SAVINGS 8409,debit,-8.16,Google Play Apps Dublin,POS Withdrawal Google Play Apps Dublin IEIE,361.63
+2025-10-30,2025-10,PRIMARY SAVINGS 8409,fee,-0.08,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,361.55

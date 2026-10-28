@@ -1,0 +1,14 @@
+date,period,account,kind,amount_usd,merchant,details,balance_usd
+2024-03-01,2024-03,PRIMARY SAVINGS 8400,credit,100.00,Transfer from W. GORDON *1409 CK,Deposit Transfer from W. GORDON *1409 CK,407.76
+2024-03-31,2024-03,PRIMARY SAVINGS 8400,credit,1.69,Dividends,Credit Dividends,409.45
+2024-03-01,2024-03,PRIMARY SAVINGS 8400,debit,-34.57,MCDONALD S DEUTSCHLFRANKFURT/MAI,POS Withdrawal MCDONALD S DEUTSCHLFRANKFURT/MAI DEDE,751.36
+2024-03-01,2024-03,PRIMARY SAVINGS 8400,fee,-0.35,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,751.01
+2024-03-02,2024-03,PRIMARY SAVINGS 8400,debit,-161.63,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,589.38
+2024-03-02,2024-03,PRIMARY SAVINGS 8400,fee,-1.62,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,587.76
+2024-03-03,2024-03,PRIMARY SAVINGS 8400,debit,-96.66,Aral Tankstelle 120Frankfurt am,POS Withdrawal Aral Tankstelle 120Frankfurt am DEDE,491.10
+2024-03-03,2024-03,PRIMARY SAVINGS 8400,fee,-0.97,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,490.13
+2024-03-16,2024-03,PRIMARY SAVINGS 8400,debit,-155.68,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,334.45
+2024-03-16,2024-03,PRIMARY SAVINGS 8400,fee,-1.56,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,332.89
+2024-03-26,2024-03,PRIMARY SAVINGS 8400,debit,-76.05,REWE Frankfurt am Frankfurt am,POS Withdrawal REWE Frankfurt am Frankfurt am DEDE,256.84
+2024-03-26,2024-03,PRIMARY SAVINGS 8400,fee,-0.76,International Fee NonUS Funds International Fee Non US Funds,International Fee NonUS Funds International Fee Non US Funds,256.08
+2024-03-26,2024-03,PRIMARY SAVINGS 8400,credit,400.00,Internet Transfer FROM: XXXX1409,Deposit Internet Transfer FROM: XXXX1409,656.08
