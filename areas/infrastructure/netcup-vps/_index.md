@@ -63,6 +63,7 @@ Plus the stock `%sudo ALL=(ALL:ALL) ALL` in `/etc/sudoers`.
 | `restic-b2-check.timer` | monthly | `restic check --read-data-subset=5%` |
 | `restic-b2-stale.timer` | 09:00 | `/usr/local/bin/restic-b2-stale-check` |
 | `vault-drift.timer` | 03:30 | `/usr/local/lib/vault-tools/drift-check.sh` — see [[#Vault]] |
+| `vault-autocommit.timer` | hourly, ±5 min | `User=luis`: `vault-snap auto`, then `git push origin main` — see [[#Git history]] |
 | `n8n-db-dump.timer` | 03:30 | `User=n8n`, nightly Postgres dump with a healthchecks ping |
 | `n8n-alive.timer` | hourly | `User=n8n`, alive check with a healthchecks ping |
 
@@ -102,8 +103,16 @@ What still stops agents from editing instruction files and protected trees is Cl
 
 `n8n` gets traverse-only ACLs on the root and `_inbox/`, and `rwX` (plus default) on `_inbox/n8n/` only. `vault-drift.service` runs `apply-tiers.sh --check` nightly: every folder `2770`, every file `0660`, every owning-group ACL entry `rw`, and no `CLAUDE.md`/`AGENTS.md` outside its list. Then it runs the infra-tools council installer's `--check` as `luis` and `dev`, and confirms `managed-settings.json` exists. Clean on 2026-10-25 after the change.
 
-> [!WARNING] No git repository in `/srv/vault`
-> ADR-0040 §3 and the vault contract assume local, commit-only git history. On this host `/srv/vault` has no `.git`; the only server-side history is `/srv/vault.infra-docs-2026-10/.git`, the pre-merge copy. Whether the laptop's copy of the vault has a repository was not checked. Until one exists here, "make the snapshot commit before an agent job" cannot be done on the server; the undo paths are Obsidian Sync version history and restic.
+### Git history
+
+Since 2026-10-28 (`measured`; [[adr-0040-vault-merge-and-agent-council|ADR-0040]] §3, amended 2026-10-28) the server's git is the vault's source of truth. The repository is `/var/lib/vault-git`, outside the vault, so `/srv/vault` has no `.git`: `core.worktree=/srv/vault`, reftable refs, `core.sharedRepository=0660`, branch `main`, remote `origin` = `neurogenesisdev/neural-network` (private) via `github-vault`. `/etc/gitconfig` lists both paths as `safe.directory`.
+
+- **Snapshot:** `vault-snap "<why>"` (`/usr/local/bin`), for any `vault` member, without sudo. It holds a lock (`state/snap.lock`), runs `git add -A` and commits as the calling user (`<user>@netcup-vps`). With nothing to commit it exits 0. Use `GIT_DIR=/var/lib/vault-git git …` to read history.
+- **Push:** `vault-autocommit.timer`, see [[#System (custom, all enabled)]]. A failed push (for example, the remote has diverged) fails the unit, which sends an ntfy alert.
+- **Hook:** `core.hooksPath=/usr/local/lib/vault-git-hooks` (`root:root` 0755). Its `pre-commit` blocks only secret shapes: private key blocks, Anthropic, OpenAI, AWS and GitHub tokens. It is a guard, not a boundary, because `--no-verify` bypasses it.
+- **Protection:** the top folder (2750), `config`, `HEAD` (0644) and `info/` are `root:vault`, so `dev` cannot change hooks or config, which would mean running code as `luis` on the next timer run. Only `objects/`, `reftable/`, `logs/` and `state/` are group-writable; the index is `state/index`, through a symlink. Config changes need `sudo git --git-dir=/var/lib/vault-git config …`.
+- **Ignored:** `.obsidian/workspace*.json`, `.trash/`, `_generated/*` except `.keep` (the vault's `.gitignore`).
+- **gc** is off (`gc.auto=0`) because it writes to the root-owned top folder. Run `sudo git --git-dir=/var/lib/vault-git gc` now and then; that also prunes the blob of anything the hook blocked.
 
 Pre-merge copies kept until ≥ 2026-11-22 ([[vault-merge-2026-10]]): `/srv/vault.infra-docs-2026-10`, `/srv/neural-network.pre-merge`, `/srv/freelance-practice.pre-merge`.
 
@@ -123,6 +132,7 @@ A clone of the private `neurogenesisdev/infra-tools` repository, owned by `luis`
 |---|---|---|
 | `~dev/code/neurogenesis-dev` | `neurogenesisdev/neurogenesis-dev`, branch `main` | `site-deploy`, via SSH host alias `github-site` |
 | `/opt/infra-tools` (as `luis`) | `neurogenesisdev/infra-tools` | `infra-tools-deploy`, via SSH host alias `github-infra-tools` |
+| `/var/lib/vault-git` (as `luis`) | `neurogenesisdev/neural-network` (the vault) | `vault-deploy`, write, via SSH host alias `github-vault` (since 2026-10-28) |
 
 `~dev/code` holds only that one repository. Whether each key has write access on GitHub was not checked from here. Codex 0.163.0 runs as `dev` with the AppArmor profile `/etc/apparmor.d/codex-bwrap`; Playwright's Chromium is under `~dev/.cache/ms-playwright`.
 
@@ -135,7 +145,6 @@ Things the runbook or ADR-0039 say that the host does not match, as of 2026-10-2
 - **No `claude-update.timer`** (runbook 5.3).
 - **systemd-resolved is in use**; stage 2 planned a static `resolv.conf`.
 - **Postgres is pinned by tag**, not digest.
-- **`/srv/vault` has no git repository** (see the warning above).
 - Small: `/etc/systemd/system/chronyd.service` is a dangling symlink (chrony removed, config files left); `claude-rc-site.service` has `Description=… (dev)`.
 
 ## Contents

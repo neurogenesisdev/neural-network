@@ -24,7 +24,12 @@
       "Bash(ssh-keygen -q -t ed25519 -N '' -C 'netcup-vps vault-autocommit' -f ~/.ssh/vault-deploy)",
       "Bash(chmod 0600 ~/.ssh/vault-deploy)",
       "Bash(cat)",
-      "Bash(vault-snap *)"
+      "Bash(vault-snap *)",
+      "Bash(echo \"tiers exit=$?\")",
+      "Bash(export GIT_DIR=/var/lib/vault-git)",
+      "Bash(git ls-remote *)",
+      "Bash(echo \"ls-remote exit=$?\")",
+      "Bash(echo \"push exit=$?\")"
     ]
   }
 }

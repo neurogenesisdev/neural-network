@@ -14,7 +14,15 @@ tags: [project, vault, merge]
 
 - [x] First unit run completed 2026-10-22 14:20: snapshot `496f6bb2`, prune done, `last-success` written, stale alarm cleared (2 stale locks from the 10-20 runs removed with `restic unlock`).
 - [ ] **Laptop B2 timer still skips every metered night.** The metered-link guard skips every night. Decide a fallback (for example, run on a metered link when the last success is older than 3 days) and verify `/var/lib/restic/last-success` gets written. Highest priority: data integrity.
-- [ ] `vault-snap`: a git undo log for `/srv/vault` with its repository outside the vault (`/var/lib/vault-git`, group `vault`) and a `vault-snap "<why>"` wrapper that any vault member can run without sudo, so the snapshot-before-edit rule from CLAUDE.md can be followed on the server. The laptop git stays canonical.
+- [x] `vault-snap`: a git undo log for `/srv/vault` with its repository outside the vault (`/var/lib/vault-git`, group `vault`) and a `vault-snap "<why>"` wrapper that any vault member can run without sudo, so the snapshot-before-edit rule from CLAUDE.md can be followed on the server. Done 2026-10-28, and extended: the server is the source of truth, pushing hourly to GitHub (ADR-0040 amended 2026-10-28, Decision 3). The laptop git is no longer canonical.
+- [ ] On the laptop, replace these two lines in the root `CLAUDE.md` (agents may not edit it):
+  ```diff
+  - This vault's Git repository has no remote. Git is local history only; Obsidian Sync carries the files.
+  - Git is commit-only while Sync watches. Before an agent job, make the approved snapshot commit.
+  + The server's git (/var/lib/vault-git) is the source of truth and pushes hourly to a private GitHub repo; Obsidian Sync carries the files.
+  + Never run git by hand in the vault. On the server, the snapshot is vault-snap "<why>"; make it before an agent job.
+  ```
+- [ ] Laptop git: stop committing to the laptop's own vault repository, or replace it with a clone of `neurogenesisdev/neural-network`.
 - [x] Rewrite `areas/infrastructure/netcup-vps/_index.md`. It still describes Debian, Hermes and the auto-* timers. A good first job for `cc-sys`.
 - [ ] neurogenesis.dev site sync: read `areas/writing/published/` (was `publish/blog/`).
 - [ ] 15 unread freelance digests in `archive/freelance/digest/`: give the n8n digest workflow a reader, or switch it off.
