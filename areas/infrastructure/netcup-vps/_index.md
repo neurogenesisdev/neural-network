@@ -25,7 +25,7 @@ netcup RS 1000 G12, Nuremberg. The phone-first operator host: Claude Code runs h
 | Hardware | 4 vCPU, 7.7 GiB RAM, 256 GB virtio disk, 3.9 GiB zram swap |
 | Disk | BIOS/GPT. ext4 `/boot` on `vda2`; btrfs on `vda3` with seven subvolumes: `@`, `@home`, `@srv`, `@containers`, `@log`, `@cache`, `@snapshots`. **No full-disk encryption, by design** — [[20260830-no-luks-on-always-online-vps\|ADR-0021]] |
 | Network | systemd-networkd, static dual-stack; `systemd-resolved` with the stub `resolv.conf` |
-| Tailscale | 1.104.1, node `netcup-vps` = `<TS_IPV4>`. Not version-held. `tailscale serve` exposes `https://netcup-vps.<tailnet>.ts.net:8443` → `127.0.0.1:5678` (n8n), tailnet only. No Funnel |
+| Tailscale | 1.104.1, node `netcup-vps` = `<TS_IPV4>`. **Version-held** (`apt-mark hold`, 2026-10-29). `tailscale serve` exposes `https://netcup-vps.<tailnet>.ts.net:8443` → `127.0.0.1:5678` (n8n), tailnet only. **Funnel on 443** (since 2026-10-29): six path mounts only (`/mcp`, `/register`, `/authorize`, `/token`, two `/.well-known/oauth-*`) → `127.0.0.1:8422`, the claude.ai vault connector — [[mcp-endpoint]] |
 | SSH | Port 22 on the wildcard (ADR-0029), keys only, `PermitRootLogin no`, `AllowUsers luis dev`; config in `/etc/ssh/sshd_config.d/10-hardening.conf`. Host key fingerprints: [[ssh-lockout-recovery]] |
 | Outer ring | netcup panel firewall policy `tailnet-only` — `inherited-unverified`, not rechecked since the rebuild ([[areas/infrastructure/netcup-vps/runbooks/panel-firewall-outer-ring|panel firewall runbook]]) |
 
@@ -36,9 +36,10 @@ netcup RS 1000 G12, Nuremberg. The phone-first operator host: Claude Code runs h
 | `luis` | 1000 | `sudo`, `vault` | SSH (password set) | Admin. Owns `/srv/vault`, runs Obsidian Sync and the `sys` Remote Control host, owns `/opt/infra-tools`. Node 22 via mise |
 | `dev` | 1001 | `vault` | SSH (password locked) | The coder. Two permanent Remote Control agents (`vault`, `dev`) plus on-demand ones (since 2026-10-28), Codex, repos under `~dev/code`. No general sudo. Node 22 via mise; mise shims on `PATH` for non-interactive shells from `~/.zshenv` (added 2026-10-23) |
 | `n8n` | 1002 | — (not in `vault`) | nologin | n8n and its Postgres as rootless podman Quadlets |
+| `mcpread` | 1003 | `vault` | nologin | The claude.ai vault connector (since 2026-10-28): read/write `/srv/vault`, read-only `/srv/vaults/code`, both behind an access policy. No sudo, no Claude Code login, own slice (1G), egress fenced by `skuid` — [[mcp-endpoint]] |
 | `root` | 0 | | locked | No SSH. Console access goes through `luis` |
 
-All three users linger. Subuid/subgid ranges: `luis` 100000, `dev` 165536, `n8n` 231072 (65536 each).
+All four users linger. Subuid/subgid ranges: `luis` 100000, `dev` 165536, `n8n` 231072 (65536 each).
 
 ### sudo rules (`/etc/sudoers.d/`)
 
@@ -66,8 +67,9 @@ Plus the stock `%sudo ALL=(ALL:ALL) ALL` in `/etc/sudoers`.
 | `vault-autocommit.timer` | hourly, ±5 min | `User=luis`: `vault-snap auto`, then `git push origin main` — see [[#Git history]] |
 | `n8n-db-dump.timer` | 03:30 | `User=n8n`, nightly Postgres dump with a healthchecks ping |
 | `n8n-alive.timer` | hourly | `User=n8n`, alive check with a healthchecks ping |
+| `mcpread-alive.timer` | hourly, ±5 min | `User=mcpread`, `/usr/local/lib/mcpread/alive.sh`: the connector answers locally and over the public Funnel route, and the Funnel serves nothing else — [[mcp-endpoint]] |
 
-Both n8n jobs run `/usr/local/lib/n8n/*.sh` through the healthchecks wrapper `/usr/local/lib/auto/hc-run.sh`. Every unit has `OnFailure=ntfy-alert@%n`, the system template that posts to ntfy (topic from `/etc/credstore`). Other enabled services are the distribution's own plus `nftables`, `tailscaled`, `ssh`, `unattended-upgrades` and the Livepatch snap. No failed units.
+Both n8n jobs run `/usr/local/lib/n8n/*.sh` through the healthchecks wrapper `/usr/local/lib/auto/hc-run.sh`. Every unit has `OnFailure=ntfy-alert@%n`, the system template that posts to ntfy (topic from `/etc/credstore`). The connector runs as `mcpread-gateway.service` (supergateway :8420) and `mcpread-auth.service` (OAuth, `127.0.0.1:8422`), with `srv-vaults-code.mount` (read-only bind of `/home/dev/code`). Other enabled services are the distribution's own plus `nftables`, `tailscaled`, `ssh`, `unattended-upgrades` and the Livepatch snap. No failed units.
 
 ### User units
 
