@@ -136,8 +136,10 @@ Consider items, none urgent, are:
 - The registration test does not prove the limit is per address.
 - The folder-link refusal lets the unlink through when `stat` fails with `EACCES`.
 
-**These commits exist only in this clone and in restic.** Moving them into infra-tools
-(patches plus an apply script) is a laptop item on [[vault-merge-2026-10]].
+**The full fork is on GitHub** since 2026-10-30: private repo `neurogenesisdev/obsidian-remote-mcp`,
+branch `local/netcup` and tag `v1.5.0`. Push from `~luis/src/obsidian-remote-mcp` (remote host
+`github-obsidian-mcp`, write deploy key `~luis/.ssh/obsidian-mcp-deploy`) after each change to the live
+clone. infra-tools gets only the units and the policy (laptop item on [[vault-merge-2026-10]]).
 
 Tests: `npm test` runs `test/run.js` (84), `test/policy.js` (34), `test/limiter.js` (6) and
 `test/auth.js` (2).
@@ -193,4 +195,4 @@ mcpread-auth`, then the Funnel loop above.
 - [[../decisions/20261029-claude-ai-vault-connector-read-write|Connector ADR]] (ADR-0041) ·
   [[../decisions/20260920-public-mcp-endpoint-claude-ai|ADR-0037]] (superseded on acceptance)
 - [[adr-0040-vault-merge-and-agent-council|ADR-0040]]: vault git and `vault-snap`, the recoverability this relies on
-- [[restic-b2-backup]]: where the local commits are backed up until infra-tools has them
+- [[restic-b2-backup]]: the second copy of the live clone, besides the GitHub fork

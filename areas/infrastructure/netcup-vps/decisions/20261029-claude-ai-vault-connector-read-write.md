@@ -124,6 +124,10 @@ exist only in `~mcpread/obsidian-remote-mcp` and in the nightly restic backup of
 **They must land in infra-tools** as patches with an apply script, before the next upstream
 rebase.
 
+Amended 2026-10-30: the full fork went to its own private repo instead,
+`neurogenesisdev/obsidian-remote-mcp` (branch `local/netcup` at `830becb`, tag `v1.5.0`), pushed by
+`luis` with a write deploy key. infra-tools gets only the units and the policy.
+
 ## Alternatives Considered
 
 1. **Keep ADR-0037's mirror and inbox pattern.** The mirrors and the inbox repo are gone with
