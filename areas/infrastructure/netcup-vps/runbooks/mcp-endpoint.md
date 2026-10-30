@@ -15,7 +15,7 @@ tags: [runbook, mcp, claude-ai, mcpread, funnel, containment, obsidian]
 
 > [!NOTE] Summary
 > This runbook implements [[../decisions/20261029-claude-ai-vault-connector-read-write|the connector ADR]]
-> (ADR-TBD, supersedes [[../decisions/20260920-public-mcp-endpoint-claude-ai|ADR-0037]]).
+> (ADR-0041, supersedes [[../decisions/20260920-public-mcp-endpoint-claude-ai|ADR-0037]]).
 > claude.ai reads and writes the live vault, and reads `/home/dev/code` read-only, through
 > `https://netcup-vps.tail82bb86.ts.net/mcp`. Built 2026-10-28/29; acceptance passed
 > 2026-10-29 from the phone with Tailscale off. Everything below is `measured` unless marked otherwise.
@@ -190,7 +190,7 @@ mcpread-auth`, then the Funnel loop above.
 
 ## Related
 
-- [[../decisions/20261029-claude-ai-vault-connector-read-write|Connector ADR]] (ADR-TBD) ·
+- [[../decisions/20261029-claude-ai-vault-connector-read-write|Connector ADR]] (ADR-0041) ·
   [[../decisions/20260920-public-mcp-endpoint-claude-ai|ADR-0037]] (superseded on acceptance)
 - [[adr-0040-vault-merge-and-agent-council|ADR-0040]]: vault git and `vault-snap`, the recoverability this relies on
 - [[restic-b2-backup]]: where the local commits are backed up until infra-tools has them

@@ -1,7 +1,8 @@
 ---
 type: decision
-id: ADR-TBD
-status: proposed
+id: ADR-0041
+aliases: [ADR-0041]
+status: accepted  # 2026-10-30, acceptance passed 2026-10-29 from the phone over the public route
 impact: high
 provenance: measured
 device: netcup-vps
@@ -16,7 +17,7 @@ superseded_by:
 tags: [mcp, claude-ai, ingress, funnel, containment, obsidian]
 ---
 
-# claude.ai vault connector: read/write on the live vault, read-only code
+# ADR-0041 — claude.ai vault connector: read/write on the live vault, read-only code
 
 ## Summary
 
@@ -182,5 +183,5 @@ Passed 2026-10-29 from claude.ai over the public route (Luis, phone on mobile da
 - The code listing hides `.git`, `.env` and `node_modules`.
 
 The build, the review rounds and the public checks are in
-[[../runbooks/mcp-endpoint|the runbook]]. On acceptance, ADR-0037 gets
+[[../runbooks/mcp-endpoint|the runbook]]. Accepted 2026-10-30; ADR-0037 now carries
 `superseded_by` and a dated line pointing here.

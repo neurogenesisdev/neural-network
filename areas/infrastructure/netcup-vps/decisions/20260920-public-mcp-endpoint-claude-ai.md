@@ -2,7 +2,8 @@
 type: decision
 id: ADR-0037
 aliases: [ADR-0037]
-status: accepted  # 2026-09-20, stage 4 acceptance passed from the phone with the laptop offline
+status: superseded  # accepted 2026-09-20 (stage 4 acceptance passed from the phone with the laptop offline); superseded 2026-10-30 by ADR-0041
+superseded_by: "[[20261029-claude-ai-vault-connector-read-write]]"
 provenance: inferred
 device: netcup-vps
 created: 2026-09-20
@@ -11,6 +12,8 @@ tags: [mcp, claude-ai, ingress, funnel, containment, obsidian]
 ---
 
 # ADR-0037 — Public MCP endpoint for claude.ai (principal `mcpread`)
+
+Amended 2026-10-30: superseded by [[20261029-claude-ai-vault-connector-read-write|ADR-0041]]. The mirrors and the inbox this record describes no longer exist; the connector now reads and writes the live vault.
 
 ## Context
 

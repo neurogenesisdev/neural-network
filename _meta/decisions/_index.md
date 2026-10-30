@@ -13,7 +13,7 @@ tags: [index, decision]
 
 | Next free | Reserved | Why |
 |---|---|---|
-| **ADR-0041** | — | — |
+| **ADR-0042** | — | — |
 
 How to allocate: take the next free number, add the record's row below, then raise *Next free* by one.
 
@@ -61,10 +61,11 @@ ADR-0038 was assigned twice. The neurogenesis.dev i18n routing decision (2026-09
 | ADR-0034 | accepted | [[20260911-persistent-credentials-on-netcup-vps]] |
 | ADR-0035 | accepted | [[20260912-netcup-vps-is-the-coding-host]] |
 | ADR-0036 | accepted | [[20260913-contained-secretary-hermes]] |
-| ADR-0037 | accepted | [[20260920-public-mcp-endpoint-claude-ai]] |
+| ADR-0037 | superseded | [[20260920-public-mcp-endpoint-claude-ai]] → ADR-0041 |
 | ADR-0038 | accepted | [[20260921-neurogenesis-dev-i18n-routing]] |
 | ADR-0039 | accepted | [[20261018-single-operator-rebuild]] |
 | ADR-0040 | accepted | [[adr-0040-vault-merge-and-agent-council]] |
+| ADR-0041 | accepted | [[20261029-claude-ai-vault-connector-read-write]] |
 
 ## FDR series (historical, freelance)
 
