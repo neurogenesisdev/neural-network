@@ -14,8 +14,13 @@ Ideas to pick up when there is energy and time: things to build, learn, go to or
 - `effort`: hour, evening, weekend or ongoing.
 - `projects`: links to existing projects or notes the idea belongs to.
 
-## Files in this directory (3)
+## Files in this directory (8)
 
 - [[phone-dictation-shortcut]] — one press to dictate into today's journal
 - [[journal-data-extraction]] — an agent fills properties and habit ticks from dictated entries
 - [[nate-herk-background-animation]] — a cursor-reactive background for the website
+- [[learn-a-new-piece]] — any new musical piece
+- [[learn-a-new-poem]] — any new poem, by heart
+- [[work-from-a-cafe]] — business work with passive socializing
+- [[join-a-running-club]] — sign up for a running club
+- [[take-a-dance-class]] — sign up for a dance class
