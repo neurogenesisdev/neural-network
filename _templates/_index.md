@@ -10,7 +10,7 @@ tags: [index, _templates]
 
 Templater skeletons for new vault notes. They require the Templater plugin. These are internal only: client-facing deliverable templates live in [[areas/freelance/deliverables/_index|deliverables]].
 
-This index merges the three pre-merge indexes (neural-network, infra-docs and freelance-practice) on 2026-10-21. It lists all 20 templates, each once (quarterly-note added in step 6).
+This index merges the three pre-merge indexes (neural-network, infra-docs and freelance-practice) on 2026-10-21. It lists all 21 templates, each once (quarterly-note added in step 6, tpl-idea on 2026-11-03).
 
 ## Notes and journal
 
@@ -27,6 +27,7 @@ This index merges the three pre-merge indexes (neural-network, infra-docs and fr
 | [[permanent-note]] | permanent | `notes/` |
 | [[moc]] | moc | `maps/` |
 | [[project-note]] | project | `projects/` |
+| [[tpl-idea]] | idea | `projects/ideas/` (the home dashboard's New idea button) |
 | [[startup-open-home]] | — | startup template (opens `maps/home.md`) |
 
 ## Admin

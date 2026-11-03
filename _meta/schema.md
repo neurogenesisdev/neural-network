@@ -46,6 +46,7 @@ The Templater skeleton in `_templates/` sets these fields. `status` is checked p
 | `case` | tpl-case | `counterparty`, `aktenzeichen`, `amount`, `direction` (owe, claim, none), `deadline` | open, waiting, blocked, closed |
 | `correspondence` | tpl-correspondence | `received`, `doc_date`, `sender`, `channel`, `kind`, `amount`, `deadline`, `aktenzeichen`, `case` | open, answered, filed |
 | `decision` | tpl-decisions, tpl-decision | see *Decision records* | proposed, accepted, superseded, deprecated |
+| `idea` | tpl-idea | `category` (build, learn, go, join), `effort` (hour, evening, weekend, ongoing), `projects` (links) | idea, active, done, dropped |
 | `backlog-item` | tpl-backlog-items | `priority`, `device`, `projects`, `commit` | active, blocked, done, archived |
 | `client` | tpl-client | `engagement`, `language`, `target_launch` | lead, discovery, scoping, building, review, launched, closed |
 | `lesson` | tpl-lesson | `severity`, `client`, `changed` | — |

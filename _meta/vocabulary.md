@@ -26,6 +26,7 @@ Carried over from the retired neural-network contract. These remain the controll
 |---|---|
 | `japanese` | areas/self/japanese.md (step 4) |
 | `quarterly-note` | _templates/quarterly-note.md (step 6) |
+| `appointment`, `call`, `email`, `errand`, `shopping`, `chore`, `waiting` | task categories: inline tags on tasks, read by the home task dashboard (2026-11-03) |
 
 ## Grandfathered — neural-network
 

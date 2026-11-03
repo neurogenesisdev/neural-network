@@ -14,6 +14,7 @@ Bounded creative/work projects with defined scope.
 
 - [[autobiography/]] — 6 files
 - [[self-authoring/]] — 3 files
+- [[projects/ideas/_index|ideas/]] — ideas to build, learn, go to or join; listed under Ideas on [[home]]
 
 ## Files in this directory (2)
 

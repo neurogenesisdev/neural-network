@@ -13,6 +13,8 @@ cssclasses: [wide]
 const { dailyPath } = await dc.require(dc.headerLink("_meta/dashboard-lib.md", "Daily note paths"));
 const INBOX = "_inbox";
 const FLEETING = "_templates/fleeting-note.md";
+const IDEAS = "projects/ideas";
+const IDEA_TEMPLATE = "_templates/tpl-idea.md";
 const pad = (x) => String(x).padStart(2, "0");
 const CURSOR = /<%\s*tp\.file\.cursor\(\d*\)\s*%>/g;
 
@@ -39,7 +41,7 @@ return function TodayHeader() {
     }
 
     // Sections of this note, and the index note of each top-level folder.
-    const PAGE = ["Habits", "Tasks", "Projects", "Areas", "Protocols"];
+    const PAGE = ["Habits", "Tasks", "Projects", "Ideas", "Areas", "Protocols"];
     const VAULT = [
         ["Inbox", "_inbox/_index.md"], ["Journal", "journal/_index.md"], ["Projects", "projects/_index.md"],
         ["Areas", "areas/_index.md"], ["Resources", "resources/_index.md"], ["Maps", "maps/_index.md"],
@@ -71,6 +73,24 @@ return function TodayHeader() {
         setIdea("");
     }
 
+    // Idea: a new note projects/ideas/<slug>.md from the idea template (it asks for the category).
+    async function captureIdea() {
+        const app = dc.app;
+        const template = app.vault.getAbstractFileByPath(IDEA_TEMPLATE);
+        const folder = app.vault.getAbstractFileByPath(IDEAS);
+        const templater = app.plugins?.plugins?.["templater-obsidian"]?.templater;
+        let slug = idea.trim().toLowerCase().replace(/[^a-z0-9äöüß]+/g, "-").replace(/^-+|-+$/g, "");
+        if (!template || !folder || !templater || !slug) {
+            if (slug) console.warn("Idea capture: template, projects/ideas/ or Templater not found");
+            return;
+        }
+        if (slug.length > 60) slug = slug.slice(0, 61).replace(/-[^-]*$/, "") || slug.slice(0, 60);
+        let name = slug;
+        for (let i = 2; app.vault.getAbstractFileByPath(`${IDEAS}/${name}.md`); i++) name = `${slug}-${i}`;
+        await openWithCursor(app, await templater.create_new_note_from_template(template, folder, name, false));
+        setIdea("");
+    }
+
     return <div className="home-card">
         <div className="home-header">
             <div className="home-date">{label}</div>
@@ -86,10 +106,11 @@ return function TodayHeader() {
         </div>
         <div className="home-nav">
             <span className="home-nav-label">Capture</span>
-            <input className="td-input" type="text" placeholder="Fleeting idea → _inbox/" value={idea}
+            <input className="td-input" type="text" placeholder="Fleeting note → _inbox/, or an idea → projects/ideas/" value={idea}
                 onInput={(e) => setIdea(e.currentTarget.value)}
                 onKeyDown={(e) => { if (e.key === "Enter") captureFleeting(); }} />
             <button className="home-btn" onClick={captureFleeting}>New fleeting note</button>
+            <button className="home-btn" onClick={captureIdea}>New idea</button>
         </div>
     </div>;
 }
@@ -544,6 +565,10 @@ const SCOPE = "journal";
 const { dailyPath, dayOf } = await dc.require(dc.headerLink("_meta/dashboard-lib.md", "Daily note paths"));
 const FALLBACK = "journal/tasks.md";
 const PRIO_MARK = { 1: "⏫", 2: "🔼", 3: "🔽" };
+// Task categories, Todoist-label style: one tag per task, e.g. #appointment. Registered in _meta/vocabulary.md.
+const CATEGORIES = [["appointment", "Appointments"], ["call", "Calls"], ["email", "Emails"], ["errand", "Errands"],
+    ["shopping", "Shopping"], ["chore", "Chores"], ["waiting", "Waiting"]];
+const CAT_IDS = new Set(CATEGORIES.map(([id]) => id));
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
@@ -595,18 +620,21 @@ function parseTask(t) {
     else if (raw.includes("🔼")) prio = 2;
     else if (raw.includes("🔽") || raw.includes("⏬")) prio = 3;
 
+    const cat = [...raw.matchAll(/(?:^|\s)#([\w-]+)/gu)].map(m => m[1].toLowerCase()).find(c => CAT_IDS.has(c)) ?? null;
+
     const doneMatch = raw.match(/✅\s*(\d{4}-\d{2}-\d{2})/u);
     const noteDay = dayOf(t.$file); // only a daily note dates its tasks; reviews and tasks.md do not
     const text = raw
         .replace(/(📅|✅|➕|🛫|⏳)\s*\d{4}-\d{2}-\d{2}/gu, "")
         .replace(/\[(due|completion|done)::[^\]]*\]/gi, "")
         .replace(/(🔺|⏫|🔼|🔽|⏬)/gu, "")
+        .replace(/(^|\s)#([\w-]+)/gu, (m, sp, tag) => CAT_IDS.has(tag.toLowerCase()) ? sp : m)
         .replace(/\s+/g, " ")
         .trim();
 
     return {
         key: `${t.$file}:${t.$position?.start}`,
-        task: t, raw, text, due, prio,
+        task: t, raw, text, due, prio, cat,
         file: t.$file ?? "",
         status: t.$status,
         done: t.$completed === true,
@@ -614,8 +642,8 @@ function parseTask(t) {
     };
 }
 
-const bodyOf = (text, due, prio) =>
-    [text.trim(), PRIO_MARK[prio] ?? "", due ? `📅 ${due}` : ""].filter(Boolean).join(" ");
+const bodyOf = (text, due, prio, cat) =>
+    [text.trim(), cat ? `#${cat}` : "", PRIO_MARK[prio] ?? "", due ? `📅 ${due}` : ""].filter(Boolean).join(" ");
 
 const TASK_LINE = /^(\s*[-*+] \[)(.)(\]\s?)(.*)$/;
 
@@ -646,12 +674,12 @@ async function toggleTask(item) {
     });
 }
 
-async function saveTask(item, text, due, prio) {
+async function saveTask(item, text, due, prio, cat) {
     await editLine(item, (line) => {
         const m = line.match(TASK_LINE);
         if (!m) return line;
         const done = m[4].match(/✅\s*\d{4}-\d{2}-\d{2}/u);
-        return `${m[1]}${m[2]}${m[3]}${bodyOf(text, due, prio)}${done ? " " + done[0] : ""}`;
+        return `${m[1]}${m[2]}${m[3]}${bodyOf(text, due, prio, cat)}${done ? " " + done[0] : ""}`;
     });
 }
 
@@ -659,9 +687,9 @@ async function deleteTask(item) {
     await editLine(item, () => null);
 }
 
-async function addTask(text, due, prio) {
+async function addTask(text, due, prio, cat) {
     const today = todayISO();
-    const line = `- [ ] ${bodyOf(text, due, prio)}`;
+    const line = `- [ ] ${bodyOf(text, due, prio, cat)}`;
     const vault = dc.app.vault;
     const daily = vault.getAbstractFileByPath(dailyPath(due || today));
 
@@ -674,6 +702,9 @@ async function addTask(text, due, prio) {
             for (let i = head + 1; i < lines.length; i++) {
                 if (/^#{1,6}\s/.test(lines[i])) { end = i; break; }
             }
+            // The template's empty checkbox is filled first.
+            const blank = lines.slice(head + 1, end).findIndex(l => /^\s*[-*+] \[ \]\s*$/.test(l));
+            if (blank >= 0) { lines[head + 1 + blank] = line; return lines.join("\n"); }
             // Insert after the last task, above trailing blank lines and a closing --- rule.
             let at = end;
             while (at - 1 > head && /^(\s*|-{3,}|\*{3,}|_{3,})$/.test(lines[at - 1].trim())) at--;
@@ -702,16 +733,24 @@ function PrioSelect({ value, onChange }) {
     </select>;
 }
 
+function CatSelect({ value, onChange }) {
+    return <select value={value ?? ""} onChange={(e) => onChange(e.currentTarget.value || null)}>
+        <option value="">No category</option>
+        {CATEGORIES.map(([id, label]) => <option key={id} value={id}>{label}</option>)}
+    </select>;
+}
+
 function AddBar() {
     const [text, setText] = dc.useState("");
     const [due, setDue] = dc.useState("");
     const [prio, setPrio] = dc.useState(4);
+    const [cat, setCat] = dc.useState(null);
 
     async function submit() {
         const date = resolveDate(due);
         if (!text.trim() || date === null) return;
-        await addTask(text, date, prio);
-        setText(""); setDue(""); setPrio(4);
+        await addTask(text, date, prio, cat);
+        setText(""); setDue(""); setPrio(4); setCat(null);
     }
 
     return <div className="td-add">
@@ -723,6 +762,7 @@ function AddBar() {
             onInput={(e) => setDue(e.currentTarget.value)}
             onKeyDown={(e) => { if (e.key === "Enter") submit(); }} />
         <PrioSelect value={prio} onChange={setPrio} />
+        <CatSelect value={cat} onChange={setCat} />
         <button className="td-btn td-btn-primary" onClick={submit}>Add</button>
     </div>;
 }
@@ -732,16 +772,17 @@ function Row({ item, today }) {
     const [text, setText] = dc.useState(item.text);
     const [due, setDue] = dc.useState(item.due ?? "");
     const [prio, setPrio] = dc.useState(item.prio);
+    const [cat, setCat] = dc.useState(item.cat);
     const [confirm, setConfirm] = dc.useState(false);
 
     function startEdit() {
-        setText(item.text); setDue(item.due ?? ""); setPrio(item.prio);
+        setText(item.text); setDue(item.due ?? ""); setPrio(item.prio); setCat(item.cat);
         setConfirm(false); setEditing(true);
     }
     async function save() {
         const date = resolveDate(due);
         if (!text.trim() || date === null) return;
-        await saveTask(item, text, date, prio);
+        await saveTask(item, text, date, prio, cat);
         setEditing(false);
     }
     async function remove() {
@@ -763,6 +804,7 @@ function Row({ item, today }) {
                 onInput={(e) => setDue(e.currentTarget.value)}
                 onKeyDown={(e) => { if (e.key === "Enter") save(); if (e.key === "Escape") setEditing(false); }} />
             <PrioSelect value={prio} onChange={setPrio} />
+            <CatSelect value={cat} onChange={setCat} />
             <button className="td-btn td-btn-primary" onClick={save}>Save</button>
             <button className="td-btn" onClick={() => setEditing(false)}>Cancel</button>
             <button className="td-btn td-btn-danger" onClick={remove}>{confirm ? "Really delete?" : "Delete"}</button>
@@ -776,6 +818,7 @@ function Row({ item, today }) {
             title={item.done ? "Mark as open" : "Complete"}
             onClick={() => toggleTask(item)}></span>
         <span className="td-text" title="Click to edit" onClick={startEdit}>{item.text}</span>
+        {item.cat && <span className="td-chip">{CATEGORIES.find(([id]) => id === item.cat)?.[1] ?? item.cat}</span>}
         {item.due && !item.done && <span className={"td-due" + dueClass}>{item.due}</span>}
         <span className="td-src" title="Open note"
             onClick={() => dc.app.workspace.openLinkText(item.file, "", "tab")}>{fileName}</span>
@@ -790,9 +833,13 @@ function Rows({ list, today, empty }) {
 return function TaskDashboard() {
     const tasks = dc.useQuery(`@task and !#habit and childof(@page and path("${SCOPE}"))`);
     const [tab, setTab] = dc.useState("today");
+    const [catFilter, setCatFilter] = dc.useState(null);
     const today = todayISO();
 
-    const items = dc.useMemo(() => tasks.map(parseTask).filter(i => i.text), [tasks]);
+    const allItems = dc.useMemo(() => tasks.map(parseTask).filter(i => i.text), [tasks]);
+    const allOpen = allItems.filter(i => !i.done && i.status !== "-");
+    // The category filter applies to every tab.
+    const items = catFilter ? allItems.filter(i => i.cat === catFilter) : allItems;
     const open = items.filter(i => !i.done && i.status !== "-");
     const byDueThenPrio = (a, b) => a.due.localeCompare(b.due) || a.prio - b.prio;
 
@@ -819,6 +866,9 @@ return function TaskDashboard() {
         ["done", "Done", done.length],
     ];
 
+    const catCounts = CATEGORIES.map(([id, label]) => [id, label, allOpen.filter(i => i.cat === id).length])
+        .filter(([id, , count]) => count > 0 || id === catFilter);
+
     return <div className="td">
         <AddBar />
         <div className="td-tabs">
@@ -827,6 +877,14 @@ return function TaskDashboard() {
                     {label}<span className="td-count">{count}</span>
                 </span>)}
         </div>
+        {catCounts.length > 0 && <div className="td-tabs">
+            <span className={"td-tab" + (catFilter == null ? " is-active" : "")} onClick={() => setCatFilter(null)}>All</span>
+            {catCounts.map(([id, label, count]) =>
+                <span key={id} className={"td-tab" + (catFilter === id ? " is-active" : "")}
+                    onClick={() => setCatFilter(catFilter === id ? null : id)}>
+                    {label}<span className="td-count">{count}</span>
+                </span>)}
+        </div>}
 
         {tab === "today" && <div>
             {overdue.length > 0 && <div className="td-section-title is-overdue">Overdue</div>}
@@ -895,6 +953,82 @@ return function Projects() {
                 <span className="td-text home-link" onClick={() => go(item.path)}>{item.name}</span>
                 {item.due && <span className="td-due">{item.due}</span>}
                 <span className="td-chip">{item.status}</span>
+            </div>)}
+            {list.length === 0 && <div className="td-empty">Nothing here.</div>}
+        </div>
+    </div>;
+}
+```
+
+---
+
+## Ideas
+
+```datacorejsx
+// Notes under projects/ideas/. Fields read from their properties:
+// status (idea | active | done | dropped), category (build | learn | go | join), effort, projects.
+const ROOT = "projects/ideas";
+const CATEGORIES = [["build", "Build"], ["learn", "Learn"], ["go", "Go"], ["join", "Join"]];
+const EFFORTS = ["hour", "evening", "weekend", "ongoing"];
+const pretty = (slug) => String(slug).split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+// A property link arrives as a Link object or as a "[[target|alias]]" string.
+const linkTarget = (l) => String(l?.path ?? l ?? "").replace(/^\[\[|\]\]$/g, "").split("|")[0].trim();
+const linkLabel = (l) => pretty(linkTarget(l).split("/").pop().replace(/\.md$/, ""));
+
+return function Ideas() {
+    const pages = dc.useQuery(`@page and path("${ROOT}")`);
+    const [tab, setTab] = dc.useState("idea");
+    const [cat, setCat] = dc.useState(null);
+    const [effort, setEffort] = dc.useState(null);
+
+    const items = dc.useMemo(() => pages
+        .filter(p => !String(p.$path).endsWith("_index.md"))
+        .map(p => {
+            const projects = p.value("projects");
+            return {
+                path: p.$path,
+                name: pretty(String(p.$path).split("/").pop().replace(/\.md$/, "")),
+                status: String(p.value("status") ?? "idea"),
+                cat: p.value("category") ? String(p.value("category")) : null,
+                effort: p.value("effort") ? String(p.value("effort")) : null,
+                projects: (Array.isArray(projects) ? projects : projects ? [projects] : []).filter(l => linkTarget(l)),
+            };
+        })
+        .sort((a, b) => a.name.localeCompare(b.name)), [pages]);
+
+    const inTab = (i) => tab === "idea" ? i.status === "idea"
+        : tab === "active" ? i.status === "active" : i.status === "done" || i.status === "dropped";
+    const tabItems = items.filter(inTab);
+    const list = tabItems.filter(i => (!cat || i.cat === cat) && (!effort || i.effort === effort));
+    const go = (path, from) => dc.app.workspace.openLinkText(path, from ?? "", "tab");
+    const chip = (on) => "td-tab" + (on ? " is-active" : "");
+
+    return <div className="td">
+        <div className="td-tabs">
+            {[["idea", "Ideas"], ["active", "Active"], ["closed", "Done / dropped"]].map(([id, label]) =>
+                <span key={id} className={chip(tab === id)} onClick={() => setTab(id)}>
+                    {label}<span className="td-count">{items.filter(i => id === "idea" ? i.status === "idea"
+                        : id === "active" ? i.status === "active" : i.status === "done" || i.status === "dropped").length}</span>
+                </span>)}
+        </div>
+        <div className="td-tabs">
+            <span className={chip(cat == null)} onClick={() => setCat(null)}>All</span>
+            {CATEGORIES.map(([id, label]) => <span key={id} className={chip(cat === id)}
+                onClick={() => setCat(cat === id ? null : id)}>
+                {label}<span className="td-count">{tabItems.filter(i => i.cat === id).length}</span>
+            </span>)}
+            <span style={{ flex: 1 }}></span>
+            {EFFORTS.map(e => <span key={e} className={chip(effort === e)} title="Effort"
+                onClick={() => setEffort(effort === e ? null : e)}>{e}</span>)}
+        </div>
+        <div>
+            {list.map(item => <div key={item.path} className="td-row td-wrap">
+                <span className={"td-dot" + (item.status === "active" ? " is-active" : "")}></span>
+                <span className="td-text home-link" onClick={() => go(item.path)}>{item.name}</span>
+                {item.cat && <span className="td-chip">{CATEGORIES.find(([id]) => id === item.cat)?.[1] ?? item.cat}</span>}
+                {item.effort && <span className="td-chip" title="Effort">{item.effort}</span>}
+                {item.projects.map(l => <span key={linkTarget(l)} className="td-src" title="Related project"
+                    onClick={() => go(linkTarget(l), item.path)}>{linkLabel(l)}</span>)}
             </div>)}
             {list.length === 0 && <div className="td-empty">Nothing here.</div>}
         </div>

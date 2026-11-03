@@ -83,7 +83,8 @@ focus_theme:        # short one-liner (e.g., "Deep Work – Coding")
 ---
 
 ## Tasks
-
+<!-- Things to do, one checkbox each. Optional: a due date (📅 YYYY-MM-DD) and a priority (⏫ 🔼 🔽). They show on the home dashboard. Journal text goes under Log. -->
+- [ ] 
 
 ---
 
