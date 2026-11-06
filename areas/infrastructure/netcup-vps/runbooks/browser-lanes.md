@@ -5,7 +5,7 @@ provenance: measured
 device: netcup-vps
 stale: false
 last_verified: 2026-11-06
-commit: pending
+commit: 8c9cc2d
 created: 2026-11-06
 updated: 2026-11-06
 tags: [runbook, chromium, mcp, claude-code, codex, design, ssh]
