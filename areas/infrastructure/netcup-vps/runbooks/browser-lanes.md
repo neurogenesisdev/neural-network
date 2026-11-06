@@ -27,7 +27,7 @@ tags: [runbook, chromium, mcp, claude-code, codex, design, ssh]
 > first run from the laptop. Background: the research report at
 > `/home/dev/code/reports/AI tools for aesthetic web UI.md` (2026-11-04).
 
-Lanes: coding = `dev`. No admin step is needed except the font packages in §Fonts.
+Lanes: coding = `dev`. The only admin step, the font packages in §Fonts, is done.
 Supersedes the "chrome-devtools-mcp fails with Missing X server … uninstalled" note in
 [[coding-rig-stage-1|coding-rig-stage-1 §Headless Chromium]] (2026-09-24): the failure
 was the server launching headful; `--headless` in the server args fixes it. The
@@ -59,14 +59,16 @@ in any repo). Written with `claude mcp add --scope user --transport stdio …`:
 ```
 chrome-devtools  npx -y chrome-devtools-mcp@latest --headless --isolated
                  --executablePath /usr/bin/chromium
-                 --chromeArg=--no-sandbox --chromeArg=--disable-dev-shm-usage
+                 --chromeArg=--disable-dev-shm-usage
 dembrandt        npx -y --package dembrandt dembrandt-mcp
                  env DEMBRANDT_NO_HEADED_FALLBACK=1
 ```
 
 - `--isolated`: temporary profile, deleted on close, so no profile lock survives a
-  crashed run. `--no-sandbox` and `--disable-dev-shm-usage` are carried over from
-  the 2026-09-24 note; whether this host still needs them is `inferred`, not retested.
+  crashed run. `--no-sandbox` from the 2026-09-24 note is **dropped**: the admin
+  confirmed the Chromium sandbox works for `dev` on this host, and the screenshot run
+  below succeeds without it (`measured` 2026-11-06). `--disable-dev-shm-usage` is
+  kept; whether the VPS's `/dev/shm` is small enough to need it is `inferred`.
 - Dembrandt has no executable-path option. It drives Playwright's own Chromium from
   `~dev/.cache/ms-playwright/` (revision 1243, "Chrome Headless Shell 153.0.8010.12",
   fetched by `npx dembrandt install-browser`, 114 MiB, 2026-11-06). Its only hook for
@@ -157,26 +159,26 @@ task needs, and loopback binding only. Close Chromium when done.
 
 ## Fonts for lane-1 screenshots — `measured` 2026-11-06
 
-`fc-list` has 50 fonts from `fonts-liberation`, `fonts-freefont-ttf`,
-`fonts-noto-color-emoji`, `fonts-ipafont-gothic`, `fonts-wqy-zenhei`,
-`fonts-unifont`, `fonts-tlwg-loma-otf`. `fc-match` resolves `sans-serif`, `serif`,
-`monospace`, `system-ui`, `Inter`, `Roboto`, `Segoe UI` and `Georgia` **all to
-WenQuanYi Zen Hei**, a CJK face; only `Arial`/`Helvetica` land on Liberation Sans.
-Any site that relies on a generic family or a system stack therefore renders Latin
-text in the wrong face in headless screenshots. Web fonts loaded by the page are
-unaffected.
+Before (morning of 2026-11-06): 50 fonts from `fonts-liberation`, `fonts-freefont-ttf`,
+`fonts-noto-color-emoji`, `fonts-ipafont-gothic`, `fonts-wqy-zenhei`, `fonts-unifont`,
+`fonts-tlwg-loma-otf`; `fc-match` resolved `sans-serif`, `serif`, `monospace`,
+`system-ui`, `Inter`, `Roboto`, `Segoe UI` and `Georgia` **all to WenQuanYi Zen Hei**,
+a CJK face. Any page relying on a generic family or a system stack rendered Latin
+text in the wrong face. Web fonts loaded by the page were unaffected.
 
-Admin step (root), proposed:
+Fixed the same day (root, from Ubuntu's archive; the apt pins exclude the xtradeb PPA):
 
 ```
 apt install -y fonts-dejavu-core fonts-noto-core fonts-noto-mono \
-  fonts-crosextra-carlito fonts-crosextra-caladea
+  fonts-crosextra-carlito fonts-crosextra-caladea     # + fonts-dejavu-mono pulled in
 fc-cache -f
 ```
 
-DejaVu and Noto give fontconfig its usual generic defaults; Carlito and Caladea are
-metric clones of Calibri and Cambria. Recheck with the `fc-match` list above and one
-`take_screenshot` of a system-font page; then set `last_verified`.
+After (`measured` as `dev`): `sans-serif`, `system-ui`, `Inter`, `Roboto`, `Segoe UI`
+→ Noto Sans; `serif`, `Georgia` → Noto Serif; `monospace` → DejaVu Sans Mono;
+`Calibri` → Carlito; `Cambria` → Caladea (metric clones, so documents set in those
+faces keep their layout). If a screenshot ever shows CJK-looking Latin text again,
+rerun this `fc-match` list first.
 
 ## Codex — not configured
 
