@@ -21,6 +21,7 @@ netcup RS 1000 G12, Nuremberg. The phone-first operator host: Claude Code runs h
 | OS | Ubuntu 26.04.1 LTS (`resolute`), kernel 7.0.0-38-generic |
 | Ubuntu Pro | Attached (free personal). `esm-apps`, `esm-infra` and `livepatch` enabled; Livepatch running. snapd is installed only for `canonical-livepatch` |
 | Updates | `unattended-upgrades` with the release, security and both ESM security origins |
+| Packages | Third-party apt sources: Tailscale (`tailscale.list`) and, since 2026-11-06, the **xtradeb PPA** for Chromium as a deb, not the snap. Source `/etc/apt/sources.list.d/xtradeb-apps.sources` (`resolute`), keyring `/etc/apt/keyrings/xtradeb-apps.gpg`, fingerprint `5301FA4FD93244FBC6F6149982BB6851C64F6880` (matches Launchpad and keyserver.ubuntu.com). Two pins: `/etc/apt/preferences.d/xtradeb-apps` keeps the whole PPA at 1 and only `chromium*` at 500; `/etc/apt/preferences.d/no-chromium-snap` holds Ubuntu's snap stubs (`chromium-browser` and siblings) at −1. Installed `chromium` 156.0.8078.73 at `/usr/bin/chromium`; only `chromium` and `chromium-common` come from the PPA. It serves the headless DevTools MCP lane only. Claude in Chrome runs in the laptop's Chrome and connects over Anthropic's bridge, so the server needs no display or extension |
 | sudo | sudo-rs 0.2.13 |
 | Hardware | 4 vCPU, 7.7 GiB RAM, 256 GB virtio disk, 3.9 GiB zram swap |
 | Disk | BIOS/GPT. ext4 `/boot` on `vda2`; btrfs on `vda3` with seven subvolumes: `@`, `@home`, `@srv`, `@containers`, `@log`, `@cache`, `@snapshots`. **No full-disk encryption, by design** — [[20260830-no-luks-on-always-online-vps\|ADR-0021]] |
@@ -137,8 +138,9 @@ A clone of the private `neurogenesisdev/infra-tools` repository, owned by `luis`
 | `~dev/code/neurogenesis-dev` | `neurogenesisdev/neurogenesis-dev`, branch `main` | `site-deploy`, via SSH host alias `github-site` |
 | `/opt/infra-tools` (as `luis`) | `neurogenesisdev/infra-tools` | `infra-tools-deploy`, via SSH host alias `github-infra-tools` |
 | `/var/lib/vault-git` (as `luis`) | `neurogenesisdev/neural-network` (the vault) | `vault-deploy`, write, via SSH host alias `github-vault` (since 2026-10-28) |
+| `~luis/src/obsidian-remote-mcp` | `neurogenesisdev/obsidian-remote-mcp` (private): the connector fork, branch `local/netcup` and tag `v1.5.0` | `obsidian-mcp-deploy`, write, via SSH host alias `github-obsidian-mcp` (since 2026-10-30) |
 
-`~dev/code` holds only that one repository. Whether each key has write access on GitHub was not checked from here. Codex 0.163.0 runs as `dev` with the AppArmor profile `/etc/apparmor.d/codex-bwrap`; Playwright's Chromium is under `~dev/.cache/ms-playwright`.
+`~dev/code` holds only that one repository. Whether each key has write access on GitHub was not checked from here. Codex 0.163.0 runs as `dev` with the AppArmor profile `/etc/apparmor.d/codex-bwrap`; Playwright's Chromium is under `~dev/.cache/ms-playwright`; the system Chromium is in the Host table (Packages).
 
 ## Drift from the rebuild record
 
