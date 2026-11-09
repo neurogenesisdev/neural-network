@@ -1,7 +1,7 @@
 ---
 type: index
 device: arch-thinkpad
-updated: 2026-08-30
+updated: 2026-11-09
 tags: [index]
 ---
 
@@ -16,6 +16,7 @@ when one part of it stops holding.
 | [[tpm2-reenroll\|Re-enroll TPM2 after a firmware update]] | Boot asks for the LUKS passphrase instead of the TPM PIN | None — the machine is usable; only the convenience path is gone |
 | [[bootloader-reinstall\|Reinstall the bootloader without unsigning it]] | The named firmware boot entry is gone, **or** the firmware refuses the loader and there is no menu | None for the first; high and needs the Arch ISO for the second |
 | [[restic-restore\|Restore from restic]] | A file or tree is lost and snapper cannot supply it — or the machine itself is gone | Low for a file; the machine case is the one to have rehearsed |
+| [[voice-dictation\|Voice dictation (whisrs)]] | Dictation stops working after a rebuild, a KDE/whisrs update or a new mic; or a fresh setup | None — a convenience, but the two KDE fixes are easy to forget |
 
 The first two fire on a firmware update, and a firmware update can produce both at
 once. `bootloader-reinstall` says so at the end.
