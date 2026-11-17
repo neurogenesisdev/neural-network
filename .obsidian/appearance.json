@@ -7,5 +7,6 @@
     "task-dashboard"
   ],
   "baseFontSize": 18,
-  "textFontFamily": ""
+  "textFontFamily": "",
+  "showRibbon": true
 }
