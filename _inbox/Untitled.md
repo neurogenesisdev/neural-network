@@ -1,0 +1,1 @@
+![[Screenshot_20261121-123534.png]]![[Screenshot_20261121-130058.png]]
